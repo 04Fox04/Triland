@@ -1,5 +1,6 @@
 import React from "react"
 import { Routes, Route } from "react-router-dom"
+import Header from "../Header/Header";
 
 function App() {
 
@@ -8,6 +9,7 @@ function App() {
       <div className='page'>
         <Routes>
           <Route>
+            <Header />
           </Route>
         </Routes>
       </div>
