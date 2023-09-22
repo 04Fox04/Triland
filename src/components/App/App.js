@@ -1,14 +1,15 @@
-import './App.css';
-import React, { Route } from "react"
+import React from "react"
+import { Routes, Route } from "react-router-dom"
 
 function App() {
 
   return (
     <div className='body'>
       <div className='page'>
-        <Route>
-
-        </Route>
+        <Routes>
+          <Route>
+          </Route>
+        </Routes>
       </div>
     </div>
   )
