@@ -1,0 +1,37 @@
+/* normalize.css */
+
+/* Document
+   ========================================================================== */
+   html {
+    line-height: 1.15; /* 1 */
+    -webkit-text-size-adjust: 100%; /* 2 */
+  }
+  
+  /* Sections
+     ========================================================================== */
+  body {
+    margin: 0;
+  }
+  
+  /* Grouping content
+     ========================================================================== */
+  h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+  abbr, code, kbd, samp,
+  ul, ol, li,
+  dl, dd, dt {
+    margin: 0;
+  }
+  
+  /* General styling
+     ========================================================================== */
+  body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+    background-color: #fff;
+  }
+  
+  /* ... Add more styles as needed ... */
+  
+  
