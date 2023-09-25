@@ -1,0 +1,110 @@
+.about__company {
+    margin: 0 auto;
+    min-height: 743px;
+    background-color: #0F102C;
+}
+
+.about__company-container {
+    width: 1385px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    grid-template-columns: (475px, 1fr);
+    padding: 0 0 0 216px;
+}
+
+.about__company-info {
+    min-height: 526px;
+    max-width: 475px;
+    width: 100%;
+    padding: 110px 0;
+}
+
+.about__company-title {
+    color: #fff;
+}
+
+.about__company-border {
+    margin-top: 23px;
+    width: 100%;
+    border-bottom: 3px solid #fff;
+}
+
+.about__company-text {
+    color: #FFF;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 124.4%;
+    letter-spacing: 0.27px;
+    margin-top: 20px;
+    max-width: 460px;
+}
+
+.about__company-text:last-of-type {
+    max-width: 470px;
+    width: 100%;
+}
+
+.about__company-button {
+    width: 221px;
+    height: 56px;
+    margin-top: 40px;
+    padding-top: 5px;
+    border-radius: 15px;
+    border: 2px solid #FFF;
+    box-shadow: 4px 4px 10px 0px rgba(255, 255, 255, 0.25);
+    background-color: #0F102C;
+    color: #FFF;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: normal;
+    cursor: pointer;
+}
+
+.about__company-button:hover {
+    background: #FFF;
+    box-shadow: 4px 4px 40px 0px rgba(255, 255, 255, 0.25);
+    color: #0F102C;
+    transition: .15s;
+}
+
+.about__company-slid {
+    width: 885px;
+    height: 743px;
+    background-color: #173FC9;
+    margin-left: 31px;
+}
+
+.slid__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 303px;
+}
+
+.slid__text {
+    max-width: 426px;
+    width: 100%;
+    min-height: 47px;
+    color: #FFF;
+    font-size: 40px;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: uppercase;
+    margin: 0 auto;
+}
+
+.slid__button {
+    width: 146px;
+    height: 60px;
+    border-radius: 25px;
+    border: 2px solid #FFF;
+    background-color: #173FC9;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+.slid__button:hover {
+    border: 2px solid rgba(255, 255, 255, 0.50);
+    transition: .15s;
+}

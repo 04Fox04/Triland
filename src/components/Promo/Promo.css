@@ -1,5 +1,5 @@
 .promo {
-    min-width: 1600px;
+    width: 100%;
     height: 900px;
     background-image: url("../../images/main-background-image.jpg");
     box-sizing: border-box;
@@ -71,7 +71,8 @@
 }
 
 .promo__image {
-    width: 670px;
-    height: 760px;
+    max-width: 670px;
+    width: 100%;
+    height: 100%;
     margin-top: 140px;
 }
