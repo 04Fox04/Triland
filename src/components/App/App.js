@@ -1,22 +1,21 @@
-import React from "react"
-import { Routes, Route } from "react-router-dom"
+import React from "react";
+import { Routes, Route } from "react-router-dom";
 import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
+import Licenses from "../Licenses/licenses";
 
 function App() {
-
   return (
-    <div className='body'>
-      <div className='page'>
+    <div className="body">
+      <div className="page">
         <Routes>
-          <Route>
-            <Header />
-            <Footer />
-          </Route>
+          <Route path="/" element={<Header />} />
+          <Route path="/" element={<Licenses />} />
+          <Route path="/" element={<Footer />} />
         </Routes>
       </div>
     </div>
-  )
+  );
 }
 
 export default App;
