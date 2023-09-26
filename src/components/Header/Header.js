@@ -13,32 +13,32 @@ function Header() {
         </Link>
         <ul className="header__nav">
           <li className="header__nav-link">
-            <Link>
+            <Link to="/">
               <p className="header__link-text">О компании</p>
             </Link>
           </li>
           <li className="header__nav-link">
-            <Link>
+            <Link to="/">
               <p className="header__link-text">Услуги</p>
             </Link>
           </li>
           <li className="header__nav-link">
-            <Link>
+            <Link to="/">
               <p className="header__link-text">Лицензии</p>
             </Link>
           </li>
           <li className="header__nav-link">
-            <Link>
+            <Link to="/">
               <p className="header__link-text">Партнеры</p>
             </Link>
           </li>
           <li className="header__nav-link">
-            <Link>
+            <Link to="/">
               <p className="header__link-text">Фотогалерея</p>
             </Link>
           </li>
           <li className="header__nav-link">
-            <Link>
+            <Link to="/">
               <p className="header__link-text">Контакты</p>
             </Link>
           </li>

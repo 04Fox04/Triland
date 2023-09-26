@@ -6,31 +6,31 @@ import ArrowSlid from "../../images/about-company/arrow.svg";
 
 function AboutCompany() {
   return (
-    <section className="about__company">
-      <div className="about__company-container">
-        <div className="about__company-info">
-          <h2 className="section-title about__company-title">О компании</h2>
-          <div className="about__company-border"></div>
-          <p className="about__company-text">
+    <section className="about-company">
+      <div className="about-company__container">
+        <div className="about-company__info">
+          <h2 className="section-title about-company__title">О компании</h2>
+          <div className="about-company__border"></div>
+          <p className="about-company__text">
             Основным видом деятельности компании является строительство и монтаж
             инженерных сетей водоснабжения, канализации, теплоснабжения жилых и
             промышленных зданий, а также продажа и установка автоматизированной
             трубопроводной арматуры от лучших производителей.
           </p>
-          <p className="about__company-text">
+          <p className="about-company__text">
             В компании работают высококвалифицированные сотрудники,
-            специализацией которых являются сварочно-сантехнические работы.
+            специализирующиеся на сварочно-сантехнических работах.
           </p>
-          <p className="about__company-text">
+          <p className="about-company__text">
             За долгие годы работы в данной области коллектив компании «Триланд»
-            сталкивался с множеством сложностей и при этом отлично справлялся с
-            их выполнением.
+            сталкивался с множеством сложностей и отлично справлялся с их
+            выполнением.
           </p>
-          <button className="about__company-button">Заказать звонок</button>
+          <button className="about-company__button">Заказать звонок</button>
         </div>
-        <div className="about__company-slider">
-          {/* <img className="about__company-image" src="" alt="Фото с производства"></img> */}
-          <div className="about__company-slid">
+        <div className="about-company__slider">
+          {/* <img className="about-company__image" src="" alt="Фото с производства"></img> */}
+          <div className="about-company__slid">
             <div className="slid__container">
               <h3 className="slid__text">Перейти в галерею</h3>
               <Link to="*">

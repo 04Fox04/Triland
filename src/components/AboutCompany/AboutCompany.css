@@ -1,35 +1,42 @@
-.about__company {
-  margin: 0 auto;
+.about-company {
+  width: 100%;
   min-height: 743px;
   background-color: #0f102c;
+  position: relative;
+  overflow: hidden;
+  margin-top: -2px;
 }
 
-.about__company-container {
-  width: 1385px;
+.about-company__container {
+  max-width: 1385px;
+  width: 100%;
   height: 100%;
-  margin: 0 auto;
   display: flex;
-  padding: 0 0 0 216px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  padding-left: 215px;
 }
 
-.about__company-info {
+.about-company__info {
   min-height: 526px;
   max-width: 475px;
   width: 100%;
   padding: 110px 0;
+  margin-right: 31px;
 }
 
-.about__company-title {
+.about-company__title {
   color: #fff;
 }
 
-.about__company-border {
+.about-company__border {
   margin-top: 23px;
   width: 100%;
   border-bottom: 3px solid #fff;
 }
 
-.about__company-text {
+.about-company__text {
   color: #fff;
   font-size: 18px;
   font-weight: 500;
@@ -39,12 +46,12 @@
   max-width: 460px;
 }
 
-.about__company-text:last-of-type {
+.about-company__text:last-of-type {
   max-width: 470px;
   width: 100%;
 }
 
-.about__company-button {
+.about-company__button {
   width: 221px;
   height: 56px;
   margin-top: 40px;
@@ -60,21 +67,21 @@
   cursor: pointer;
 }
 
-.about__company-button:hover {
+.about-company__button:hover {
   background: #fff;
   box-shadow: 4px 4px 40px 0px rgba(255, 255, 255, 0.25);
   color: #0f102c;
   transition: 0.15s;
 }
-.about__company-slider {
-    width: 100%;
+
+.about-company__slider {
+  width: 100%;
 }
-.about__company-slid {
+
+.about-company__slid {
   width: 100%;
   height: 743px;
   background-color: #173fc9;
-  margin-left: 31px;
-  box-sizing: border-box;
 }
 
 .slid__container {
@@ -109,4 +116,39 @@
 .slid__button:hover {
   border: 2px solid rgba(255, 255, 255, 0.5);
   transition: 0.15s;
+}
+
+@media (min-width: 3000px) {
+  .about-company__container {
+    left: 50%;
+    transform: translateX(-50%);
+    margin-left: 215px;
+    margin-right: auto;
+  }
+}
+
+@media (max-width: 1600px) {
+  .about-company__container {
+    max-width: 1385px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    padding-left: 215px;
+  }
+}
+
+@media (max-width: 1385px) {
+  .about-company__container {
+    max-width: 1385px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    padding-left: 50px;
+  }
 }
