@@ -1,92 +1,92 @@
 .header {
-    position: absolute;
-    color: #fff;
-    width: 100%;
-    margin: 0 auto;
-    min-height: 100px;
-    top: 0;
-    left: 0;
-    z-index: 1;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  position: absolute;
+  color: #fff;
+  width: 100%;
+  margin: 0 auto;
+  min-height: 100px;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .header__container {
-    width: 1170px;
-    margin: 0 auto;
-    display: flex;
-    border-left: 1px solid rgba(255, 255, 255, 0.1);
-    border-right: 1px solid rgba(255, 255, 255, 0.1);
+  width: 1170px;
+  margin: 0 auto;
+  display: flex;
+  border-left: 1px solid rgba(255, 255, 255, 0.1);
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .header__nav {
-    list-style-type: none;
-    display: flex;
-    gap: 30px;
-    align-items: center;
-    width: 720px;
-    padding: 0;
-    padding-left: 50px;
-    border-left: 1px solid rgba(255, 255, 255, 0.1);
-    border-right: 1px solid rgba(255, 255, 255, 0.1);
+  list-style-type: none;
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  width: 720px;
+  padding: 0;
+  padding-left: 50px;
+  border-left: 1px solid rgba(255, 255, 255, 0.1);
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .header__nav-link {
-    text-decoration: none;
-    text-transform: uppercase;
-    height: 18px;
+  text-decoration: none;
+  text-transform: uppercase;
+  height: 18px;
 }
 
 .header__link-text {
-    color: #fff;
-    font-size: 15px;
-    font-weight: 500;
-    line-height: normal;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: normal;
 }
 
 .header__link-text:hover {
-    color: #173FC9;
-    transition: .15s;
+  color: #173fc9;
+  transition: 0.15s;
 }
 
 .phone__container {
-    max-width: 161px;
-    display: flex;
-    align-items: center;
-    padding: 0 19px;
+  max-width: 161px;
+  display: flex;
+  align-items: center;
+  padding: 0 19px;
 }
 
 .header__logo-container {
-    margin-top: 16px;
-    padding-left: 50px;
-    width: 150px;
-    height: 84px;
+  margin-top: 16px;
+  padding-left: 50px;
+  width: 150px;
+  height: 84px;
 }
 
 .header__logo {
-    width: 100px;
-    height: 68.254px;
+  width: 100px;
+  height: 68.254px;
 }
 
 .phone__image {
-    height: 24px;
-    width: 24px;
+  height: 24px;
+  width: 24px;
 }
 
 .phone__text {
-    color: #fff;
-    font-variant-numeric: lining-nums proportional-nums;
-    font-size: 15px;
-    font-weight: 500;
-    line-height: normal;
-    height: 18px;
-    margin-left: 13px;
+  color: #fff;
+  font-variant-numeric: lining-nums proportional-nums;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: normal;
+  height: 18px;
+  margin-left: 13px;
 }
 
 .phone__text-link {
-    color: #fff;
+  color: #fff;
 }
 
 .phone__text-link:hover {
-    color: #173FC9;
-    transition: .15s;
+  color: #173fc9;
+  transition: 0.15s;
 }
