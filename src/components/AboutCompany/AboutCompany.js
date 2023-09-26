@@ -2,9 +2,9 @@ import React from "react";
 import "./AboutCompany.css";
 import "../../index.css";
 import { Link } from "react-router-dom";
-import ArrowSlid from "../../images/about-company/arrow.svg";
+import { arrowSlid } from "../../constants/constants";
 
-function AboutCompany() {
+function AboutCompany({ onOpen }) {
   return (
     <section className="about-company">
       <div className="about-company__container">
@@ -26,7 +26,9 @@ function AboutCompany() {
             сталкивался с множеством сложностей и отлично справлялся с их
             выполнением.
           </p>
-          <button className="about-company__button">Заказать звонок</button>
+          <button className="about-company__button" onClick={onOpen}>
+            Заказать звонок
+          </button>
         </div>
         <div className="about-company__slider">
           {/* <img className="about-company__image" src="" alt="Фото с производства"></img> */}
@@ -37,7 +39,7 @@ function AboutCompany() {
                 <button className="slid__button">
                   <img
                     className="slid__arrow"
-                    src={ArrowSlid}
+                    src={arrowSlid}
                     alt="Стрелка"
                   ></img>
                 </button>

@@ -7,6 +7,7 @@
   top: 0;
   transition: all 0.3s ease;
   cursor: pointer;
+  position: fixed;
 }
 
 .form__container {
@@ -123,9 +124,9 @@
 }
 
 .form__container-link {
-    color: #173FC9;
+  color: #173fc9;
 }
 
-.form__container-link:hover{
-    opacity: 0.5;
+.form__container-link:hover {
+  opacity: 0.5;
 }
