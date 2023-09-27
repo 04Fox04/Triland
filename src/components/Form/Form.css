@@ -1,4 +1,4 @@
-.form {
+.overlay {
   width: 100%;
   height: 100%;
   background-color: rgba(15, 16, 44, 0.5);
@@ -10,7 +10,7 @@
   position: fixed;
 }
 
-.form__container {
+.form {
   position: relative;
   width: 402px;
   height: 422px;
@@ -27,7 +27,7 @@
   z-index: 5;
 }
 
-.form__container-closed {
+.form__closed {
   position: absolute;
   width: 20px;
   height: 20px;
@@ -40,11 +40,11 @@
   margin-left: 382px;
 }
 
-.form__container-closed:hover {
+.form__closed:hover {
   opacity: 0.5;
 }
 
-.form__container-title {
+.form__title {
   width: 100%;
   height: 29px;
   color: #000;
@@ -57,7 +57,7 @@
   font-family: Raleway;
 }
 
-.form__container-subtitle {
+.form__subtitle {
   width: 380px;
   color: #676767;
   font-size: 18px;
@@ -68,7 +68,7 @@
   font-variant-numeric: lining-nums proportional-nums;
 }
 
-.form__container-input {
+.form__input {
   height: 51px;
   border: none;
   border-radius: 10px;
@@ -83,15 +83,15 @@
   margin-top: 30px;
 }
 
-.form__container-input:last-of-type {
+.form__input:last-of-type {
   margin-top: 15px;
 }
 
-.form__container-input:focus {
+.form__input:focus {
   border: 2px solid #173fc9;
 }
 
-.form__container-submit {
+.form__submit {
   width: 402px;
   height: 56px;
   padding: 15px 25px;
@@ -108,12 +108,12 @@
   margin-top: 30px;
 }
 
-.form__container-submit:hover {
+.form__submit:hover {
   background-color: #0733cf;
   box-shadow: 4px 4px 40px 0px rgba(255, 255, 255, 0.25);
 }
 
-.form__container-info {
+.form__info {
   color: #000;
   font-family: Raleway;
   font-size: 15px;
@@ -123,10 +123,10 @@
   margin-top: 15px;
 }
 
-.form__container-link {
+.form__link {
   color: #173fc9;
 }
 
-.form__container-link:hover {
+.form__link:hover {
   opacity: 0.5;
 }
