@@ -1,9 +1,10 @@
 import React from "react";
 import "./Promo.css";
 import "../../vendor/fonts/fonts.css";
-import Man from "../../images/main-man.png";
+import { man } from "../../constants/constants";
+import Form from "../Form/Form";
 
-function Promo() {
+function Promo({ isFormOpen, onOpen, onClose }) {
   return (
     <section className="promo">
       <div className="promo__container">
@@ -15,10 +16,13 @@ function Promo() {
           <p className="promo__subtitle">
             Изготовление и сварка металлоизделий любой сложности
           </p>
-          <button className="promo__button">Заказать звонок</button>
+          <button type="button" onClick={onOpen} className="promo__button">
+            Заказать звонок
+          </button>
         </div>
-        <img src={Man} className="promo__image" alt="Фото сотрудника" />
+        <img src={man} className="promo__image" alt="Фото сотрудника" />
       </div>
+      {isFormOpen && <Form onClose={onClose} />}
     </section>
   );
 }
