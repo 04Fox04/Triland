@@ -1,0 +1,58 @@
+.carousel-about__company-container {
+  height: 743px;
+  width: 879px;
+  margin: 0 auto;
+  margin-bottom: 200px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.carousel-about__company-container-window {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.carousel-about__company-container-all-pages {
+  height: 100%;
+  display: flex;
+
+  transition: translate;
+  transition-property: transform;
+  transition-duration: 200ms;
+  transition-timing-function: ease-in-out;
+}
+
+.carousel-about__company-container-arrow {
+  width: 50px;
+  height: 20px;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  color: #fff;
+  padding: 0;
+}
+
+.carousel-about__company-container-arrow:hover {
+    opacity: .5;
+    transition: .15s;
+}
+
+.arrow-left {
+  background-image: url(../../images/small-arrow-left.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.arrow-right {
+  margin-left: 50px;
+  background-image: url(../../images/small-arrow-right.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.carousel-about__company-container-button-box {
+  position: absolute;
+  bottom: 25px;
+  left: 40px;
+}

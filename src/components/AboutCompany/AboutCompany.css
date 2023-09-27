@@ -118,6 +118,12 @@
   transition: 0.15s;
 }
 
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 @media (min-width: 3000px) {
   .about-company__container {
     left: 50%;
