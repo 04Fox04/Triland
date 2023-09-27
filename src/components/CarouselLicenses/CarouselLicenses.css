@@ -1,0 +1,54 @@
+.carousel-licenses__container {
+  height: 400px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.carousel-licenses__buttons-container {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+
+.carousel-licenses__list-window {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.carousel-licenses__list {
+  height: 100%;
+  padding: 0;
+  display: flex;
+  transition: translate;
+  transition-property: transform;
+  transition-duration: 300ms;
+  transition-timing-function: ease-in-out;
+}
+
+.carousel-licenses__arrow-button {
+  padding: 0;
+  background-color: initial;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 50px 50px;
+  width: 50px;
+  height: 50px;
+  border: none;
+  cursor: pointer;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.carousel-licenses__arrow-button:disabled {
+  opacity: 0.5;
+}
+
+.carousel-licenses__arrow-left-button {
+  background-image: url("../../images/small-arrow-left.svg");
+}
+
+.carousel-licenses__arrow-right-button {
+  background-image: url("../../images/small-arrow-right.svg");
+  margin-left: 30px;
+}
