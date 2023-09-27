@@ -1,0 +1,132 @@
+.overlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(15, 16, 44, 0.5);
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  position: fixed;
+}
+
+.form {
+  position: relative;
+  width: 402px;
+  height: 422px;
+  padding: 30px 50px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  background-color: #fff;
+  box-shadow: 4px 4px 25px 0px rgba(255, 255, 255, 0.25);
+  margin: 0 auto;
+  margin-top: 209px;
+  cursor: auto;
+  text-align: center;
+  z-index: 5;
+}
+
+.form__closed {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-image: url(../../images/popup-close.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: none;
+  background-color: #fff;
+  cursor: pointer;
+  margin-left: 382px;
+}
+
+.form__closed:hover {
+  opacity: 0.5;
+}
+
+.form__title {
+  width: 100%;
+  height: 29px;
+  color: #000;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-top: 47px;
+  font-family: Raleway;
+}
+
+.form__subtitle {
+  width: 380px;
+  color: #676767;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 122.9%;
+  letter-spacing: 0.72px;
+  margin: 16px auto 0 auto;
+  font-variant-numeric: lining-nums proportional-nums;
+}
+
+.form__input {
+  height: 51px;
+  border: none;
+  border-radius: 10px;
+  background-color: #f8f8f8;
+  padding: 10px 15px;
+  color: #a6a6a6;
+  font-variant-numeric: lining-nums proportional-nums;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.72px;
+  margin-top: 30px;
+}
+
+.form__input:last-of-type {
+  margin-top: 15px;
+}
+
+.form__input:focus {
+  border: 2px solid #173fc9;
+}
+
+.form__submit {
+  width: 402px;
+  height: 56px;
+  padding: 15px 25px;
+  border: none;
+  background-color: #173fc9;
+  box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.25);
+  border-radius: 15px;
+  color: #fff;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: normal;
+  font-family: Raleway;
+  cursor: pointer;
+  margin-top: 30px;
+}
+
+.form__submit:hover {
+  background-color: #0733cf;
+  box-shadow: 4px 4px 40px 0px rgba(255, 255, 255, 0.25);
+}
+
+.form__info {
+  color: #000;
+  font-family: Raleway;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.3px;
+  margin-top: 15px;
+}
+
+.form__link {
+  color: #173fc9;
+}
+
+.form__link:hover {
+  opacity: 0.5;
+}

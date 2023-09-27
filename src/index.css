@@ -1,6 +1,10 @@
 @import url(./vendor/normalize.css);
 @import url(./vendor/fonts/fonts.css);
 
+.body {
+  overflow-x: hidden;
+}
+
 .page {
   margin: 0;
   min-width: 320px;
