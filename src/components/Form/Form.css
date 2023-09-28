@@ -31,7 +31,7 @@
   position: absolute;
   width: 20px;
   height: 20px;
-  background-image: url(../../images/popup-close.svg);
+  background-image: url(../../images/close-grey.svg);
   background-size: cover;
   background-repeat: no-repeat;
   border: none;

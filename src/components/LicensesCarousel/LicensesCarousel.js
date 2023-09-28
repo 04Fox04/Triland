@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import "./CarouselLicenses.css";
+import "./LicensesCarousel.css";
 
 // пропс children это блоки которые передаются в файле licenses
-function CarouselLicenses({ children }) {
+function LicensesCarousel({ children }) {
   // стейт смещения блока в пикселях
   const [offset, setOffset] = useState(0);
 
@@ -27,24 +27,24 @@ function CarouselLicenses({ children }) {
   };
 
   return (
-    <div className="carousel-licenses__container">
-      <div className="carousel-licenses__buttons-container">
+    <div className="licenses-carousel__container">
+      <div className="licenses-carousel__buttons-container">
         <button
           type="button"
-          className="carousel-licenses__arrow-button carousel-licenses__arrow-left-button"
+          className="licenses-carousel__arrow-button licenses-carousel__arrow-left-button"
           onClick={handleLeftArrowClick}
           disabled={offset === 0 ? true : false}
         />
         <button
           type="button"
-          className="carousel-licenses__arrow-button carousel-licenses__arrow-right-button"
+          className="licenses-carousel__arrow-button licenses-carousel__arrow-right-button"
           onClick={handleRightArrowClick}
           disabled={offset === -600 ? true : false}
         />
       </div>
-      <div className="carousel-licenses__list-window">
+      <div className="licenses-carousel__list-window">
         <ul
-          className="carousel-licenses__list"
+          className="licenses-carousel__list"
           style={{ transform: `translateX(${offset}px)` }}
         >
           {children}
@@ -54,4 +54,4 @@ function CarouselLicenses({ children }) {
   );
 }
 
-export default CarouselLicenses;
+export default LicensesCarousel;
