@@ -42,12 +42,12 @@ function AboutCompany({ onOpen }) {
             <img src={slideTwo} className="item" alt="" />
             <img src={slideThree} className="item" alt="" />
             <div className="about-company__slid">
-              <div className="slid__container">
-                <h3 className="slid__text">Перейти в галерею</h3>
+              <div className="about-company__slid-container">
+                <h3 className="about-company__slid-container-text">Перейти в галерею</h3>
                 <Link to="*">
-                  <button className="slid__button">
+                  <button className="about-company__slid-container-button">
                     <img
-                      className="slid__arrow"
+                      className="about-company__slid-container-button-arrow"
                       src={arrowSlid}
                       alt="Стрелка"
                     ></img>

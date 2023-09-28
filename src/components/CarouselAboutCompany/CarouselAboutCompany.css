@@ -1,4 +1,4 @@
-.carousel-about__company-container {
+.about-company__slider-carousel {
   height: 743px;
   width: 879px;
   margin: 0 auto;
@@ -7,23 +7,20 @@
   align-items: center;
   position: relative;
 }
-.carousel-about__company-container-window {
+
+.about-company__slider-carousel-window {
   height: 100%;
   width: 100%;
   overflow: hidden;
 }
 
-.carousel-about__company-container-all-pages {
+.about-company__slider-carousel-window-all-pages {
   height: 100%;
   display: flex;
-
-  transition: translate;
-  transition-property: transform;
-  transition-duration: 200ms;
-  transition-timing-function: ease-in-out;
+  transition: transform 200ms ease-in-out;
 }
 
-.carousel-about__company-container-arrow {
+.about-company__slider-carousel-button-box-arrow {
   width: 50px;
   height: 20px;
   cursor: pointer;
@@ -33,26 +30,63 @@
   padding: 0;
 }
 
-.carousel-about__company-container-arrow:hover {
-    opacity: .5;
-    transition: .15s;
+.about-company__slider-carousel-button-box-arrow:not(.arrow-right-disabled, .arrow-left-disabled):hover {
+  transform: scale(1.2);
+  transition: 0.3s;
 }
 
 .arrow-left {
+  margin-right: 35px;
   background-image: url(../../images/small-arrow-left.svg);
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .arrow-right {
-  margin-left: 50px;
+  margin-left: 35px;
   background-image: url(../../images/small-arrow-right.svg);
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-.carousel-about__company-container-button-box {
+.arrow-right-disabled {
+  opacity: .5;
+}
+
+.arrow-left-disabled {
+  opacity: .5;
+}
+
+.about-company__slider-carousel-button-box {
   position: absolute;
   bottom: 25px;
   left: 40px;
+  display: flex;
+  align-items: center;
+}
+
+.about-company__slider-carousel-button-box-circle {
+  width: 10px;
+  height: 10px;
+  background-color: #fff;
+  opacity: 0.25;
+  border-radius: 50%;
+  margin-right: 10px;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.about-company__slider-carousel-button-box-circle-active {
+  background-color: #fff;
+  opacity: 1;
+}
+
+.about-company__slider-carousel-button-box-circle:hover {
+  background-color: #fff;
+  opacity: 1;
+}
+
+.about-company__slider-carousel-button-box-circle:last-of-type {
+  margin: 0;
 }

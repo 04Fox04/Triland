@@ -49,7 +49,7 @@
   transition: 0.15s;
 }
 
-.phone__container {
+.header__container-phone {
   max-width: 161px;
   display: flex;
   align-items: center;
@@ -68,12 +68,12 @@
   height: 68.254px;
 }
 
-.phone__image {
+.header__container-phone-image {
   height: 24px;
   width: 24px;
 }
 
-.phone__text {
+.header__container-phone-text {
   color: #fff;
   font-variant-numeric: lining-nums proportional-nums;
   font-size: 15px;
@@ -83,11 +83,11 @@
   margin-left: 13px;
 }
 
-.phone__text-link {
+.header__container-phone-text-link {
   color: #fff;
 }
 
-.phone__text-link:hover {
+.header__container-phone-text-link:hover {
   color: #173fc9;
   transition: 0.15s;
 }
