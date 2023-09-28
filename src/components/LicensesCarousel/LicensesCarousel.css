@@ -1,23 +1,23 @@
-.carousel-licenses__container {
+.licenses-carousel__container {
   height: 400px;
   width: 100%;
   display: flex;
   align-items: center;
 }
 
-.carousel-licenses__buttons-container {
+.licenses-carousel__buttons-container {
   position: absolute;
   top: 0px;
   right: 0px;
 }
 
-.carousel-licenses__list-window {
+.licenses-carousel__list-window {
   height: 100%;
   width: 100%;
   overflow: hidden;
 }
 
-.carousel-licenses__list {
+.licenses-carousel__list {
   height: 100%;
   padding: 0;
   display: flex;
@@ -27,7 +27,7 @@
   transition-timing-function: ease-in-out;
 }
 
-.carousel-licenses__arrow-button {
+.licenses-carousel__arrow-button {
   padding: 0;
   background-color: initial;
   background-position: center;
@@ -40,15 +40,22 @@
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
-.carousel-licenses__arrow-button:disabled {
+.licenses-carousel__arrow-button:hover {
+  transform: scale(1.2);
+  transition: 0.3s;
+}
+
+.licenses-carousel__arrow-button:disabled {
+  transform: scale(1);
+  transition: 0s;
   opacity: 0.5;
 }
 
-.carousel-licenses__arrow-left-button {
+.licenses-carousel__arrow-left-button {
   background-image: url("../../images/small-arrow-left.svg");
 }
 
-.carousel-licenses__arrow-right-button {
+.licenses-carousel__arrow-right-button {
   background-image: url("../../images/small-arrow-right.svg");
   margin-left: 30px;
 }

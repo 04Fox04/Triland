@@ -1,61 +1,113 @@
 import React from "react";
 import "./Licenses.css";
 import "../../index.css";
-import CarouselLicenses from "../CarouselLicenses/CarouselLicenses";
-import certificate from "../../images/certificates/certificate.jpg";
+import LicensesCarousel from "../LicensesCarousel/LicensesCarousel";
+import LicensePopup from "../LicensePopup/LicensePopup";
+import {
+  certificateFirst,
+  certificateSecond,
+  certificateThird,
+  certificateFourth,
+  certificateFifth,
+  certificateSixth,
+} from "../../constants/constants";
 
-function Licenses() {
+function Licenses({
+  isPopupImageOpen,
+  imageSrc,
+  imageAlt,
+  onOpenPopupLicense,
+  onClosePopupLicense,
+}) {
   return (
     <section className="licenses">
       <div className="licenses__container">
         <h2 className="section-title licenses__title">
           Лицензии и сертификаты
         </h2>
-        <CarouselLicenses>
-          <li className="licenses__item">
+        <LicensesCarousel>
+          <li
+            className="licenses__item"
+            onClick={() =>
+              onOpenPopupLicense(certificateFirst, "Выписка из реестра")
+            }
+          >
             <img
               className="licenses__certificate-img"
-              src={certificate}
-              alt="Сертификат"
+              src={certificateFirst}
+              alt="Выписка из реестра"
             />
           </li>
-          <li className="licenses__item">
+          <li
+            className="licenses__item"
+            onClick={() =>
+              onOpenPopupLicense(certificateSecond, "Выписка из реестра")
+            }
+          >
             <img
               className="licenses__certificate-img"
-              src={certificate}
-              alt="Сертификат"
+              src={certificateSecond}
+              alt="Выписка из реестра"
             />
           </li>
-          <li className="licenses__item">
+          <li
+            className="licenses__item"
+            onClick={() =>
+              onOpenPopupLicense(certificateThird, "Выписка из реестра")
+            }
+          >
             <img
               className="licenses__certificate-img"
-              src={certificate}
-              alt="Сертификат"
+              src={certificateThird}
+              alt="Выписка из реестра"
             />
           </li>
-          <li className="licenses__item">
+          <li
+            className="licenses__item"
+            onClick={() =>
+              onOpenPopupLicense(certificateFourth, "Полис страхования")
+            }
+          >
             <img
               className="licenses__certificate-img"
-              src={certificate}
-              alt="Сертификат"
+              src={certificateFourth}
+              alt="Полис страхования"
             />
           </li>
-          <li className="licenses__item">
+          <li
+            className="licenses__item"
+            onClick={() =>
+              onOpenPopupLicense(certificateFifth, "Декларация о соответствии")
+            }
+          >
             <img
               className="licenses__certificate-img"
-              src={certificate}
-              alt="Сертификат"
+              src={certificateFifth}
+              alt="Декларация о соответствии"
             />
           </li>
-          <li className="licenses__item">
+          <li
+            className="licenses__item"
+            onClick={() =>
+              onOpenPopupLicense(certificateSixth, "Сертификат соответствия")
+            }
+          >
             <img
               className="licenses__certificate-img"
-              src={certificate}
-              alt="Сертификат"
+              src={certificateSixth}
+              alt="Сертификат соответствия"
             />
           </li>
-        </CarouselLicenses>
+        </LicensesCarousel>
       </div>
+
+      {isPopupImageOpen && (
+        <LicensePopup
+          onClose={onClosePopupLicense}
+          imageSrc={imageSrc}
+          imageAlt={imageAlt}
+        />
+      )}
     </section>
   );
 }

@@ -1,0 +1,43 @@
+.license-popup {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(15, 16, 44, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.license-popup__container {
+  position: relative;
+}
+
+.license-popup__close {
+  background-image: url("../../images/close-white.svg");
+  background-size: 25px 25px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: initial;
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  right: -30px;
+  top: -30px;
+  border: none;
+  cursor: pointer;
+  transition: opacity 0.2s ease, color;
+}
+
+.license-popup__close:hover {
+  opacity: 0.5;
+}
+
+.license-popup__image {
+  max-width: 600px;
+  max-height: 85vh;
+  cursor: auto;
+}
