@@ -2,7 +2,13 @@ import React from "react";
 import "./AboutCompany.css";
 import "../../index.css";
 import { Link } from "react-router-dom";
-import { arrowSlid } from "../../constants/constants";
+import CarouselAboutCompany from "../CarouselAboutCompany/CarouselAboutCompany";
+import {
+  slideOne,
+  slideTwo,
+  slideThree,
+  arrowSlid,
+} from "../../constants/constants";
 
 function AboutCompany({ onOpen }) {
   return (
@@ -31,21 +37,25 @@ function AboutCompany({ onOpen }) {
           </button>
         </div>
         <div className="about-company__slider">
-          {/* <img className="about-company__image" src="" alt="Фото с производства"></img> */}
-          <div className="about-company__slid">
-            <div className="slid__container">
-              <h3 className="slid__text">Перейти в галерею</h3>
-              <Link to="*">
-                <button className="slid__button">
-                  <img
-                    className="slid__arrow"
-                    src={arrowSlid}
-                    alt="Стрелка"
-                  ></img>
-                </button>
-              </Link>
+          <CarouselAboutCompany>
+            <img src={slideOne} className="item" alt="" />
+            <img src={slideTwo} className="item" alt="" />
+            <img src={slideThree} className="item" alt="" />
+            <div className="about-company__slid">
+              <div className="about-company__slid-container">
+                <h3 className="about-company__slid-container-text">Перейти в галерею</h3>
+                <Link to="*">
+                  <button className="about-company__slid-container-button">
+                    <img
+                      className="about-company__slid-container-button-arrow"
+                      src={arrowSlid}
+                      alt="Стрелка"
+                    ></img>
+                  </button>
+                </Link>
+              </div>
             </div>
-          </div>
+          </CarouselAboutCompany>
         </div>
       </div>
     </section>
