@@ -7,7 +7,16 @@ import Licenses from "../Licenses/licenses";
 import Contacts from "../Contacts/Contacts";
 import Services from "../Services/Services";
 
-function Main({ isFormOpen, onOpen, onClose }) {
+function Main({
+  isFormOpen,
+  onOpen,
+  onClose,
+  isPopupImageOpen,
+  imageSrc,
+  imageAlt,
+  onOpenPopupLicense,
+  onClosePopupLicense,
+}) {
   return (
     <>
       <Header />
@@ -19,7 +28,13 @@ function Main({ isFormOpen, onOpen, onClose }) {
           onClose={onClose}
         />
         <Services />
-        <Licenses />
+        <Licenses
+          isPopupImageOpen={isPopupImageOpen}
+          imageSrc={imageSrc}
+          imageAlt={imageAlt}
+          onOpenPopupLicense={onOpenPopupLicense}
+          onClosePopupLicense={onClosePopupLicense}
+        />
         <Contacts />
       </main>
       <Footer />

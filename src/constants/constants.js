@@ -16,6 +16,12 @@ import arrowSlid from "../images/about-company/arrow.svg";
 import slideOne from "../images/about-company/slider-1.jpg"
 import slideTwo from "../images/about-company/slider-2.jpg"
 import slideThree from "../images/about-company/slider-3.jpg"
+import certificateFirst from "../images/certificates/certificate-1.jpg";
+import certificateSecond from "../images/certificates/certificate-2.jpg";
+import certificateThird from "../images/certificates/certificate-3.jpg";
+import certificateFourth from "../images/certificates/certificate-4.jpg";
+import certificateFifth from "../images/certificates/certificate-5.jpg";
+import certificateSixth from "../images/certificates/certificate-6.jpg";
 
 export {
   metalProcessing,
@@ -35,5 +41,11 @@ export {
   arrowSlid,
   slideOne,
   slideTwo,
-  slideThree
+  slideThree,
+  certificateFirst,
+  certificateSecond,
+  certificateThird,
+  certificateFourth,
+  certificateFifth,
+  certificateSixth,
 };
