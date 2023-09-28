@@ -7,12 +7,13 @@ import {
   slideOne,
   slideTwo,
   slideThree,
+  slideFour,
   arrowSlid,
 } from "../../constants/constants";
 
 function AboutCompany({ onOpen }) {
   return (
-    <section className="about-company">
+    <section className="about-company" id="about-company">
       <div className="about-company__container">
         <div className="about-company__info">
           <h2 className="section-title about-company__title">О компании</h2>
@@ -41,17 +42,18 @@ function AboutCompany({ onOpen }) {
             <img src={slideOne} className="item" alt="" />
             <img src={slideTwo} className="item" alt="" />
             <img src={slideThree} className="item" alt="" />
+            <img src={slideFour} className="item" alt="" />
             <div className="about-company__slid">
               <div className="about-company__slid-container">
-                <h3 className="about-company__slid-container-text">Перейти в галерею</h3>
-                <Link to="*">
-                  <button className="about-company__slid-container-button">
-                    <img
-                      className="about-company__slid-container-button-arrow"
-                      src={arrowSlid}
-                      alt="Стрелка"
-                    ></img>
-                  </button>
+                <h3 className="about-company__slid-container-text">
+                  Перейти в галерею
+                </h3>
+                <Link to="*" className="about-company__slid-container-button">
+                  <img
+                    className="about-company__slid-container-button-arrow"
+                    src={arrowSlid}
+                    alt="Стрелка"
+                  ></img>
                 </Link>
               </div>
             </div>

@@ -5,7 +5,7 @@ import AboutCompany from "../AboutCompany/AboutCompany";
 import Footer from "../Footer/Footer";
 import Licenses from "../Licenses/licenses";
 import Contacts from "../Contacts/Contacts";
-import Services from "../Services/Services";
+import OurServices from "../OurServices/OurServices";
 
 function Main({
   isFormOpen,
@@ -27,7 +27,7 @@ function Main({
           onOpen={onOpen}
           onClose={onClose}
         />
-        <Services />
+        <OurServices />
         <Licenses
           isPopupImageOpen={isPopupImageOpen}
           imageSrc={imageSrc}

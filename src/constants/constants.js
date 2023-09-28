@@ -10,12 +10,15 @@ import arcWelding from "../images/our-services/arc-welding.svg";
 import semiAutomaticWelding from "../images/our-services/semi-automatic-welding.svg";
 import argonWelding from "../images/our-services/argon-welding.svg";
 import logo from "../images/logo-white.svg";
+import logoBlack from "../images/logo-black.svg";
 import phoneWhite from "../images/phone-white.svg";
+import phoneBlack from "../images/phone-black.svg";
 import man from "../images/main-man.png";
 import arrowSlid from "../images/about-company/arrow.svg";
 import slideOne from "../images/about-company/slider-1.jpg"
 import slideTwo from "../images/about-company/slider-2.jpg"
 import slideThree from "../images/about-company/slider-3.jpg"
+import slideFour from "../images/about-company/slider-4.jpg"
 import certificateFirst from "../images/certificates/certificate-1.jpg";
 import certificateSecond from "../images/certificates/certificate-2.jpg";
 import certificateThird from "../images/certificates/certificate-3.jpg";
@@ -36,12 +39,15 @@ export {
   semiAutomaticWelding,
   argonWelding,
   logo,
+  logoBlack,
   phoneWhite,
+  phoneBlack,
   man,
   arrowSlid,
   slideOne,
   slideTwo,
   slideThree,
+  slideFour,
   certificateFirst,
   certificateSecond,
   certificateThird,

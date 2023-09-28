@@ -48,7 +48,7 @@ a {
 }
 
 .section-title {
-  font-variant-numeric: lining-nums proportional-nums;
+  /* font-variant-numeric: lining-nums proportional-nums; */
   font-size: 40px;
   font-weight: 500;
   line-height: normal;

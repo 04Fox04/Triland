@@ -89,7 +89,7 @@ function CarouselAboutCompany({ children }) {
         </div> 
         <button 
           className={`about-company__slider-carousel-button-box-arrow arrow-right ${ 
-            offset === -PAGE_WIDTH * 3 ? "arrow-right-disabled" : "" 
+            offset === -PAGE_WIDTH * 4 ? "arrow-right-disabled" : "" 
           }`} 
           onClick={handleRightButtonClick} 
         ></button> 
