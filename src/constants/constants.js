@@ -13,6 +13,12 @@ import logo from "../images/logo-white.svg";
 import phoneWhite from "../images/phone-white.svg";
 import man from "../images/main-man.png";
 import arrowSlid from "../images/about-company/arrow.svg";
+import certificateFirst from "../images/certificates/certificate-1.jpg";
+import certificateSecond from "../images/certificates/certificate-2.jpg";
+import certificateThird from "../images/certificates/certificate-3.jpg";
+import certificateFourth from "../images/certificates/certificate-4.jpg";
+import certificateFifth from "../images/certificates/certificate-5.jpg";
+import certificateSixth from "../images/certificates/certificate-6.jpg";
 
 export {
   metalProcessing,
@@ -30,4 +36,10 @@ export {
   phoneWhite,
   man,
   arrowSlid,
+  certificateFirst,
+  certificateSecond,
+  certificateThird,
+  certificateFourth,
+  certificateFifth,
+  certificateSixth,
 };
