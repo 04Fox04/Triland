@@ -27,24 +27,24 @@ function LicensesCarousel({ children }) {
   };
 
   return (
-    <div className="licenses-carousel__container">
-      <div className="licenses-carousel__buttons-container">
+    <div className="licenses__container-carousel">
+      <div className="licenses__container-buttons">
         <button
           type="button"
-          className="licenses-carousel__arrow-button licenses-carousel__arrow-left-button"
+          className="licenses__button-arrow licenses__button-arrow-left"
           onClick={handleLeftArrowClick}
           disabled={offset === 0 ? true : false}
         />
         <button
           type="button"
-          className="licenses-carousel__arrow-button licenses-carousel__arrow-right-button"
+          className="licenses__button-arrow licenses__button-arrow-right"
           onClick={handleRightArrowClick}
           disabled={offset === -600 ? true : false}
         />
       </div>
-      <div className="licenses-carousel__list-window">
+      <div className="licenses__window-list">
         <ul
-          className="licenses-carousel__list"
+          className="licenses__list"
           style={{ transform: `translateX(${offset}px)` }}
         >
           {children}
