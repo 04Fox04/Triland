@@ -13,6 +13,9 @@ import logo from "../images/logo-white.svg";
 import phoneWhite from "../images/phone-white.svg";
 import man from "../images/main-man.png";
 import arrowSlid from "../images/about-company/arrow.svg";
+import slideOne from "../images/about-company/slider-1.jpg"
+import slideTwo from "../images/about-company/slider-2.jpg"
+import slideThree from "../images/about-company/slider-3.jpg"
 import certificateFirst from "../images/certificates/certificate-1.jpg";
 import certificateSecond from "../images/certificates/certificate-2.jpg";
 import certificateThird from "../images/certificates/certificate-3.jpg";
@@ -36,6 +39,9 @@ export {
   phoneWhite,
   man,
   arrowSlid,
+  slideOne,
+  slideTwo,
+  slideThree,
   certificateFirst,
   certificateSecond,
   certificateThird,

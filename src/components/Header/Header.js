@@ -42,14 +42,14 @@ function Header() {
             </Link>
           </li>
         </ul>
-        <div className="phone__container">
+        <div className="header__container-phone">
           <img
             src={phoneWhite}
-            className="phone__image"
+            className="header__container-phone-image"
             alt="Иконка телефона"
           />
-          <p className="phone__text">
-            <a href="tel:+7 (495)-763-3470" className="phone__text-link">
+          <p className="header__container-phone-text">
+            <a href="tel:+7 (495)-763-3470" className="header__container-phone-text-link">
               +7 495 763-34-70
             </a>
           </p>

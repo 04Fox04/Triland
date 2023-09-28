@@ -50,7 +50,7 @@ function Form({ onClose }) {
           type="tel"
           placeholder="Телефон"
         ></input>
-        <button className="form__submit">Заказать звонок</button>
+        <button className="form__button-submit">Заказать звонок</button>
         <p className="form__info">
           Нажимая на эту кнопку вы соглашаетесь на
           <br />

@@ -55,7 +55,7 @@
   width: 221px;
   height: 56px;
   margin-top: 40px;
-  padding-top: 5px;
+  /* padding-top: 5px; */
   border-radius: 15px;
   border: 2px solid #fff;
   box-shadow: 4px 4px 10px 0px rgba(255, 255, 255, 0.25);
@@ -84,14 +84,14 @@
   background-color: #173fc9;
 }
 
-.slid__container {
+.about-company__slid-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding-top: 303px;
 }
 
-.slid__text {
+.about-company__slid-container-text {
   max-width: 426px;
   width: 100%;
   min-height: 47px;
@@ -103,7 +103,7 @@
   margin: 0 auto;
 }
 
-.slid__button {
+.about-company__slid-container-button {
   width: 146px;
   height: 60px;
   border-radius: 25px;
@@ -113,9 +113,15 @@
   cursor: pointer;
 }
 
-.slid__button:hover {
+.about-company__slid-container-button:hover {
   border: 2px solid rgba(255, 255, 255, 0.5);
   transition: 0.15s;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 @media (min-width: 3000px) {
