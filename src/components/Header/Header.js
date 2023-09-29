@@ -22,11 +22,11 @@ function Header() {
           </Link>
           <ul className="header__nav header__nav-black">
             <li className="header__nav-link">
-              <Link to="/">
+              <a href="#about-company">
                 <p className="header__link-text header__link-text-black">
                   О компании
                 </p>
-              </Link>
+              </a>
             </li>
             <li className="header__nav-link">
               <Link to="/services">
@@ -91,9 +91,9 @@ function Header() {
           </Link>
           <ul className="header__nav">
             <li className="header__nav-link">
-              <Link to="/">
+              <a href="#about-company">
                 <p className="header__link-text">О компании</p>
-              </Link>
+              </a>
             </li>
             <li className="header__nav-link">
               <Link to="/services">

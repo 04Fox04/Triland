@@ -25,6 +25,18 @@ import certificateThird from "../images/certificates/certificate-3.jpg";
 import certificateFourth from "../images/certificates/certificate-4.jpg";
 import certificateFifth from "../images/certificates/certificate-5.jpg";
 import certificateSixth from "../images/certificates/certificate-6.jpg";
+import metalProcessingServices from "../images/services/metalworking/metal-processing.jpg";
+import turningWorksServices from "../images/services/metalworking/turning-works.jpg";
+import sketchesServices from "../images/services/metalworking/sketches.jpg";
+import millingServices from "../images/services/metalworking/milling.jpg";
+import electricalDischargeMachiningServices from "../images/services/metalworking/electrical-discharge-machining.jpg";
+import laserCuttingServices from "../images/services/metalworking/laser-cutting.jpg";
+import hardeningServices from "../images/services/metalworking/hardening.jpg"
+import weldingOfVariousMetalsServices from "../images/services/welding/welding-of-various-metals.jpg";
+import arcWeldingServices from "../images/services/welding/arc-welding.jpg";
+import semiAutomaticWeldingServices from "../images/services/welding/semi-automatic-welding.jpg";
+import argonWeldingServices from "../images/services/welding/argon-welding.jpg";
+
 
 export {
   metalProcessing,
@@ -54,4 +66,15 @@ export {
   certificateFourth,
   certificateFifth,
   certificateSixth,
+  metalProcessingServices,
+  turningWorksServices,
+  sketchesServices,
+  millingServices,
+  electricalDischargeMachiningServices,
+  laserCuttingServices,
+  hardeningServices,
+  weldingOfVariousMetalsServices,
+  arcWeldingServices,
+  semiAutomaticWeldingServices,
+  argonWeldingServices
 };

@@ -20,10 +20,12 @@ function OurServices() {
   return (
     <div className="our-services">
       <div className="our-services__container">
-        <h2 className="section-title our-services__container-title">Наши услуги</h2>
+        <h2 className="section-title our-services__container-title">
+          Наши услуги
+        </h2>
         <ul className="our-services__container-list">
           <li className="our-services__container-item">
-            <Link className="our-services__container-link">
+            <Link to="/services#metalProcessingServices" className="our-services__container-link">
               <img
                 className="our-services__container-icon"
                 src={metalProcessing}
@@ -93,7 +95,10 @@ function OurServices() {
             </Link>
           </li>
           <li className="our-services__container-item">
-            <Link className="our-services__container-link">
+            <Link
+              to="/services#hardeningServices"
+              className="our-services__container-link"
+            >
               <img
                 className="our-services__container-icon"
                 src={hardening}
@@ -123,7 +128,9 @@ function OurServices() {
                 src={arcWelding}
                 alt="Ручная дуговая сварка"
               />
-              <p className="our-services__container-text">Ручная дуговая сварка</p>
+              <p className="our-services__container-text">
+                Ручная дуговая сварка
+              </p>
             </Link>
           </li>
           <li className="our-services__container-item">
