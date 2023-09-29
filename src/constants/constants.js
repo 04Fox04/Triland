@@ -13,15 +13,22 @@ import logo from "../images/logo-white.svg";
 import phoneWhite from "../images/phone-white.svg";
 import man from "../images/main-man.png";
 import arrowSlid from "../images/about-company/arrow.svg";
-import slideOne from "../images/about-company/slider-1.jpg"
-import slideTwo from "../images/about-company/slider-2.jpg"
-import slideThree from "../images/about-company/slider-3.jpg"
+import slideOne from "../images/about-company/slider-1.jpg";
+import slideTwo from "../images/about-company/slider-2.jpg";
+import slideThree from "../images/about-company/slider-3.jpg";
 import certificateFirst from "../images/certificates/certificate-1.jpg";
 import certificateSecond from "../images/certificates/certificate-2.jpg";
 import certificateThird from "../images/certificates/certificate-3.jpg";
 import certificateFourth from "../images/certificates/certificate-4.jpg";
 import certificateFifth from "../images/certificates/certificate-5.jpg";
 import certificateSixth from "../images/certificates/certificate-6.jpg";
+import moek from "../images/our-clients/moek.png";
+import mosvodokanal from "../images/our-clients/mosvodokanal.png";
+import mosvodostok from "../images/our-clients/mosvodostok.png";
+import nst from "../images/our-clients/nst.png";
+import pik from "../images/our-clients/pik.png";
+import rosneft from "../images/our-clients/rosneft.png";
+import rusHydro from "../images/our-clients/rus-hydro.png";
 
 export {
   metalProcessing,
@@ -48,4 +55,11 @@ export {
   certificateFourth,
   certificateFifth,
   certificateSixth,
+  moek,
+  mosvodokanal,
+  mosvodostok,
+  nst,
+  pik,
+  rosneft,
+  rusHydro,
 };
