@@ -36,7 +36,7 @@
 }
 
 .arrow-left {
-  margin-right: 35px;
+  margin-right: 40px;
   background-image: url(../../images/small-arrow-left.svg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -59,12 +59,16 @@
 
 .about-company__slider-carousel-button-box {
   position: absolute;
-  bottom: 25px;
-  left: 40px;
+  bottom: 24px;
+  left: 30px;
   display: flex;
   align-items: center;
 }
-
+.about-company__slider-carousel-button-box-circles{
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+}
 .about-company__slider-carousel-button-box-circle {
   width: 10px;
   height: 10px;

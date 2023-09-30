@@ -10,12 +10,15 @@ import arcWelding from "../images/our-services/arc-welding.svg";
 import semiAutomaticWelding from "../images/our-services/semi-automatic-welding.svg";
 import argonWelding from "../images/our-services/argon-welding.svg";
 import logo from "../images/logo-white.svg";
+import logoBlack from "../images/logo-black.svg";
 import phoneWhite from "../images/phone-white.svg";
+import phoneBlack from "../images/phone-black.svg";
 import man from "../images/main-man.png";
 import arrowSlid from "../images/about-company/arrow.svg";
-import slideOne from "../images/about-company/slider-1.jpg";
-import slideTwo from "../images/about-company/slider-2.jpg";
-import slideThree from "../images/about-company/slider-3.jpg";
+import slideOne from "../images/about-company/slider-1.jpg"
+import slideTwo from "../images/about-company/slider-2.jpg"
+import slideThree from "../images/about-company/slider-3.jpg"
+import slideFour from "../images/about-company/slider-4.jpg"
 import certificateFirst from "../images/certificates/certificate-1.jpg";
 import certificateSecond from "../images/certificates/certificate-2.jpg";
 import certificateThird from "../images/certificates/certificate-3.jpg";
@@ -29,6 +32,17 @@ import nst from "../images/our-clients/nst.png";
 import pik from "../images/our-clients/pik.png";
 import rosneft from "../images/our-clients/rosneft.png";
 import rusHydro from "../images/our-clients/rus-hydro.png";
+import metalProcessingServices from "../images/services/metalworking/metal-processing.jpg";
+import turningWorksServices from "../images/services/metalworking/turning-works.jpg";
+import sketchesServices from "../images/services/metalworking/sketches.jpg";
+import millingServices from "../images/services/metalworking/milling.jpg";
+import electricalDischargeMachiningServices from "../images/services/metalworking/electrical-discharge-machining.jpg";
+import laserCuttingServices from "../images/services/metalworking/laser-cutting.jpg";
+import hardeningServices from "../images/services/metalworking/hardening.jpg"
+import weldingOfVariousMetalsServices from "../images/services/welding/welding-of-various-metals.jpg";
+import arcWeldingServices from "../images/services/welding/arc-welding.jpg";
+import semiAutomaticWeldingServices from "../images/services/welding/semi-automatic-welding.jpg";
+import argonWeldingServices from "../images/services/welding/argon-welding.jpg";
 
 export {
   metalProcessing,
@@ -43,12 +57,15 @@ export {
   semiAutomaticWelding,
   argonWelding,
   logo,
+  logoBlack,
   phoneWhite,
+  phoneBlack,
   man,
   arrowSlid,
   slideOne,
   slideTwo,
   slideThree,
+  slideFour,
   certificateFirst,
   certificateSecond,
   certificateThird,
@@ -62,4 +79,15 @@ export {
   pik,
   rosneft,
   rusHydro,
+  metalProcessingServices,
+  turningWorksServices,
+  sketchesServices,
+  millingServices,
+  electricalDischargeMachiningServices,
+  laserCuttingServices,
+  hardeningServices,
+  weldingOfVariousMetalsServices,
+  arcWeldingServices,
+  semiAutomaticWeldingServices,
+  argonWeldingServices
 };
