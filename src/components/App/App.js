@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "../../index.css";
 import { Routes, Route } from "react-router-dom";
 import Main from "../Main/Main";
+import Services from "../Services/Services"
 
 function App() {
   //стейт для открытия попапа с формой
@@ -60,6 +61,7 @@ function App() {
               />
             }
           />
+          <Route path="/services" element={<Services />}/>
         </Routes>
       </div>
     </div>
