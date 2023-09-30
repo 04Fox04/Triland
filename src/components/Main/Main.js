@@ -4,7 +4,8 @@ import Promo from "../Promo/Promo";
 import AboutCompany from "../AboutCompany/AboutCompany";
 import Footer from "../Footer/Footer";
 import Licenses from "../Licenses/licenses";
-import Services from "../Services/Services";
+import Contacts from "../Contacts/Contacts";
+import OurServices from "../OurServices/OurServices";
 import OurClients from "../OurClients/OurClients";
 
 function Main({
@@ -27,7 +28,7 @@ function Main({
           onOpen={onOpen}
           onClose={onClose}
         />
-        <Services />
+        <OurServices />
         <Licenses
           isPopupImageOpen={isPopupImageOpen}
           imageSrc={imageSrc}
@@ -36,6 +37,7 @@ function Main({
           onClosePopupLicense={onClosePopupLicense}
         />
         <OurClients />
+        <Contacts />
       </main>
       <Footer />
     </>
