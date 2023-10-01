@@ -37,7 +37,7 @@ function Main({
           onClosePopupLicense={onClosePopupLicense}
         />
         <OurClients />
-        <Contacts />
+        <Contacts onOpen={onOpen} />
       </main>
       <Footer />
     </>
