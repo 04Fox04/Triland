@@ -1,4 +1,4 @@
-import React, { useState,  } from "react";
+import React, { useState } from "react";
 import Navigation from "../Navigation/Navigation";
 import Header from "../Header/Header";
 import "./PhotoGallery.css";
@@ -35,7 +35,9 @@ function PhotoGallery() {
           </ul>
           <button
             className={`${
-                displayedPhotos === 66 ? "photo-gallery__button-disabled" : "photo-gallery__button"
+              displayedPhotos === 66
+                ? "photo-gallery__button-disabled"
+                : "photo-gallery__button"
             }`}
             onClick={handleLoadMore}
           >

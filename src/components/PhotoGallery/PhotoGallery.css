@@ -52,23 +52,23 @@
 }
 
 .photo-gallery__button:hover {
-    background-color: #173fc9;
-    color: #fff;
-    transition: 0.15s;
+  background-color: #173fc9;
+  color: #fff;
+  transition: 0.15s;
 }
 
 .photo-gallery__button-disabled {
-    height: 56px;
-    width: 240px;
-    padding: 15px 25px;
-    background-color: #B2B2B2;
-    opacity: .5;
-    color: #000;
-    border: 2px solid #000;
-    border-radius: 15px;
-    cursor: auto;
-    font-size: 22px;
-    font-weight: 500;
-    line-height: normal;
-    margin: 0 465px 0 465px;
+  height: 56px;
+  width: 240px;
+  padding: 15px 25px;
+  background-color: #b2b2b2;
+  opacity: 0.5;
+  color: #000;
+  border: 2px solid #000;
+  border-radius: 15px;
+  cursor: auto;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: normal;
+  margin: 0 465px 0 465px;
 }
