@@ -40,18 +40,18 @@ function Header() {
               </Link>
             </li>
             <li className="header__nav-link">
-              <Link to="/">
+              <a href="#licenses">
                 <p className="header__link-text header__link-text-black">
                   Лицензии
                 </p>
-              </Link>
+              </a>
             </li>
             <li className="header__nav-link">
-              <Link to="/">
+              <a href="#our-clients">
                 <p className="header__link-text header__link-text-black">
                   Партнеры
                 </p>
-              </Link>
+              </a>
             </li>
             <li className="header__nav-link">
               <Link to="/">
@@ -61,11 +61,11 @@ function Header() {
               </Link>
             </li>
             <li className="header__nav-link">
-              <Link to="/photo-gallery">
+              <a href="#contacts">
                 <p className="header__link-text header__link-text-black">
                   Контакты
                 </p>
-              </Link>
+              </a>
             </li>
           </ul>
           <div className="header__container-phone">
@@ -105,14 +105,14 @@ function Header() {
               </Link>
             </li>
             <li className="header__nav-link">
-              <Link to="/">
+              <a href="#licenses">
                 <p className="header__link-text">Лицензии</p>
-              </Link>
+              </a>
             </li>
             <li className="header__nav-link">
-              <Link to="/">
+              <a href="#our-clients">
                 <p className="header__link-text">Партнеры</p>
-              </Link>
+              </a>
             </li>
             <li className="header__nav-link">
               <Link to="/photo-gallery">
@@ -120,9 +120,9 @@ function Header() {
               </Link>
             </li>
             <li className="header__nav-link">
-              <Link to="/">
+              <a href="#contacts">
                 <p className="header__link-text">Контакты</p>
-              </Link>
+              </a>
             </li>
           </ul>
           <div className="header__container-phone">

@@ -155,7 +155,7 @@ export {
   argonWeldingServices,
 };
 
-export const photoItem = [
+export const photoItems = [
   photoGalleryImage1,
   photoGalleryImage2,
   photoGalleryImage3,
