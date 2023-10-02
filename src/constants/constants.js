@@ -25,6 +25,13 @@ import certificateThird from "../images/certificates/certificate-3.jpg";
 import certificateFourth from "../images/certificates/certificate-4.jpg";
 import certificateFifth from "../images/certificates/certificate-5.jpg";
 import certificateSixth from "../images/certificates/certificate-6.jpg";
+import moek from "../images/our-clients/moek.png";
+import mosvodokanal from "../images/our-clients/mosvodokanal.png";
+import mosvodostok from "../images/our-clients/mosvodostok.png";
+import nst from "../images/our-clients/nst.png";
+import pik from "../images/our-clients/pik.png";
+import rosneft from "../images/our-clients/rosneft.png";
+import rusHydro from "../images/our-clients/rus-hydro.png";
 import metalProcessingServices from "../images/services/metalworking/metal-processing.jpg";
 import turningWorksServices from "../images/services/metalworking/turning-works.jpg";
 import sketchesServices from "../images/services/metalworking/sketches.jpg";
@@ -36,7 +43,6 @@ import weldingOfVariousMetalsServices from "../images/services/welding/welding-o
 import arcWeldingServices from "../images/services/welding/arc-welding.jpg";
 import semiAutomaticWeldingServices from "../images/services/welding/semi-automatic-welding.jpg";
 import argonWeldingServices from "../images/services/welding/argon-welding.jpg";
-
 
 export {
   metalProcessing,
@@ -66,6 +72,13 @@ export {
   certificateFourth,
   certificateFifth,
   certificateSixth,
+  moek,
+  mosvodokanal,
+  mosvodostok,
+  nst,
+  pik,
+  rosneft,
+  rusHydro,
   metalProcessingServices,
   turningWorksServices,
   sketchesServices,
