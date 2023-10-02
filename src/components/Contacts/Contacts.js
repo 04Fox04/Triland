@@ -5,7 +5,7 @@ import Form from "../Form/Form";
 
 function Contacts({ isFormOpen, onOpen, onClose }) {
   return (
-    <section className="contacts">
+    <section className="contacts" id="contacts">
       <div className="contacts__container">
         <h2 className="section-title contacts__title">Контакты</h2>
         <div className="contacts__container-info">
