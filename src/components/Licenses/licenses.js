@@ -20,7 +20,7 @@ function Licenses({
   onClosePopupLicense,
 }) {
   return (
-    <section className="licenses">
+    <section className="licenses" id="licenses">
       <div className="licenses__container">
         <h2 className="section-title licenses__title">
           Лицензии и сертификаты
