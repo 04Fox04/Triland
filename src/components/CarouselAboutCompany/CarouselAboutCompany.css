@@ -51,10 +51,12 @@
 
 .arrow-right-disabled {
   opacity: .5;
+  cursor: auto;
 }
 
 .arrow-left-disabled {
   opacity: .5;
+  cursor: auto;
 }
 
 .about-company__slider-carousel-button-box {

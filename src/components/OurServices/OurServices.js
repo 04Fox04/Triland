@@ -25,7 +25,7 @@ function OurServices() {
         </h2>
         <ul className="our-services__container-list">
           <li className="our-services__container-item">
-            <Link to="/services#metalProcessingServices" className="our-services__container-link">
+            <Link to="/services#metal-processing-heading" className="our-services__container-link">
               <img
                 className="our-services__container-icon"
                 src={metalProcessing}
