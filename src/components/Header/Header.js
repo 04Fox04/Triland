@@ -13,7 +13,10 @@ function Header() {
 
   let header;
 
-  if (location.pathname === "/services") {
+  if (
+    location.pathname === "/services" ||
+    location.pathname === "/photo-gallery"
+  ) {
     header = (
       <header className="header header-black">
         <div className="header__container header__container-black">
@@ -57,7 +60,7 @@ function Header() {
               </Link>
             </li>
             <li className="header__nav-link">
-              <Link to="/">
+              <Link to="/photo-gallery">
                 <p className="header__link-text header__link-text-black">
                   Контакты
                 </p>
@@ -111,7 +114,7 @@ function Header() {
               </Link>
             </li>
             <li className="header__nav-link">
-              <Link to="/">
+              <Link to="/photo-gallery">
                 <p className="header__link-text">Фотогалерея</p>
               </Link>
             </li>
