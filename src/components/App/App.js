@@ -2,8 +2,9 @@ import React, { useState } from "react";
 import "../../index.css";
 import { Routes, Route } from "react-router-dom";
 import Main from "../Main/Main";
-import Services from "../Services/Services"
+import Services from "../Services/Services";
 import PhotoGallery from "../PhotoGallery/PhotoGallery";
+import ContactsPage from "../ContactsPage/ContactsPage";
 
 function App() {
   //стейт для открытия попапа с формой
@@ -62,8 +63,18 @@ function App() {
               />
             }
           />
-          <Route path="/services" element={<Services />}/>
-          <Route path="/photo-gallery" element={<PhotoGallery />}/>
+          <Route path="/services" element={<Services />} />
+          <Route path="/photo-gallery" element={<PhotoGallery />} />
+          <Route
+            path="/contacts"
+            element={
+              <ContactsPage
+                isFormOpen={isFormOpen}
+                onOpen={handleOpenPopupForm}
+                onClose={handleClosePopupForm}
+              />
+            }
+          />
         </Routes>
       </div>
     </div>

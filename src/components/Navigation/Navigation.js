@@ -1,19 +1,25 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./Navigation.css";
 import { Link, useLocation } from "react-router-dom";
 
 function Navigation() {
   const location = useLocation();
+  const [navigationText, setnavigationText] = useState("");
 
-  const navigation = () => {
-    return location.pathname === "/services";
-  };
-
-  const navigationColorText = {
-    color: navigation() ? "#000000" : "#000000",
-  };
-
-  const navigatonText = navigation() ? "Услуги" : "Фотогалерея";
+  useEffect(() => {
+    if (location.pathname === "/services") {
+      setnavigationText("Услуги");
+    } else if (location.pathname === "/photo-gallery") {
+      setnavigationText("Фотогалерея");
+    } else if (location.pathname === "/contacts") {
+      setnavigationText("Контакты");
+    } else if (location.pathname === "/privacy-policy") {
+      setnavigationText("Политика конфиденциальности");
+    } else {
+      setnavigationText("Политика в отношении обработки персональных данных");
+    }
+    // eslint-disable-next-line
+  }, []);
 
   return (
     <section className="navigation">
@@ -21,11 +27,9 @@ function Navigation() {
         <p className="navigation__link-text">Главная</p>
       </Link>
       <div className="navigation__line"></div>
-      <Link to="" className="navigation__link">
-        <p className="navigation__link-text" style={navigationColorText}>
-          {navigatonText}
-        </p>
-      </Link>
+      <p className="navigation__link-text navigation__link-text-active">
+        {navigationText}
+      </p>
     </section>
   );
 }

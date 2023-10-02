@@ -38,7 +38,7 @@ function Footer() {
               </Link>
             </li>
             <li className="footer__nav-link">
-              <Link to="/" className="footer__link-item">
+              <Link to="/contacts" className="footer__link-item">
                 <p className="footer__link-text">Контакты</p>
               </Link>
             </li>

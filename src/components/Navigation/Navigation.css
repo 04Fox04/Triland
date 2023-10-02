@@ -24,6 +24,15 @@
   color: #173fc9;
 }
 
+.navigation__link-text-active {
+  color: #000000;
+}
+
+.navigation__link-text-active:hover {
+  transition: 0;
+  color: #000000;
+}
+
 .navigation__line {
   width: 40px;
   height: 2px;
