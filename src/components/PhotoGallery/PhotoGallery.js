@@ -5,6 +5,7 @@ import "../../index.css";
 import Navigation from "../Navigation/Navigation";
 import { photoItems } from "../../constants/constants";
 import PhotoGalleryPopup from "../PhotoGalleryPopup/PhotoGalleryPopup";
+import Footer from "../Footer/Footer";
 
 function PhotoGallery() {
   // стейт для отображение дефолтного кол-ва фотографий
@@ -65,6 +66,7 @@ function PhotoGallery() {
           photoItems={photoItems}
         />
       )}
+      <Footer />
     </>
   );
 }

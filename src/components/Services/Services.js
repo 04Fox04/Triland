@@ -5,6 +5,7 @@ import Header from "../Header/Header";
 import Navigation from "../Navigation/Navigation";
 import Metalworking from "../Metalworking/Metalworking";
 import Welding from "../Welding/Welding";
+import Footer from "../Footer/Footer";
 
 function Services() {
   //используем хук для установки состояния компонента, добавляем Metalworking как состояние по умолчанию
@@ -51,6 +52,7 @@ function Services() {
           {activeButton === "Металлообработка" ? <Metalworking /> : <Welding />}
         </section>
       </main>
+      <Footer />
     </>
   );
 }
