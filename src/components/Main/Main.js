@@ -6,6 +6,7 @@ import Footer from "../Footer/Footer";
 import Licenses from "../Licenses/licenses";
 import Contacts from "../Contacts/Contacts";
 import OurServices from "../OurServices/OurServices";
+import OurClients from "../OurClients/OurClients";
 
 function Main({
   isFormOpen,
@@ -35,7 +36,8 @@ function Main({
           onOpenPopupLicense={onOpenPopupLicense}
           onClosePopupLicense={onClosePopupLicense}
         />
-        <Contacts />
+        <OurClients />
+        <Contacts onOpen={onOpen} />
       </main>
       <Footer />
     </>

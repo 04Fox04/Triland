@@ -1,0 +1,37 @@
+.our-clients__container-carousel {
+  height: 100px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.our-clients__window-list {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.our-clients__list {
+  height: 100%;
+  padding: 0;
+  display: flex;
+  list-style: none;
+  transition: translate;
+  transition-property: transform;
+  transition-duration: 300ms;
+  transition-timing-function: ease-in-out;
+}
+
+.our-clients__item {
+  background-color: white;
+  height: 100%;
+  min-width: 300px;
+  max-width: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  user-select: none;
+  transition: 0.4s ease;
+  border-right: 1px solid black;
+}

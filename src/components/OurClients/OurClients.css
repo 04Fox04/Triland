@@ -1,0 +1,21 @@
+.our-clients {
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding-top: 110px;
+}
+
+.our-clients__container {
+  max-width: 1170px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.our-clients__title {
+  color: #000;
+  margin-bottom: 50px;
+}
+
+.our-clients__client-logo {
+  height: 50px;
+}
