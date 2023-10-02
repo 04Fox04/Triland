@@ -11,7 +11,6 @@ function PhotoGallery() {
 
   // обработчик клика | при клике добавляется еще 6 фотографий
   const handleLoadMore = () => {
-    console.log(displayedPhotos);
     setDisplayedPhotos(displayedPhotos + 12);
   };
 

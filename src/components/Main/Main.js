@@ -37,7 +37,7 @@ function Main({
           onClosePopupLicense={onClosePopupLicense}
         />
         <OurClients />
-        <Contacts onOpen={onOpen} />
+        <Contacts isFormOpen={isFormOpen} onOpen={onOpen} onClose={onClose} />
       </main>
       <Footer />
     </>
