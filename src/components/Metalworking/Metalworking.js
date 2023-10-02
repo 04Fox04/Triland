@@ -14,7 +14,7 @@ function Metalworking() {
     <>
       <div className="services__container">
         <div className="services__container-text">
-          <h3 id="metalProcessingServices" className="services__container-text-title">
+          <h3 id="1" className="services__container-text-title">
             Механическая обработка черных и цветных металлов, а также их сплавов
             любой сложности
           </h3>
