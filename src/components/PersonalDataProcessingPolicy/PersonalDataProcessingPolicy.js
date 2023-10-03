@@ -391,13 +391,11 @@ function PersonalDataProcessingPolicy() {
                 <table className="personal-data-processing-policy__table">
                   <tr className="personal-data-processing-policy__table-line">
                     <td
-                      align="left"
-                      valign="top"
-                      className="personal-data-processing-policy__teble-text"
+                      className="personal-data-processing-policy__table-text"
                     >
                       Цель обработки
                     </td>
-                    <td className="personal-data-processing-policy__teble-text">
+                    <td className="personal-data-processing-policy__table-text">
                       Для осуществление обратного звонка и уточнения деталей
                       заказа, а также информирование Пользователя посредством
                       отправки электронных писем
@@ -405,39 +403,33 @@ function PersonalDataProcessingPolicy() {
                   </tr>
                   <tr className="personal-data-processing-policy__table-line">
                     <td
-                      align="left"
-                      valign="top"
-                      className="personal-data-processing-policy__teble-text"
+                      className="personal-data-processing-policy__table-text"
                     >
                       Персональные данные
                     </td>
-                    <td className="personal-data-processing-policy__teble-text">
+                    <td className="personal-data-processing-policy__table-text">
                       фамилия, имя, отчество <br /> электронный адрес <br />{" "}
                       номера телефонов
                     </td>
                   </tr>
                   <tr className="personal-data-processing-policy__table-line">
                     <td
-                      align="left"
-                      valign="top"
-                      className="personal-data-processing-policy__teble-text"
+                      className="personal-data-processing-policy__table-text"
                     >
                       Правовые основания
                     </td>
-                    <td className="personal-data-processing-policy__teble-text">
+                    <td className="personal-data-processing-policy__table-text">
                       Федеральный закон «Об информации, информационных
                       технологиях и о защите информации» от 27.07.2006 N 149-ФЗ
                     </td>
                   </tr>
                   <tr className="personal-data-processing-policy__table-line">
                     <td
-                      align="left"
-                      valign="top"
-                      className="personal-data-processing-policy__teble-text"
+                      className="personal-data-processing-policy__table-text"
                     >
                       Виды обработки персональных данных
                     </td>
-                    <td className="personal-data-processing-policy__teble-text">
+                    <td className="personal-data-processing-policy__table-text">
                       Сбор, запись, систематизация, накопление, хранение,
                       уничтожение и обезличивание персональных данных <br />{" "}
                       Отправка информационных писем на адрес электронной почты
