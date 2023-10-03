@@ -66,15 +66,23 @@ function PhotoGalleryPopup({ photo, onClose, photoItems }) {
 
   // Обработчик нажатия клавиши 'Esc' для закрытия попапа
   useEffect(() => {
-    const handleEsc = (e) => {
-      if (e.keyCode === 27) {
+    const handleKeydown = (e) => {
+      if (e.keyCode === 37) {
+        // Код клавиши "влево"
+        handlePreviousPhoto();
+        // Код клавиши "вправо"
+      } else if (e.keyCode === 39){
+        handleNextPhoto();
+      }
+      else if (e.keyCode === 27) {
+        // Код клавиши "Esc"
         onClose();
       }
     };
 
-    document.addEventListener("keydown", handleEsc);
+    document.addEventListener("keydown", handleKeydown);
     return () => {
-      document.removeEventListener("keydown", handleEsc);
+      document.removeEventListener("keydown", handleKeydown);
     };
   }, [onClose]);
 
