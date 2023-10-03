@@ -73,8 +73,10 @@
   border: 1px solid #c1c1c1;
 }
 
-.personal-data-processing-policy__teble-text {
+.personal-data-processing-policy__table-text {
   border-collapse: collapse;
   border: 1px solid #c1c1c1;
   padding: 10px;
+  text-align: left;
+  vertical-align: top;
 }

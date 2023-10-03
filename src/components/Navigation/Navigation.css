@@ -29,7 +29,7 @@
 }
 
 .navigation__link-text-active:hover {
-  transition: 0;
+  transition: none;
   color: #000000;
 }
 
