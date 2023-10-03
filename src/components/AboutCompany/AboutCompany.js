@@ -48,7 +48,10 @@ function AboutCompany({ onOpen }) {
                 <h3 className="about-company__slid-container-text">
                   Перейти в галерею
                 </h3>
-                <Link to="/photo-gallery" className="about-company__slid-container-button">
+                <Link
+                  to="/photo-gallery"
+                  className="about-company__slid-container-button"
+                >
                   <img
                     className="about-company__slid-container-button-arrow"
                     src={arrowSlid}
