@@ -17,8 +17,8 @@ function Header() {
     location.pathname === "/services" ||
     location.pathname === "/photo-gallery" ||
     location.pathname === "/contacts" ||
-    location.pathname === "/privacy-policy"
-    
+    location.pathname === "/privacy-policy" ||
+    location.pathname === "/personal-data-processing-policy"
   ) {
     header = (
       <header className="header header-black">
