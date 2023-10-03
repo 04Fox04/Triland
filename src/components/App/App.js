@@ -6,6 +6,7 @@ import Services from "../Services/Services";
 import PhotoGallery from "../PhotoGallery/PhotoGallery";
 import ContactsPage from "../ContactsPage/ContactsPage";
 import PrivacyPolicy from "../PrivacyPolicy/PrivacyPolicy";
+import NotFoundError from "../NotFoundError/NotFoundError";
 
 function App() {
   //стейт для открытия попапа с формой
@@ -77,6 +78,7 @@ function App() {
             }
           />
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+          <Route path="/*" element={<NotFoundError />} />
         </Routes>
       </div>
     </div>
