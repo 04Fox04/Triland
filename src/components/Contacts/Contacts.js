@@ -1,8 +1,9 @@
 import React from "react";
 import { YMaps, Map, Placemark } from "@pbe/react-yandex-maps";
 import "./Contacts.css";
+import Form from "../Form/Form";
 
-function Contacts({ onOpen }) {
+function Contacts({ isFormOpen, onOpen, onClose }) {
   return (
     <section className="contacts" id="contacts">
       <div className="contacts__container">
@@ -69,6 +70,7 @@ function Contacts({ onOpen }) {
           </div>
         </div>
       </div>
+      {isFormOpen && <Form onClose={onClose} />}
     </section>
   );
 }

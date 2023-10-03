@@ -49,6 +49,7 @@
   transform: scale(1);
   transition: 0s;
   opacity: 0.5;
+  cursor: auto;
 }
 
 .licenses__button-arrow-left {

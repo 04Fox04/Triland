@@ -15,7 +15,8 @@ function Header() {
 
   if (
     location.pathname === "/services" ||
-    location.pathname === "/photo-gallery"
+    location.pathname === "/photo-gallery" ||
+    location.pathname === "/contacts"
   ) {
     header = (
       <header className="header header-black">
