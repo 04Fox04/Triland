@@ -47,7 +47,7 @@ function Footer() {
             <p className="footer__protection-rights-text">
               &#169; 2023 Все права защищены
             </p>
-            <Link to="/" className="footer__link-item">
+            <Link to="/privacy-policy" className="footer__link-item">
               <p className="footer__protection-rights-text footer__privacy-policy-text">
                 Политика конфиденциальности
               </p>

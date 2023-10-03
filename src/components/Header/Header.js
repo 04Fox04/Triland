@@ -16,7 +16,9 @@ function Header() {
   if (
     location.pathname === "/services" ||
     location.pathname === "/photo-gallery" ||
-    location.pathname === "/contacts"
+    location.pathname === "/contacts" ||
+    location.pathname === "/privacy-policy"
+    
   ) {
     header = (
       <header className="header header-black">
@@ -61,11 +63,11 @@ function Header() {
               </Link>
             </li>
             <li className="header__nav-link">
-              <a href="#contacts">
+              <Link to="/contacts">
                 <p className="header__link-text header__link-text-black">
                   Контакты
                 </p>
-              </a>
+              </Link>
             </li>
           </ul>
           <div className="header__container-phone">
@@ -120,9 +122,9 @@ function Header() {
               </Link>
             </li>
             <li className="header__nav-link">
-              <a href="#contacts">
+              <Link to="/contacts">
                 <p className="header__link-text">Контакты</p>
-              </a>
+              </Link>
             </li>
           </ul>
           <div className="header__container-phone">

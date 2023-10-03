@@ -5,6 +5,7 @@ import Main from "../Main/Main";
 import Services from "../Services/Services";
 import PhotoGallery from "../PhotoGallery/PhotoGallery";
 import ContactsPage from "../ContactsPage/ContactsPage";
+import PrivacyPolicy from "../PrivacyPolicy/PrivacyPolicy";
 
 function App() {
   //стейт для открытия попапа с формой
@@ -63,7 +64,7 @@ function App() {
               />
             }
           />
-          <Route path="/services" element={<Services />} />
+          <Route path="/services" element={<Services />} /> 
           <Route path="/photo-gallery" element={<PhotoGallery />} />
           <Route
             path="/contacts"
@@ -75,6 +76,7 @@ function App() {
               />
             }
           />
+          <Route path="/privacy-policy" element={<PrivacyPolicy />} />
         </Routes>
       </div>
     </div>
