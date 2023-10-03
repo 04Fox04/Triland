@@ -54,7 +54,7 @@ function Form({ onClose }) {
         <p className="form__info">
           Нажимая на эту кнопку вы соглашаетесь на
           <br />
-          <Link className="form__link">
+          <Link to="/personal-data-processing-policy" className="form__link">
             обработку персональных данных
           </Link>
         </p>
