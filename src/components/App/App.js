@@ -7,6 +7,7 @@ import PhotoGallery from "../PhotoGallery/PhotoGallery";
 import ContactsPage from "../ContactsPage/ContactsPage";
 import PrivacyPolicy from "../PrivacyPolicy/PrivacyPolicy";
 import PersonalDataProcessingPolicy from "../PersonalDataProcessingPolicy/PersonalDataProcessingPolicy";
+import NotFoundError from "../NotFoundError/NotFoundError";
 
 function App() {
   //стейт для открытия попапа с формой
@@ -82,6 +83,7 @@ function App() {
             path="/personal-data-processing-policy"
             element={<PersonalDataProcessingPolicy />}
           />
+          <Route path="/*" element={<NotFoundError />} />
         </Routes>
       </div>
     </div>
