@@ -11,6 +11,7 @@ import { Link, useLocation } from "react-router-dom";
 function Header() {
   const location = useLocation();
 
+
   let header;
 
   if (
@@ -54,11 +55,11 @@ function Header() {
               </Link>
             </li>
             <li className="header__nav-link">
-              <a href="#licenses">
+              <Link to="/#licenses">
                 <p className="header__link-text header__link-text-black">
                   Лицензии
                 </p>
-              </a>
+              </Link>
             </li>
             <li className="header__nav-link">
               <a href="#our-clients">
