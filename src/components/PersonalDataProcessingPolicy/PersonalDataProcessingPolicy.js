@@ -384,7 +384,7 @@ function PersonalDataProcessingPolicy() {
                   </li>
                 </ol>
               </li>
-              <li className="personal-data-processing-policy__list-block">
+              <li className="personal-data-processing-policy__list-block table">
                 <h3 className="personal-data-processing-policy__list-item-title">
                   6. Цели обработки персональных данных
                 </h3>
