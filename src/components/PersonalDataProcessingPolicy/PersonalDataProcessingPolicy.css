@@ -22,16 +22,20 @@
 }
 
 .personal-data-processing-policy__list-block {
-  margin-bottom: 30px;
+  margin-bottom: 28px;
 }
-
+.table {
+  margin-bottom: 15px;
+}
 .personal-data-processing-policy__list-item-title {
   color: #000;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
   font-variant-numeric: lining-nums;
   font-size: 25px;
   font-weight: 500;
   text-transform: uppercase;
+  line-height: 25px;
+  
 }
 
 .personal-data-processing-policy__list-num-subparagraphs {
@@ -44,7 +48,7 @@
   font-variant-numeric: lining-nums;
   font-size: 18px;
   font-weight: 500;
-  line-height: 1.24;
+  line-height: 1.23;
   letter-spacing: 0.27px;
 }
 
@@ -58,7 +62,7 @@
   font-variant-numeric: lining-nums;
   font-size: 18px;
   font-weight: 500;
-  line-height: 1.24;
+  line-height: 1.23;
   letter-spacing: 0.27px;
 }
 
