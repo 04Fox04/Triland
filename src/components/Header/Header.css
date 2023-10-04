@@ -49,6 +49,11 @@
   text-decoration: none;
   text-transform: uppercase;
   height: 18px;
+  padding-bottom: 5px;
+}
+
+.header__nav-link-active {
+  border-bottom: 2px solid #173fc9;
 }
 
 .header__link-text {
@@ -56,6 +61,11 @@
   font-size: 15px;
   font-weight: 500;
   line-height: normal;
+}
+
+.header__link-text-active {
+  font-size: 15px;
+  color: #173fc9;
 }
 
 .header__link-text-black {

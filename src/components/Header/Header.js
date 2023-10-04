@@ -34,9 +34,9 @@ function Header() {
                 </p>
               </a>
             </li>
-            <li className="header__nav-link">
+            <li className={`header__nav-link ${location.pathname === '/services' ? 'header__nav-link-active' : ''}`}>
               <Link to="/services">
-                <p className="header__link-text header__link-text-black">
+                <p className={`header__link-text ${location.pathname === '/services' ? 'header__link-text-active' : 'header__link-text-black'}`}>
                   Услуги
                 </p>
               </Link>
@@ -55,16 +55,14 @@ function Header() {
                 </p>
               </a>
             </li>
-            <li className="header__nav-link">
-              <Link to="/">
-                <p className="header__link-text header__link-text-black">
-                  Фотогалерея
-                </p>
-              </Link>
-            </li>
-            <li className="header__nav-link">
+            <li className={`header__nav-link ${location.pathname === '/photo-gallery' ? 'header__nav-link-active' : ''}`}>
+              <Link to="/photo-gallery"> 
+                <p className={`header__link-text ${location.pathname === '/photo-gallery' ? 'header__link-text-active' : 'header__link-text-black'}`}>Фотогалерея</p> 
+              </Link> 
+            </li> 
+            <li className={`header__nav-link ${location.pathname === '/contacts' ? 'header__nav-link-active' : ''}`}>
               <Link to="/contacts">
-                <p className="header__link-text header__link-text-black">
+                <p className={`header__link-text ${location.pathname === '/contacts' ? 'header__link-text-active' : 'header__link-text-black'}`}>
                   Контакты
                 </p>
               </Link>
