@@ -6,6 +6,7 @@ import Services from "../Services/Services";
 import PhotoGallery from "../PhotoGallery/PhotoGallery";
 import ContactsPage from "../ContactsPage/ContactsPage";
 import PrivacyPolicy from "../PrivacyPolicy/PrivacyPolicy";
+import PersonalDataProcessingPolicy from "../PersonalDataProcessingPolicy/PersonalDataProcessingPolicy";
 import NotFoundError from "../NotFoundError/NotFoundError";
 
 function App() {
@@ -65,7 +66,7 @@ function App() {
               />
             }
           />
-          <Route path="/services" element={<Services />} /> 
+          <Route path="/services" element={<Services />} />
           <Route path="/photo-gallery" element={<PhotoGallery />} />
           <Route
             path="/contacts"
@@ -78,6 +79,10 @@ function App() {
             }
           />
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+          <Route
+            path="/personal-data-processing-policy"
+            element={<PersonalDataProcessingPolicy />}
+          />
           <Route path="/*" element={<NotFoundError />} />
         </Routes>
       </div>
