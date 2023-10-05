@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from "react";
-import { Link, useLocation } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 import "./Form.css";
 
 function Form({ onClose }) {
@@ -47,8 +47,8 @@ function Form({ onClose }) {
         <p className="form__info">
           Нажимая на эту кнопку вы соглашаетесь на
           <br />
-          <Link
-            to="/personal-data-processing-policy"
+          <a
+            href="/personal-data-processing-policy"
             className="form__link"
             onClick={() => {
               if (location.pathname === "/contacts") {
@@ -57,7 +57,7 @@ function Form({ onClose }) {
             }}
           >
             обработку персональных данных
-          </Link>
+          </a>
         </p>
       </form>
     </div>
