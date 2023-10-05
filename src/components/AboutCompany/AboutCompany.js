@@ -10,10 +10,11 @@ import {
   slideFour,
   arrowSlid,
 } from "../../constants/constants";
+import { Element } from "react-scroll";
 
 function AboutCompany({ onOpen }) {
   return (
-    <section className="about-company" id="about-company">
+    <Element className="about-company" id="about-company">
       <div className="about-company__container">
         <div className="about-company__info">
           <h2 className="section-title about-company__title">О компании</h2>
@@ -63,7 +64,7 @@ function AboutCompany({ onOpen }) {
           </CarouselAboutCompany>
         </div>
       </div>
-    </section>
+    </Element>
   );
 }
 
