@@ -1,7 +1,6 @@
 import React from "react";
 import "./AboutCompany.css";
 import "../../index.css";
-import { Link } from "react-router-dom";
 import CarouselAboutCompany from "../CarouselAboutCompany/CarouselAboutCompany";
 import {
   slideOne,
@@ -10,10 +9,11 @@ import {
   slideFour,
   arrowSlid,
 } from "../../constants/constants";
+import { Element } from "react-scroll";
 
 function AboutCompany({ onOpen }) {
   return (
-    <section className="about-company" id="about-company">
+    <Element className="about-company" id="about-company">
       <div className="about-company__container">
         <div className="about-company__info">
           <h2 className="section-title about-company__title">О компании</h2>
@@ -48,8 +48,8 @@ function AboutCompany({ onOpen }) {
                 <h3 className="about-company__slid-container-text">
                   Перейти в галерею
                 </h3>
-                <Link
-                  to="/photo-gallery"
+                <a
+                  href="/photo-gallery"
                   className="about-company__slid-container-button"
                 >
                   <img
@@ -57,13 +57,13 @@ function AboutCompany({ onOpen }) {
                     src={arrowSlid}
                     alt="Стрелка"
                   ></img>
-                </Link>
+                </a>
               </div>
             </div>
           </CarouselAboutCompany>
         </div>
       </div>
-    </section>
+    </Element>
   );
 }
 

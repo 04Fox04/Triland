@@ -53,3 +53,7 @@ a {
   line-height: normal;
   text-transform: uppercase;
 }
+
+html {
+  scroll-behavior: smooth;
+}
