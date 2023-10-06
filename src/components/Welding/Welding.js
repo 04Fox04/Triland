@@ -37,7 +37,7 @@ function Welding() {
           alt="Ручная дуговая сварка"
         ></img>
         <div className="services__container-text">
-          <h3 className="services__container-text-title">
+          <h3 className="services__container-text-title" id="arc-welding">
             Ручная дуговая сварка
           </h3>
           <p className="services__container-description">

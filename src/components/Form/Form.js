@@ -1,9 +1,10 @@
 import React, { useEffect, useRef } from "react";
-import { Link } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 import "./Form.css";
 
 function Form({ onClose }) {
   const formRef = useRef(null);
+  const location = useLocation();
 
   useEffect(() => {
     //обработчик для клавиши "Esc"
@@ -40,23 +41,23 @@ function Form({ onClose }) {
             Закажите звонок и мы перезвоним Вам в течении 5 минут!
           </p>
         </div>
-        <input
-          className="form__input"
-          type="text"
-          placeholder="Имя"
-        ></input>
-        <input
-          className="form__input"
-          type="tel"
-          placeholder="Телефон"
-        ></input>
+        <input className="form__input" type="text" placeholder="Имя"></input>
+        <input className="form__input" type="tel" placeholder="Телефон"></input>
         <button className="form__button-submit">Заказать звонок</button>
         <p className="form__info">
           Нажимая на эту кнопку вы соглашаетесь на
           <br />
-          <Link to="/personal-data-processing-policy" className="form__link">
+          <a
+            href="/personal-data-processing-policy"
+            className="form__link"
+            onClick={() => {
+              if (location.pathname === "/contacts") {
+                onClose();
+              }
+            }}
+          >
             обработку персональных данных
-          </Link>
+          </a>
         </p>
       </form>
     </div>
