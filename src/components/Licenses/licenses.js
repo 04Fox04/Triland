@@ -11,6 +11,7 @@ import {
   certificateFifth,
   certificateSixth,
 } from "../../constants/constants";
+import { Element } from "react-scroll";
 
 function Licenses({
   isPopupImageOpen,
@@ -20,7 +21,7 @@ function Licenses({
   onClosePopupLicense,
 }) {
   return (
-    <section className="licenses" id="licenses">
+    <Element className="licenses" id="licenses">
       <div className="licenses__container">
         <h2 className="section-title licenses__title">
           Лицензии и сертификаты
@@ -108,7 +109,7 @@ function Licenses({
           imageAlt={imageAlt}
         />
       )}
-    </section>
+    </Element>
   );
 }
 

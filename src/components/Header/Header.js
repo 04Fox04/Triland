@@ -7,6 +7,7 @@ import {
   phoneBlack,
 } from "../../constants/constants";
 import { Link, useLocation } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 
 function Header() {
   const location = useLocation();
@@ -28,11 +29,11 @@ function Header() {
           </Link>
           <ul className="header__nav header__nav-black">
             <li className="header__nav-link">
-              <a href="#about-company">
+              <HashLink to="/#about-company" smooth={true} duration={400}>
                 <p className="header__link-text header__link-text-black">
                   О компании
                 </p>
-              </a>
+              </HashLink>
             </li>
             <li
               className={`header__nav-link ${
@@ -54,18 +55,18 @@ function Header() {
               </Link>
             </li>
             <li className="header__nav-link">
-              <a href="#licenses">
+              <HashLink to="/#licenses" smooth={true} duration={400}>
                 <p className="header__link-text header__link-text-black">
                   Лицензии
                 </p>
-              </a>
+              </HashLink>
             </li>
             <li className="header__nav-link">
-              <a href="#our-clients">
+              <HashLink to="/#our-clients" smooth={true} duration={400}>
                 <p className="header__link-text header__link-text-black">
                   Партнеры
                 </p>
-              </a>
+              </HashLink>
             </li>
             <li
               className={`header__nav-link ${

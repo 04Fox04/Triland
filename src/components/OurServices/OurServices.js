@@ -2,6 +2,7 @@ import React from "react";
 import "./OurServices.css";
 import "../../index.css";
 import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 import {
   metalProcessing,
   sketches,
@@ -25,7 +26,10 @@ function OurServices() {
         </h2>
         <ul className="our-services__container-list">
           <li className="our-services__container-item">
-            <Link to="/services#metal-processing-heading" className="our-services__container-link">
+            <HashLink
+              to="/services#metal-processing-heading"
+              className="our-services__container-link"
+            >
               <img
                 className="our-services__container-icon"
                 src={metalProcessing}
@@ -34,10 +38,10 @@ function OurServices() {
               <p className="our-services__container-text">
                 Механическая обработка черных и цветных металлов
               </p>
-            </Link>
+            </HashLink>
           </li>
           <li className="our-services__container-item">
-            <Link className="our-services__container-link">
+            <HashLink to="/services#turning-works" className="our-services__container-link">
               <img
                 className="our-services__container-icon"
                 src={turningWorks}
@@ -46,20 +50,20 @@ function OurServices() {
               <p className="our-services__container-text">
                 Изготовления деталей по чертежам и эскизам заказчика
               </p>
-            </Link>
+            </HashLink>
           </li>
           <li className="our-services__container-item">
-            <Link className="our-services__container-link">
+            <HashLink to="/services#sketches" className="our-services__container-link">
               <img
                 className="our-services__container-icon"
                 src={sketches}
                 alt="Токарные работы"
               />
               <p className="our-services__container-text">Токарные работы</p>
-            </Link>
+            </HashLink>
           </li>
           <li className="our-services__container-item">
-            <Link className="our-services__container-link">
+            <HashLink to="/services#milling" className="our-services__container-link">
               <img
                 className="our-services__container-icon"
                 src={milling}
@@ -68,10 +72,10 @@ function OurServices() {
               <p className="our-services__container-text">
                 Фрезерование деталей любой сложности
               </p>
-            </Link>
+            </HashLink>
           </li>
           <li className="our-services__container-item">
-            <Link className="our-services__container-link">
+            <HashLink to="/services#electrical-discharge-machining" className="our-services__container-link">
               <img
                 className="our-services__container-icon"
                 src={electricalDischargeMachining}
@@ -80,10 +84,10 @@ function OurServices() {
               <p className="our-services__container-text">
                 Электроэрозионная обработка
               </p>
-            </Link>
+            </HashLink>
           </li>
           <li className="our-services__container-item">
-            <Link className="our-services__container-link">
+            <HashLink to="/services#laser-cutting" className="our-services__container-link">
               <img
                 className="our-services__container-icon"
                 src={laserCutting}
@@ -92,11 +96,11 @@ function OurServices() {
               <p className="our-services__container-text">
                 Лазерная резка металлов
               </p>
-            </Link>
+            </HashLink>
           </li>
           <li className="our-services__container-item">
-            <Link
-              to="/services#hardeningServices"
+            <HashLink
+              to="/services#hardening"
               className="our-services__container-link"
             >
               <img
@@ -107,10 +111,10 @@ function OurServices() {
               <p className="our-services__container-text">
                 Закалка изделий из металла
               </p>
-            </Link>
+            </HashLink>
           </li>
           <li className="our-services__container-item">
-            <Link className="our-services__container-link">
+            <Link to="" className="our-services__container-link">
               <img
                 className="our-services__container-icon"
                 src={weldingOfVariousMetals}
@@ -122,7 +126,7 @@ function OurServices() {
             </Link>
           </li>
           <li className="our-services__container-item">
-            <Link className="our-services__container-link">
+            <HashLink to="/services#arc-welding" className="our-services__container-link">
               <img
                 className="our-services__container-icon"
                 src={arcWelding}
@@ -131,10 +135,10 @@ function OurServices() {
               <p className="our-services__container-text">
                 Ручная дуговая сварка
               </p>
-            </Link>
+            </HashLink>
           </li>
           <li className="our-services__container-item">
-            <Link className="our-services__container-link">
+            <Link to="" className="our-services__container-link">
               <img
                 className="our-services__container-icon"
                 src={semiAutomaticWelding}
@@ -146,7 +150,7 @@ function OurServices() {
             </Link>
           </li>
           <li className="our-services__container-item">
-            <Link className="our-services__container-link">
+            <Link to="" className="our-services__container-link">
               <img
                 className="our-services__container-icon"
                 src={argonWelding}
