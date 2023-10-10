@@ -41,7 +41,10 @@ function OurServices() {
             </HashLink>
           </li>
           <li className="our-services__container-item">
-            <HashLink to="/services#turning-works" className="our-services__container-link">
+            <HashLink
+              to="/services#turning-works"
+              className="our-services__container-link"
+            >
               <img
                 className="our-services__container-icon"
                 src={turningWorks}
@@ -53,7 +56,10 @@ function OurServices() {
             </HashLink>
           </li>
           <li className="our-services__container-item">
-            <HashLink to="/services#sketches" className="our-services__container-link">
+            <HashLink
+              to="/services#sketches"
+              className="our-services__container-link"
+            >
               <img
                 className="our-services__container-icon"
                 src={sketches}
@@ -63,7 +69,10 @@ function OurServices() {
             </HashLink>
           </li>
           <li className="our-services__container-item">
-            <HashLink to="/services#milling" className="our-services__container-link">
+            <HashLink
+              to="/services#milling"
+              className="our-services__container-link"
+            >
               <img
                 className="our-services__container-icon"
                 src={milling}
@@ -75,7 +84,10 @@ function OurServices() {
             </HashLink>
           </li>
           <li className="our-services__container-item">
-            <HashLink to="/services#electrical-discharge-machining" className="our-services__container-link">
+            <HashLink
+              to="/services#electrical-discharge-machining"
+              className="our-services__container-link"
+            >
               <img
                 className="our-services__container-icon"
                 src={electricalDischargeMachining}
@@ -87,7 +99,10 @@ function OurServices() {
             </HashLink>
           </li>
           <li className="our-services__container-item">
-            <HashLink to="/services#laser-cutting" className="our-services__container-link">
+            <HashLink
+              to="/services#laser-cutting"
+              className="our-services__container-link"
+            >
               <img
                 className="our-services__container-icon"
                 src={laserCutting}
@@ -126,7 +141,10 @@ function OurServices() {
             </Link>
           </li>
           <li className="our-services__container-item">
-            <HashLink to="/services#arc-welding" className="our-services__container-link">
+            <HashLink
+              to="/services#arc-welding"
+              className="our-services__container-link"
+            >
               <img
                 className="our-services__container-icon"
                 src={arcWelding}
