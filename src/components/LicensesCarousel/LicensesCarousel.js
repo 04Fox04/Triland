@@ -5,8 +5,8 @@ import "./LicensesCarousel.css";
 function LicensesCarousel({ children }) {
   // стейт смещения блока в пикселях
   const [offset, setOffset] = useState(0);
-  const [limitScroll, setlimitScroll] = useState(0);
   const [lengthScroll, setlengthScroll] = useState(0);
+  const [limitScroll, setlimitScroll] = useState(0);
 
   // изменение значения, на сколько сдвинется блок, а так же лимитная точка карусели, и сброс карусели при изменении ширины экрана
   useEffect(() => {
