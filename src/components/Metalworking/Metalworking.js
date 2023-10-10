@@ -8,7 +8,6 @@ import {
   laserCuttingServices,
   hardeningServices,
 } from "../../constants/constants";
-import { Element } from "react-scroll";
 
 function Metalworking() {
   return (
@@ -44,11 +43,9 @@ function Metalworking() {
           src={turningWorksServices}
           alt="Чертежи"
         ></img>
-        <Element
+        <div
           className="services__container-text"
           id="turning-works"
-          smooth={true}
-          duration={400}
         >
           <h3 className="services__container-text-title">
             Изготовления деталей и изделий по чертежам и эскизам заказчика
@@ -63,9 +60,9 @@ function Metalworking() {
             бюджета. Наше стремление к совершенству делают нас лучшим выбором
             для всех ваших потребностей в производстве деталей на заказ.
           </p>
-        </Element>
+        </div>
 
-        <Element className="services__container-text" id="sketches">
+        <div className="services__container-text" id="sketches">
           <h3 className="services__container-text-title">Токарные работы</h3>
           <p className="services__container-description">
             Токарные работы выполняются на токарном станке, который имеет
@@ -74,7 +71,7 @@ function Metalworking() {
             оси, а резец перемещается вдоль ее поверхности, удаляя материал и
             формируя нужную форму и размеры детали.
           </p>
-        </Element>
+        </div>
         <img
           className="services__container-image"
           src={sketchesServices}
@@ -86,7 +83,7 @@ function Metalworking() {
           src={millingServices}
           alt="Фрезерование деталей"
         ></img>
-        <Element className="services__container-text" id="milling">
+        <div className="services__container-text" id="milling">
           <h3 className="services__container-text-title">
             Фрезерование деталей любой сложности
           </h3>
@@ -97,9 +94,9 @@ function Metalworking() {
             перемещается вдоль заготовки, создавая требуемую форму и размер
             детали.
           </p>
-        </Element>
+        </div>
 
-        <Element
+        <div
           className="services__container-text"
           id="#electrical-discharge-machining"
         >
@@ -111,7 +108,7 @@ function Metalworking() {
             электрические разряды удаляют слой металла с поверхности заготовки
             для получения требуемой формы и размеров детали
           </p>
-        </Element>
+        </div>
         <img
           className="services__container-image"
           src={electricalDischargeMachiningServices}
@@ -123,7 +120,7 @@ function Metalworking() {
           src={laserCuttingServices}
           alt="Резка металла"
         ></img>
-        <Element className="services__container-text" id="laser-cutting">
+        <div className="services__container-text" id="laser-cutting">
           <h3 className="services__container-text-title">
             Лазерная резка металлов
           </h3>
@@ -134,9 +131,9 @@ function Metalworking() {
             При этом материал расплавляется и выдувается из зоны реза, оставляя
             после себя чистый и ровный край.
           </p>
-        </Element>
+        </div>
 
-        <Element className="services__container-text" id="hardening">
+        <div className="services__container-text" id="hardening">
           <h3 className="services__container-text-title">
             Закалка изделий из металла
           </h3>
@@ -146,7 +143,7 @@ function Metalworking() {
             этой температуре в течение определенного времени и затем
             охлаждается. Цель закалки - повышение твердости и прочности металла.
           </p>
-        </Element>
+        </div>
         <img
           className="services__container-image"
           src={hardeningServices}

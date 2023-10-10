@@ -11,11 +11,10 @@ import {
   rosneft,
   rusHydro,
 } from "../../constants/constants";
-import { Element } from "react-scroll";
 
 function OurClients() {
   return (
-    <Element className="our-clients" id="our-clients">
+    <section className="our-clients" id="our-clients">
       <div className="our-clients__container">
         <h2 className="section-title our-clients__title">Наши клиенты</h2>
         <OurClientsCarousel>
@@ -56,7 +55,7 @@ function OurClients() {
           />
         </OurClientsCarousel>
       </div>
-    </Element>
+    </section>
   );
 }
 

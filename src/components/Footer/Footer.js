@@ -14,7 +14,7 @@ function Footer() {
         <div className="footer__container-info">
           <ul className="footer__nav">
             <li className="footer__nav-link">
-              <HashLink to="/#about-company" smooth={true} duration={400}>
+              <HashLink to="/#about-company">
                 <p className="footer__link-text">О компании</p>
               </HashLink>
             </li>
@@ -24,22 +24,12 @@ function Footer() {
               </a>
             </li>
             <li className="footer__nav-link">
-              <HashLink
-                to="/#licenses"
-                className="footer__link-item"
-                smooth={true}
-                duration={400}
-              >
+              <HashLink to="/#licenses" className="footer__link-item">
                 <p className="footer__link-text">Лицензии</p>
               </HashLink>
             </li>
             <li className="footer__nav-link">
-              <HashLink
-                to="/#our-clients"
-                className="footer__link-item"
-                smooth={true}
-                duration={400}
-              >
+              <HashLink to="/#our-clients" className="footer__link-item">
                 <p className="footer__link-text">Партнеры</p>
               </HashLink>
             </li>
