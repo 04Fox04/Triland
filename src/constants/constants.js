@@ -103,9 +103,11 @@ import photoGalleryImage57 from "../images/photo-gallery/20230615_160919.jpg";
 import photoGalleryImage58 from "../images/photo-gallery/20230615_160926.jpg";
 import photoGalleryImage59 from "../images/photo-gallery/в1.jpg";
 import photoGalleryImage60 from "../images/photo-gallery/в2.jpg";
-import photoGalleryImage61 from "../images/photo-gallery/в3.jpg"
+import photoGalleryImage61 from "../images/photo-gallery/в3.jpg";
 import photoGalleryImage62 from "../images/photo-gallery/в4.jpg";
 import photoGalleryImage63 from "../images/photo-gallery/в5.jpg";
+export const nameRegex = /^[a-zA-Zа-яёА-Я\s]+$/; // разрешение только пробелов и букв
+export const telRegex = /^(?:\+[\d\s]+|[\d\s]+)$/; // телефон начинается с "+" и содержит цифры и пробелы, или состоит только из цифр и пробелов
 
 export {
   metalProcessing,
@@ -218,5 +220,5 @@ export const photoItems = [
   photoGalleryImage60,
   photoGalleryImage61,
   photoGalleryImage62,
-  photoGalleryImage63
+  photoGalleryImage63,
 ];
