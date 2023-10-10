@@ -35,7 +35,6 @@
   font-weight: 500;
   text-transform: uppercase;
   line-height: 25px;
-  
 }
 
 .personal-data-processing-policy__list-num-subparagraphs {
@@ -83,4 +82,8 @@
   padding: 10px;
   text-align: left;
   vertical-align: top;
+}
+
+.personal-data-processing-policy__table-text:nth-child(2n) {
+  width: 880px;
 }
