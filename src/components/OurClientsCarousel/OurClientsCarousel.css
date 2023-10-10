@@ -35,3 +35,46 @@
   transition: 0.4s ease;
   border-right: 1px solid black;
 }
+
+@media screen and (max-width: 1180px) {
+  .our-clients__item {
+    min-width: 255px;
+    max-width: 255px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .our-clients__item {
+    min-width: 200px;
+    max-width: 200px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .our-clients__item {
+    min-width: 166px;
+    max-width: 166px;
+  }
+}
+
+@media screen and (max-width: 515px) {
+  .our-clients__item {
+    min-width: 195px;
+    max-width: 195px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .our-clients__container-carousel {
+    height: 160px;
+  }
+
+  .our-clients__item {
+    min-width: 290px;
+    max-width: 290px;
+  }
+
+  .our-clients__item {
+    border-right: none;
+  }
+}
