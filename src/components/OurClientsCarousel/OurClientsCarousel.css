@@ -30,7 +30,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  cursor: pointer;
   user-select: none;
   transition: 0.4s ease;
   border-right: 1px solid black;
