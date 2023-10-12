@@ -19,7 +19,7 @@ import {
 
 function OurServices() {
   return (
-    <div className="our-services">
+    <section className="our-services">
       <div className="our-services__container">
         <h2 className="section-title our-services__container-title">
           Наши услуги
@@ -179,7 +179,7 @@ function OurServices() {
           </li>
         </ul>
       </div>
-    </div>
+    </section>
   );
 }
 
