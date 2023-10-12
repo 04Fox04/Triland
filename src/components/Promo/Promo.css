@@ -20,10 +20,12 @@
 }
 
 .promo__info {
+  position: absolute;
   display: flex;
   flex-direction: column;
-  min-width: 430px;
-  margin: 100px 70px 0 0;
+  max-width: 430px;
+  z-index: 1;
+  top: 310px;
 }
 
 .promo__title {
@@ -75,10 +77,116 @@
 }
 
 .promo__image {
-  margin-top: 140px;
-  max-width: 100%;
+  position: absolute;
+  width: 100%;
   max-height: 100%;
   width: 670px;
   height: auto;
-  margin-top: 140px;
+  top: 140px;
+  right: 215px;
+}
+
+@media screen and (max-width: 1500px) {
+  .promo__image {
+    right: 115px;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .promo__image {
+    right: 15px;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .promo__info {
+    top: 270px;
+  }
+  .promo__image {
+    right: 15px;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .promo__info {
+    top: 270px;
+  }
+  .promo__image {
+    width: 600px;
+    top: 217px;
+    right: 15px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .promo {
+    height: 663px;
+  }
+  .promo__container {
+    max-width: 768px;
+    padding: 0 15px;
+    min-height: 663px;
+    height: 100%;
+  }
+  .promo__info {
+    max-width: 378px;
+    top: 195px;
+  }
+  .promo__title {
+    font-size: 30px;
+    margin-bottom: 25px;
+    min-height: 175px;
+  }
+  .promo__subtitle {
+    margin-bottom: 40px;
+  }
+  .promo__image {
+    width: 397px;
+    top: 210px;
+    right: 15px;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .promo {
+    height: 823px;
+  }
+  .promo__container {
+    max-width: 680px;
+    display: flex;
+    flex-direction: column;
+  }
+  .promo__info {
+    top: 130px;
+    left: 15px;
+  }
+  .promo__title {
+    font-size: 23px;
+    margin-bottom: 25px;
+    min-height: 135px;
+  }
+  .promo__image {
+    position: static;
+    width: 400px;
+    margin-left: 70px;
+    margin-top: 370px;
+  }
+}
+@media screen and (max-width: 520px) {
+  .promo__container {
+    padding: 0;
+  }
+  .promo__info {
+    position: static;
+    max-width: 290px;
+    margin-top: 111px;
+  }
+  .promo__subtitle {
+    width: 290px;
+  }
+  .promo__image {
+    position: static;
+    width: 290px;
+    margin: 0;
+  }
 }
