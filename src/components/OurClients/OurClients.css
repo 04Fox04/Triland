@@ -19,3 +19,73 @@
 .our-clients__client-logo {
   height: 50px;
 }
+
+@media screen and (max-width: 1180px) {
+  .our-clients {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+
+  .our-clients__container {
+    max-width: 1000px;
+  }
+
+  .our-clients__client-logo {
+    max-width: 230px;
+  }
+}
+
+@media screen and (max-width: 1030px) {
+  .our-clients__container {
+    max-width: 750px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .our-clients__container {
+    max-width: 600px;
+  }
+
+  .our-clients__client-logo {
+    max-width: 175px;
+    height: 30px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .our-clients__container {
+    max-width: 490px;
+  }
+
+  .our-clients__client-logo {
+    max-width: 141px;
+    height: 30px;
+  }
+}
+
+@media screen and (max-width: 627px) {
+  .our-clients {
+    padding-top: 80px;
+  }
+
+  .our-clients__title {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 515px) {
+  .our-clients__container {
+    max-width: 390px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .our-clients__container {
+    max-width: 290px;
+  }
+
+  .our-clients__client-logo {
+    max-width: 220px;
+    height: 40px;
+  }
+}
