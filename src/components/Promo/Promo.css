@@ -172,7 +172,7 @@
     margin-top: 370px;
   }
 }
-@media screen and (max-width: 520px) {
+@media screen and (max-width: 500px) {
   .promo__container {
     padding: 0;
   }
