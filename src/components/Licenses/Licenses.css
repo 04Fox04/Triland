@@ -108,7 +108,7 @@
   }
 
   .licenses__title {
-    margin-bottom: 80px;
+    margin-bottom: 40px;
     white-space: nowrap;
   }
 
@@ -135,7 +135,7 @@
   }
 
   .licenses__title {
-    margin-bottom: 80px;
+    margin-bottom: 30px;
     font-size: 30px;
   }
 
@@ -163,7 +163,6 @@
 
   .licenses__title {
     white-space: wrap;
-    margin-bottom: 70px;
   }
 
   .licenses__item {

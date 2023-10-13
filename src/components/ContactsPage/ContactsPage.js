@@ -1,10 +1,10 @@
 import React from "react";
-import { YMaps, Map, Placemark } from "@pbe/react-yandex-maps";
 import "./ContactsPage.css";
 import Header from "../Header/Header";
 import Navigation from "../Navigation/Navigation";
 import Footer from "../Footer/Footer";
 import Form from "../Form/Form";
+import YaMap from "../Map/Map";
 
 function ContactsPage({ isFormOpen, onOpen, onClose }) {
   return (
@@ -78,33 +78,7 @@ function ContactsPage({ isFormOpen, onOpen, onClose }) {
                 </div>
               </div>
               <div className="contacts-page__container-map">
-                <YMaps
-                  style={{
-                    maxWidth: "1170px",
-                    height: "500px",
-                    borderRadius: "20px",
-                  }}
-                >
-                  <Map
-                    defaultState={{ center: [55.916254, 37.746729], zoom: 10 }}
-                    style={{ width: "100%", height: "500px" }}
-                  >
-                    <Placemark
-                      geometry={[55.945629, 37.95613]}
-                      options={{
-                        iconColor: "#34abeb", // цвет отметки
-                        preset: "islands#blueHomeIcon", // стиль отметки
-                      }}
-                    />
-                    <Placemark
-                      geometry={[55.881626, 37.545617]}
-                      options={{
-                        iconColor: "#34abeb", // цвет отметки
-                        preset: "islands#blueHomeIcon", // стиль отметки
-                      }}
-                    />
-                  </Map>
-                </YMaps>
+                <YaMap />
               </div>
             </div>
           </div>
