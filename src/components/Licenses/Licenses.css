@@ -57,6 +57,10 @@
     padding-left: 15px;
   }
 
+  .licenses__container {
+    max-width: 1000px;
+  }
+
   .licenses__item {
     min-width: 227px;
     max-width: 227px;
@@ -69,6 +73,10 @@
 }
 
 @media screen and (max-width: 1040px) {
+  .licenses__container {
+    max-width: 900px;
+  }
+
   .licenses__item {
     min-width: 200px;
     max-width: 200px;
@@ -84,6 +92,10 @@
   .licenses {
     height: 557px;
     background-image: url("../../images/licenses-small-background.jpg");
+  }
+
+  .licenses__container {
+    max-width: 737px;
   }
 
   .licenses__item {
