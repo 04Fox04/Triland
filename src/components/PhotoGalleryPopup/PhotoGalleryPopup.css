@@ -11,7 +11,8 @@
 
 .photo-popup {
   position: relative;
-  width: 1170px;
+  max-width: 1170px;
+  width: 100%;
   margin: 0 auto;
   margin-top: 101px;
   display: flex;
@@ -20,7 +21,8 @@
 }
 
 .photo-popup__image {
-  width: 970px;
+  max-width: 970px;
+  width: 100%;
   height: 700px;
   object-fit: cover;
   cursor: auto;
@@ -106,4 +108,63 @@
   margin-left: 70px;
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 1200px) {
+  .photo-popup {
+    max-width: 738px;
+    margin-top: 50px;
+  }
+  .photo-popup__image {
+    max-width: 738px;
+    position: relative;
+  }
+  .button-left {
+    position: absolute;
+    margin: 0;
+    z-index: 2;
+    left: 0;
+  }
+  .button-right {
+    position: absolute;
+    margin: 0;
+    z-index: 2;
+    right: 0;
+  }
+  .photo-popup__button-closed {
+    top: -50px;
+    left: 710px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .photo-popup {
+    max-width: 500px;
+  }
+  .photo-popup__image {
+    max-width: 500px;
+    height: 510px;
+  }
+  .photo-popup__button-closed {
+    top: -50px;
+    left: 475px;
+  }
+}
+
+@media screen and (max-width: 528px) {
+  .photo-popup {
+    max-width: 290px;
+  }
+  .photo-popup__image {
+    max-width: 290px;
+    height: 275px;
+  }
+  .photo-popup__button-closed {
+    top: -40px;
+    left: 265px;
+  }
+  .photo-popup__button {
+    width: 20px;
+    height: 50px;
+  }
 }
