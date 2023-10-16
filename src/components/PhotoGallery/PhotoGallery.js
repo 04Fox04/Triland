@@ -15,12 +15,24 @@ function PhotoGallery() {
   const [selectedPhoto, setSelectedPhoto] = useState(null);
   // стейт для отображения прелоадера
   const [loading, setLoading] = useState(true);
-  // стейт для отображения кнопки
+  // // стейты для отображения кнопки
   const [showButton, setShowButton] = useState(false);
+  const [showPhoto, setShowPhoto] = useState(66);
 
-  // обработчик клика | при клике добавляется еще 6 фотографий
+  // обработчик клика
   const handleLoadMore = () => {
-    setDisplayedPhotos(displayedPhotos + 12);
+    if (window.innerWidth <= 1200 && window.innerWidth >= 1000) {
+      setDisplayedPhotos(displayedPhotos + 10); // если ширина экрана меньше 1200 добавляется еще 10 фотографий
+      setShowPhoto(70);
+    } else if (window.innerWidth <= 1000 && window.innerWidth >= 751) {
+      setDisplayedPhotos(displayedPhotos + 8); // если ширина экрана меньше 1000 добавляется еще 8 фотографий
+      setShowPhoto(68);
+    } else if (window.innerWidth <= 750 && window.innerWidth >= 0) {
+      setDisplayedPhotos(displayedPhotos + 6); // если ширина экрана меньше 750 добавляется еще 6 фотографий
+      setShowPhoto(64); // если ширина экрана меньше 750 добавляется еще 6 фотографий
+    } else {
+      setDisplayedPhotos(displayedPhotos + 12); // по дефолту добалвяется 12 фотографий
+    }
   };
 
   // функция открытия попапа
@@ -41,6 +53,27 @@ function PhotoGallery() {
     }, 2000);
   }, []);
 
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth <= 1000 && window.innerWidth >= 751) {
+        setDisplayedPhotos(20); // Устанавливаем 20, когда ширина экрана меньше или равна 1000px и больше или равна 751
+      } else if (window.innerWidth <= 750 && window.innerWidth >= 571) {
+        setDisplayedPhotos(15); // Устанавливаем 15, когда ширина экрана меньше или равна 750px и больше или равна 571
+      } else if (window.innerWidth <= 570 && window.innerWidth >= 320) {
+        setDisplayedPhotos(10); // Устанавливаем 10, когда ширина экрана меньше или равна 570px и больше или равна 320
+      }
+    };
+
+    // Добавление слушателя события изменения размера окна
+    window.addEventListener("resize", handleResize);
+    // Вызываем handleResize при первоначальной загрузке страницы
+    handleResize();
+    // Удаление слушателя события при размонтировании компонента
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
   return (
     <>
       <Header />
@@ -48,7 +81,6 @@ function PhotoGallery() {
         <Navigation />
         <section className="photo-gallery">
           <h2 className="photo-gallery__title section-title">Фотогалерея</h2>
-
           {loading ? (
             // Если loading === true, отображаем прелоадер
             <Preloader />
@@ -66,15 +98,12 @@ function PhotoGallery() {
               ))}
             </ul>
           )}
-          {showButton && (
-            <button
-              className={`${
-                displayedPhotos === 66
-                  ? "photo-gallery__button-disabled"
-                  : "photo-gallery__button"
-              }`}
-              onClick={handleLoadMore}
-            >
+          {displayedPhotos === showPhoto ? (
+            <button className="photo-gallery__button-disabled" disabled>
+              Смотреть больше
+            </button>
+          ) : (
+            <button className="photo-gallery__button" onClick={handleLoadMore}>
               Смотреть больше
             </button>
           )}
