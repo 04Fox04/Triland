@@ -17,30 +17,16 @@ function ContactsPage({ isFormOpen, onOpen, onClose }) {
             <h2 className="section-title contacts-page__title">Контакты</h2>
             <div className="contacts-page__container-info">
               <div className="contacts-page__container-text-info">
-                <div className="contacts-page__container-first-text-info">
+                <div className="contacts-page__text-block contacts-page__text-production-block">
                   <h3 className="contacts-page__title-text-info">
                     Производство:
                   </h3>
                   <p className="contacts-page__text-info">
-                    М.О. г. Щелково ул. Браварская д.100 <br /> (территория
-                    31-го завода ГА)
+                    М.О. г. Щелково ул. Браварская д.100 (территория 31-го
+                    завода ГА)
                   </p>
-                  <h3 className="contacts-page__title-text-info">Офис:</h3>
-                  <p className="contacts-page__text-info">
-                    Москва, Дмитровское шоссе, д. 100, оф. 1, ком. 31, пом. I,
-                    эт. 4
-                  </p>
-                  <h3 className="contacts-page__title-text-info">
-                    Режим работы офиса:
-                  </h3>
-                  <p className="contacts-page__text-info">
-                    С 10:00 до 18:00 без обеда
-                  </p>
-                  <button className="contacts-page__button" onClick={onOpen}>
-                    Заказать звонок
-                  </button>
                 </div>
-                <div className="contacts-page__container-second-text-info">
+                <div className="contacts-page__text-block">
                   <h3 className="contacts-page__title-text-info">Телефон:</h3>
                   <a
                     className="contacts-page__text-info contacts-page__text-info-link contacts-page__text-info-tel"
@@ -48,15 +34,8 @@ function ContactsPage({ isFormOpen, onOpen, onClose }) {
                   >
                     +7 495 763-34-70
                   </a>
-                  <h3 className="contacts-page__title-text-info">Почта:</h3>
-                  <a
-                    className="contacts-page__text-info contacts-page__text-info-link contacts-page__text-info-mail"
-                    href="mailto:zakaz@gk-triland.ru"
-                  >
-                    zakaz@gk-triland.ru
-                  </a>
                 </div>
-                <div className="contacts-page__container-third-text-info">
+                <div className="contacts-page__text-block">
                   <h3 className="contacts-page__title-text-info">
                     Отдел снабжения:
                   </h3>
@@ -66,6 +45,24 @@ function ContactsPage({ isFormOpen, onOpen, onClose }) {
                   >
                     snab@gk-triland.ru
                   </a>
+                </div>
+                <div className="contacts-page__text-block contacts-page__text-office-block">
+                  <h3 className="contacts-page__title-text-info">Офис:</h3>
+                  <p className="contacts-page__text-info">
+                    Москва, Дмитровское шоссе, д. 100, оф. 1, ком. 31, пом. I,
+                    эт. 4
+                  </p>
+                </div>
+                <div className="contacts-page__text-block contacts-page__text-email-block">
+                  <h3 className="contacts-page__title-text-info">Почта:</h3>
+                  <a
+                    className="contacts-page__text-info contacts-page__text-info-link contacts-page__text-info-mail"
+                    href="mailto:zakaz@gk-triland.ru"
+                  >
+                    zakaz@gk-triland.ru
+                  </a>
+                </div>
+                <div className="contacts-page__text-block contacts-page__text-accounting-block">
                   <h3 className="contacts-page__title-text-info">
                     Бухгалтерия:
                   </h3>
@@ -76,6 +73,17 @@ function ContactsPage({ isFormOpen, onOpen, onClose }) {
                     book@gk-triland.ru
                   </a>
                 </div>
+                <div className="contacts-page__text-block">
+                  <h3 className="contacts-page__title-text-info">
+                    Режим работы офиса:
+                  </h3>
+                  <p className="contacts-page__text-info">
+                    С 10:00 до 18:00 без обеда
+                  </p>
+                </div>
+                <button className="contacts-page__button" onClick={onOpen}>
+                  Заказать звонок
+                </button>
               </div>
               <div className="contacts-page__container-map">
                 <YaMap />

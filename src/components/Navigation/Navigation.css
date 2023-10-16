@@ -39,3 +39,21 @@
   background-color: #a7a7a7;
   margin: 8px 20px;
 }
+
+@media screen and (max-width: 1200px) {
+  .navigation {
+    margin-left: 15px;
+  }
+}
+
+@media screen and (max-width: 855px) {
+  .navigation {
+    margin-top: 102px;
+  }
+}
+
+@media screen and (max-width: 499px) {
+  .navigation {
+    margin-top: 92px;
+  }
+}

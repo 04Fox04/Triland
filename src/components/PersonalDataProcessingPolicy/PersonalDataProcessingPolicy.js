@@ -384,7 +384,7 @@ function PersonalDataProcessingPolicy() {
                   </li>
                 </ol>
               </li>
-              <li className="personal-data-processing-policy__list-block table">
+              <li className="personal-data-processing-policy__list-block">
                 <h3 className="personal-data-processing-policy__list-item-title">
                   6. Цели обработки персональных данных
                 </h3>
@@ -671,9 +671,9 @@ function PersonalDataProcessingPolicy() {
                     расположена в сети Интернет по адресу{" "}
                     <a
                       className="personal-data-processing-policy__list-link"
-                      href="https://triland.ru"
+                      href="https://triland.ru/privacy"
                     >
-                      https://triland.ru
+                      https://triland.ru/privacy
                     </a>
                     .
                   </li>
