@@ -96,15 +96,21 @@
 }
 
 @media screen and (max-width: 620px) {
-  .personal-data-processing-policy__list-item-title {
-    font-size: 23px;
-  }
-
   .personal-data-processing-policy__title {
     font-size: 30px;
   }
 
+  .personal-data-processing-policy__list-item-title {
+    font-size: 23px;
+  }
+
   .personal-data-processing-policy__table-text {
     font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 499px) {
+  .personal-data-processing-policy__title {
+    margin-top: 50px;
   }
 }

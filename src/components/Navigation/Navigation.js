@@ -4,6 +4,11 @@ import { Link, useLocation } from "react-router-dom";
 
 function Navigation() {
   const location = useLocation();
+  const isPolicyPage =
+    location.pathname === "/privacy-policy" ||
+    location.pathname === "/personal-data-processing-policy"
+      ? " navigation-column"
+      : "";
   const [navigationText, setnavigationText] = useState("");
 
   useEffect(() => {
@@ -22,11 +27,13 @@ function Navigation() {
   }, []);
 
   return (
-    <section className="navigation">
-      <Link to="/" className="navigation__link">
-        <p className="navigation__link-text">Главная</p>
-      </Link>
-      <div className="navigation__line"></div>
+    <section className={`navigation${isPolicyPage}`}>
+      <div className="navigation__container">
+        <Link to="/" className="navigation__link">
+          <p className="navigation__link-text">Главная</p>
+        </Link>
+        <div className="navigation__line"></div>
+      </div>
       <p className="navigation__link-text navigation__link-text-active">
         {navigationText}
       </p>
