@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import "./Services.css";
 import "../../index.css";
 import Header from "../Header/Header";
@@ -7,19 +7,7 @@ import Metalworking from "../Metalworking/Metalworking";
 import Welding from "../Welding/Welding";
 import Footer from "../Footer/Footer";
 
-function Services() {
-  //используем хук для установки состояния компонента, добавляем Metalworking как состояние по умолчанию
-  const [activeButton, setActiveButton] = useState("Металлообработка");
-
-  //обработчик клика
-  const handleButtonClick = (componentName) => {
-    if (componentName === "Металлообработка") {
-      setActiveButton("Металлообработка");
-    } else if (componentName === "Сварка") {
-      setActiveButton("Сварка");
-    }
-  };
-
+function Services({ onButtonClick, activeButton }) {
   return (
     <>
       <Header />
@@ -34,7 +22,7 @@ function Services() {
                   ? "services__navigation-button-active"
                   : ""
               }`}
-              onClick={() => handleButtonClick("Металлообработка")}
+              onClick={() => onButtonClick("Металлообработка")}
             >
               Металлообработка
             </button>
@@ -44,7 +32,7 @@ function Services() {
                   ? "services__navigation-button-active"
                   : ""
               }`}
-              onClick={() => handleButtonClick("Сварка")}
+              onClick={() => onButtonClick("Сварка")}
             >
               Сварка
             </button>
