@@ -32,3 +32,24 @@
 .privacy-policy__container-item-text-gap {
     margin-top: 19px;
 }
+
+
+@media screen and (max-width: 1200px) {
+  .privacy-policy__title {
+    padding: 0 15px;
+  }
+  .privacy-policy__container {
+    padding: 0 15px;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .privacy-policy__title {
+    font-size: 20px;
+    font-weight: 700; 
+    margin-top: 90px;
+  }
+  .privacy-policy__container-item-title {
+    font-size: 22px;
+  }
+}

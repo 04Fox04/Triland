@@ -6,7 +6,8 @@ import {
   argonWeldingServices,
 } from "../../constants/constants";
 
-function Welding() {
+function Welding({maxWidth}) {
+
   return (
     <>
       <div className="services__container">
@@ -33,22 +34,43 @@ function Welding() {
           src={weldingOfVariousMetalsServices}
           alt="Сварка"
         />
-
-        <img
-          className="services__container-image"
-          src={arcWeldingServices}
-          alt="Ручная дуговая сварка"
-        />
-        <div className="services__container-text" id="arc-welding">
-          <h3 className="services__container-text-title">
-            Ручная дуговая сварка
-          </h3>
-          <p className="services__container-description">
-            Ручная дуговая сварка используется для соединения тонких
-            металлических листов и труб. Она требует наличия сварочного аппарата
-            и электродов.
-          </p>
-        </div>
+        {maxWidth <= 767 ? (
+          <>
+            <div className="services__container-text" id="arc-welding">
+              <h3 className="services__container-text-title">
+                Ручная дуговая сварка
+              </h3>
+              <p className="services__container-description">
+                Ручная дуговая сварка используется для соединения тонких
+                металлических листов и труб. Она требует наличия сварочного
+                аппарата и электродов.
+              </p>
+            </div>
+            <img
+              className="services__container-image"
+              src={arcWeldingServices}
+              alt="Ручная дуговая сварка"
+            />
+          </>
+        ) : (
+          <>
+            <img
+              className="services__container-image"
+              src={arcWeldingServices}
+              alt="Ручная дуговая сварка"
+            />
+            <div className="services__container-text" id="arc-welding">
+              <h3 className="services__container-text-title">
+                Ручная дуговая сварка
+              </h3>
+              <p className="services__container-description">
+                Ручная дуговая сварка используется для соединения тонких
+                металлических листов и труб. Она требует наличия сварочного
+                аппарата и электродов.
+              </p>
+            </div>
+          </>
+        )}
 
         <div className="services__container-text" id="semi-automatic-welding">
           <h3 className="services__container-text-title">
@@ -65,20 +87,45 @@ function Welding() {
           src={semiAutomaticWeldingServices}
           alt="Полуавтоматическая сварка"
         />
-
-        <img
-          className="services__container-image"
-          src={argonWeldingServices}
-          alt="Аргонная сварка"
-        />
-        <div className="services__container-text" id="argon-welding">
-          <h3 className="services__container-text-title">Аргонная сварка</h3>
-          <p className="services__container-description">
-            Аргонная сварка используется для сварки алюминия и других цветных
-            металлов. В этом случае сварочная горелка содержит неплавящийся
-            электрод из вольфрама, который защищен аргоном от окисления.
-          </p>
-        </div>
+        {maxWidth <= 767 ? (
+          <>
+            <div className="services__container-text" id="argon-welding">
+              <h3 className="services__container-text-title">
+                Аргонная сварка
+              </h3>
+              <p className="services__container-description">
+                Аргонная сварка используется для сварки алюминия и других
+                цветных металлов. В этом случае сварочная горелка содержит
+                неплавящийся электрод из вольфрама, который защищен аргоном от
+                окисления.
+              </p>
+            </div>
+            <img
+              className="services__container-image"
+              src={argonWeldingServices}
+              alt="Аргонная сварка"
+            />
+          </>
+        ) : (
+          <>
+            <img
+              className="services__container-image"
+              src={argonWeldingServices}
+              alt="Аргонная сварка"
+            />
+            <div className="services__container-text" id="argon-welding">
+              <h3 className="services__container-text-title">
+                Аргонная сварка
+              </h3>
+              <p className="services__container-description">
+                Аргонная сварка используется для сварки алюминия и других
+                цветных металлов. В этом случае сварочная горелка содержит
+                неплавящийся электрод из вольфрама, который защищен аргоном от
+                окисления.
+              </p>
+            </div>
+          </>
+        )}
       </div>
     </>
   );
