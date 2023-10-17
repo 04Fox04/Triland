@@ -36,17 +36,14 @@ function Metalworking() {
           className="services__container-image"
           src={metalProcessingServices}
           alt="Обработка металлов"
-        ></img>
+        />
 
         <img
           className="services__container-image"
           src={turningWorksServices}
           alt="Чертежи"
-        ></img>
-        <div
-          className="services__container-text"
-          id="turning-works"
-        >
+        />
+        <div className="services__container-text" id="turning-works">
           <h3 className="services__container-text-title">
             Изготовления деталей и изделий по чертежам и эскизам заказчика
           </h3>
@@ -76,13 +73,13 @@ function Metalworking() {
           className="services__container-image"
           src={sketchesServices}
           alt="Готовые изделия"
-        ></img>
+        />
 
         <img
           className="services__container-image"
           src={millingServices}
           alt="Фрезерование деталей"
-        ></img>
+        />
         <div className="services__container-text" id="milling">
           <h3 className="services__container-text-title">
             Фрезерование деталей любой сложности
@@ -98,7 +95,7 @@ function Metalworking() {
 
         <div
           className="services__container-text"
-          id="#electrical-discharge-machining"
+          id="electrical-discharge-machining"
         >
           <h3 className="services__container-text-title">
             Электроэрозионная обработка
@@ -113,13 +110,13 @@ function Metalworking() {
           className="services__container-image"
           src={electricalDischargeMachiningServices}
           alt="Обработка изделий"
-        ></img>
+        />
 
         <img
           className="services__container-image"
           src={laserCuttingServices}
           alt="Резка металла"
-        ></img>
+        />
         <div className="services__container-text" id="laser-cutting">
           <h3 className="services__container-text-title">
             Лазерная резка металлов
@@ -148,7 +145,7 @@ function Metalworking() {
           className="services__container-image"
           src={hardeningServices}
           alt="Раскаленное изделие"
-        ></img>
+        />
       </div>
     </>
   );

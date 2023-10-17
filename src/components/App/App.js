@@ -18,6 +18,17 @@ function App() {
   const [isImageAlt, setIsImageAlt] = useState("");
   //стейт для подставления нужного src в попап
   const [selectedImg, setSelectedImg] = useState(null);
+  //используем хук для установки состояния компонента, добавляем Metalworking как состояние по умолчанию
+  const [activeButton, setActiveButton] = useState("Металлообработка");
+
+  //обработчик клика
+  const handleButtonClick = (componentName) => {
+    if (componentName === "Металлообработка") {
+      setActiveButton("Металлообработка");
+    } else if (componentName === "Сварка") {
+      setActiveButton("Сварка");
+    }
+  };
 
   //функция открытия попапа
   const handleOpenPopupForm = () => {
@@ -63,10 +74,19 @@ function App() {
                 imageAlt={isImageAlt}
                 onOpenPopupLicense={handleOpenPopupLicense}
                 onClosePopupLicense={handleClosePopupLicense}
+                onButtonClick={handleButtonClick}
               />
             }
           />
-          <Route path="/services" element={<Services />} />
+          <Route
+            path="/services"
+            element={
+              <Services
+                onButtonClick={handleButtonClick}
+                activeButton={activeButton}
+              />
+            }
+          />
           <Route path="/photo-gallery" element={<PhotoGallery />} />
           <Route
             path="/contacts"

@@ -1,7 +1,6 @@
 import React from "react";
 import "./OurServices.css";
 import "../../index.css";
-import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 import {
   metalProcessing,
@@ -17,7 +16,7 @@ import {
   argonWelding,
 } from "../../constants/constants";
 
-function OurServices() {
+function OurServices({ onButtonClick }) {
   return (
     <section className="our-services">
       <div className="our-services__container">
@@ -25,11 +24,12 @@ function OurServices() {
           Наши услуги
         </h2>
         <ul className="our-services__container-list">
-          <li className="our-services__container-item">
-            <HashLink
-              to="/services#metal-processing-heading"
-              className="our-services__container-link"
-            >
+          <HashLink
+            to="/services#metal-processing-heading"
+            className="our-services__container-link"
+            onClick={() => onButtonClick("Металлообработка")}
+          >
+            <li className="our-services__container-item">
               <img
                 className="our-services__container-icon"
                 src={metalProcessing}
@@ -38,13 +38,14 @@ function OurServices() {
               <p className="our-services__container-text">
                 Механическая обработка черных и цветных металлов
               </p>
-            </HashLink>
-          </li>
-          <li className="our-services__container-item">
-            <HashLink
-              to="/services#turning-works"
-              className="our-services__container-link"
-            >
+            </li>
+          </HashLink>
+          <HashLink
+            to="/services#turning-works"
+            className="our-services__container-link"
+            onClick={() => onButtonClick("Металлообработка")}
+          >
+            <li className="our-services__container-item">
               <img
                 className="our-services__container-icon"
                 src={turningWorks}
@@ -53,26 +54,28 @@ function OurServices() {
               <p className="our-services__container-text">
                 Изготовления деталей по чертежам и эскизам заказчика
               </p>
-            </HashLink>
-          </li>
-          <li className="our-services__container-item">
-            <HashLink
-              to="/services#sketches"
-              className="our-services__container-link"
-            >
+            </li>
+          </HashLink>
+          <HashLink
+            to="/services#sketches"
+            className="our-services__container-link"
+            onClick={() => onButtonClick("Металлообработка")}
+          >
+            <li className="our-services__container-item">
               <img
                 className="our-services__container-icon"
                 src={sketches}
                 alt="Токарные работы"
               />
               <p className="our-services__container-text">Токарные работы</p>
-            </HashLink>
-          </li>
-          <li className="our-services__container-item">
-            <HashLink
-              to="/services#milling"
-              className="our-services__container-link"
-            >
+            </li>
+          </HashLink>
+          <HashLink
+            to="/services#milling"
+            className="our-services__container-link"
+            onClick={() => onButtonClick("Металлообработка")}
+          >
+            <li className="our-services__container-item">
               <img
                 className="our-services__container-icon"
                 src={milling}
@@ -81,13 +84,14 @@ function OurServices() {
               <p className="our-services__container-text">
                 Фрезерование деталей любой сложности
               </p>
-            </HashLink>
-          </li>
-          <li className="our-services__container-item">
-            <HashLink
-              to="/services#electrical-discharge-machining"
-              className="our-services__container-link"
-            >
+            </li>
+          </HashLink>
+          <HashLink
+            to="/services#electrical-discharge-machining"
+            className="our-services__container-link"
+            onClick={() => onButtonClick("Металлообработка")}
+          >
+            <li className="our-services__container-item">
               <img
                 className="our-services__container-icon"
                 src={electricalDischargeMachining}
@@ -96,13 +100,14 @@ function OurServices() {
               <p className="our-services__container-text">
                 Электроэрозионная обработка
               </p>
-            </HashLink>
-          </li>
-          <li className="our-services__container-item">
-            <HashLink
-              to="/services#laser-cutting"
-              className="our-services__container-link"
-            >
+            </li>
+          </HashLink>
+          <HashLink
+            to="/services#laser-cutting"
+            className="our-services__container-link"
+            onClick={() => onButtonClick("Металлообработка")}
+          >
+            <li className="our-services__container-item">
               <img
                 className="our-services__container-icon"
                 src={laserCutting}
@@ -111,13 +116,14 @@ function OurServices() {
               <p className="our-services__container-text">
                 Лазерная резка металлов
               </p>
-            </HashLink>
-          </li>
-          <li className="our-services__container-item">
-            <HashLink
-              to="/services#hardening"
-              className="our-services__container-link"
-            >
+            </li>
+          </HashLink>
+          <HashLink
+            to="/services#hardening"
+            className="our-services__container-link"
+            onClick={() => onButtonClick("Металлообработка")}
+          >
+            <li className="our-services__container-item">
               <img
                 className="our-services__container-icon"
                 src={hardening}
@@ -126,10 +132,14 @@ function OurServices() {
               <p className="our-services__container-text">
                 Закалка изделий из металла
               </p>
-            </HashLink>
-          </li>
-          <li className="our-services__container-item">
-            <Link to="" className="our-services__container-link">
+            </li>
+          </HashLink>
+          <HashLink
+            to="/services#welding-of-various-metals"
+            className="our-services__container-link"
+            onClick={() => onButtonClick("Сварка")}
+          >
+            <li className="our-services__container-item">
               <img
                 className="our-services__container-icon"
                 src={weldingOfVariousMetals}
@@ -138,13 +148,14 @@ function OurServices() {
               <p className="our-services__container-text">
                 Сварка различных металлов и их сплавов
               </p>
-            </Link>
-          </li>
-          <li className="our-services__container-item">
-            <HashLink
-              to="/services#arc-welding"
-              className="our-services__container-link"
-            >
+            </li>
+          </HashLink>
+          <HashLink
+            to="/services#arc-welding"
+            className="our-services__container-link"
+            onClick={() => onButtonClick("Сварка")}
+          >
+            <li className="our-services__container-item">
               <img
                 className="our-services__container-icon"
                 src={arcWelding}
@@ -153,10 +164,14 @@ function OurServices() {
               <p className="our-services__container-text">
                 Ручная дуговая сварка
               </p>
-            </HashLink>
-          </li>
-          <li className="our-services__container-item">
-            <Link to="" className="our-services__container-link">
+            </li>
+          </HashLink>
+          <HashLink
+            to="/services#semi-automatic-welding"
+            className="our-services__container-link"
+            onClick={() => onButtonClick("Сварка")}
+          >
+            <li className="our-services__container-item">
               <img
                 className="our-services__container-icon"
                 src={semiAutomaticWelding}
@@ -165,18 +180,22 @@ function OurServices() {
               <p className="our-services__container-text">
                 Полуавтоматическая сварка
               </p>
-            </Link>
-          </li>
-          <li className="our-services__container-item">
-            <Link to="" className="our-services__container-link">
+            </li>
+          </HashLink>
+          <HashLink
+            to="/services#argon-welding"
+            className="our-services__container-link"
+            onClick={() => onButtonClick("Сварка")}
+          >
+            <li className="our-services__container-item">
               <img
                 className="our-services__container-icon"
                 src={argonWelding}
                 alt="Аргонная сварка"
               />
               <p className="our-services__container-text">Аргонная сварка</p>
-            </Link>
-          </li>
+            </li>
+          </HashLink>
         </ul>
       </div>
     </section>

@@ -17,6 +17,7 @@ function Main({
   imageAlt,
   onOpenPopupLicense,
   onClosePopupLicense,
+  onButtonClick,
 }) {
   return (
     <>
@@ -28,7 +29,7 @@ function Main({
           onOpen={onOpen}
           onClose={onClose}
         />
-        <OurServices />
+        <OurServices onButtonClick={onButtonClick} />
         <Licenses
           isPopupImageOpen={isPopupImageOpen}
           imageSrc={imageSrc}

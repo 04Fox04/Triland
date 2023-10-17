@@ -10,7 +10,10 @@ function Welding() {
   return (
     <>
       <div className="services__container">
-        <div className="services__container-text">
+        <div
+          className="services__container-text"
+          id="welding-of-various-metals"
+        >
           <h3 className="services__container-text-title">
             Сварка различных металлов и их сплавов. Изготовление патрубков из
             ВЧШГ. Изготовление сварных изделий из нержавеющих сталей
@@ -29,15 +32,15 @@ function Welding() {
           className="services__container-image"
           src={weldingOfVariousMetalsServices}
           alt="Сварка"
-        ></img>
+        />
 
         <img
           className="services__container-image"
           src={arcWeldingServices}
           alt="Ручная дуговая сварка"
-        ></img>
-        <div className="services__container-text">
-          <h3 className="services__container-text-title" id="arc-welding">
+        />
+        <div className="services__container-text" id="arc-welding">
+          <h3 className="services__container-text-title">
             Ручная дуговая сварка
           </h3>
           <p className="services__container-description">
@@ -47,7 +50,7 @@ function Welding() {
           </p>
         </div>
 
-        <div className="services__container-text">
+        <div className="services__container-text" id="semi-automatic-welding">
           <h3 className="services__container-text-title">
             Полуавтоматическая сварка
           </h3>
@@ -61,14 +64,14 @@ function Welding() {
           className="services__container-image"
           src={semiAutomaticWeldingServices}
           alt="Полуавтоматическая сварка"
-        ></img>
+        />
 
         <img
           className="services__container-image"
           src={argonWeldingServices}
           alt="Аргонная сварка"
-        ></img>
-        <div className="services__container-text">
+        />
+        <div className="services__container-text" id="argon-welding">
           <h3 className="services__container-text-title">Аргонная сварка</h3>
           <p className="services__container-description">
             Аргонная сварка используется для сварки алюминия и других цветных
