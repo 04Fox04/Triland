@@ -128,7 +128,7 @@
   object-fit: cover;
 }
 
-@media (min-width: 3000px) {
+@media screen and (min-width: 3000px) {
   .about-company__container {
     left: 50%;
     transform: translateX(-50%);
@@ -137,7 +137,7 @@
   }
 }
 
-@media (max-width: 1600px) {
+@media screen and (max-width: 1600px) {
   .about-company__container {
     max-width: 1385px;
     width: 100%;
@@ -150,18 +150,18 @@
   }
 }
 
-@media (max-width: 1385px) {
+@media screen and (max-width: 1385px) {
   .about-company__container {
     padding-left: 50px;
   }
 }
 
-@media (max-width: 1279px) {
+@media screen and (max-width: 1279px) {
   .about-company__info {
     min-height: 526px;
     max-width: 738px;
     width: 100%;
-    padding: 60px 0 110px 0;
+    padding: 30px 0 110px 0;
     margin-right: 31px;
   }
 
@@ -180,7 +180,7 @@
   }
 }
 
-@media (max-width: 1222px) {
+@media screen and (max-width: 1222px) {
   .about-company {
     min-height: 1050px;
     position: relative;
@@ -226,7 +226,7 @@
   }
 }
 
-@media (max-width: 920px) {
+@media screen and (max-width: 920px) {
   .about-company {
     min-height: 1147px;
     position: relative;
@@ -263,13 +263,13 @@
   }
 }
 
-@media (max-width: 720px) {
+@media screen and (max-width: 720px) {
   .about-company__text {
     max-width: 560px;
   }
 }
 
-@media (max-width: 580px) {
+@media screen and (max-width: 580px) {
   .about-company {
     min-height: 1020px;
   }
@@ -313,7 +313,7 @@
   }
 }
 
-@media (max-width: 500px) {
+@media screen and (max-width: 500px) {
   .about-company {
     min-height: 1183px;
   }
