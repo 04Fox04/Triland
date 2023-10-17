@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./Services.css";
 import "../../index.css";
 import Header from "../Header/Header";
@@ -8,6 +8,21 @@ import Welding from "../Welding/Welding";
 import Footer from "../Footer/Footer";
 
 function Services({ onButtonClick, activeButton }) {
+  // стейт для отслеживания ширины экрана
+  const [maxWidth, setMaxWidth] = useState(window.innerWidth);
+  // функция, которая будет вызываться при изменении ширины экрана
+  const maxWidthWindow = () => {
+    setMaxWidth(window.innerWidth);
+  };
+  // эффект, который добавляет слушателя изменения размера окна при монтировании компонента
+  useEffect(() => {
+    window.addEventListener("resize", maxWidthWindow);
+    // функция для очистки слушателя при размонтировании компонента
+    return () => {
+      window.removeEventListener("resize", maxWidthWindow);
+    };
+  }, []);
+
   return (
     <>
       <Header />
@@ -37,7 +52,11 @@ function Services({ onButtonClick, activeButton }) {
               Сварка
             </button>
           </div>
-          {activeButton === "Металлообработка" ? <Metalworking /> : <Welding />}
+          {activeButton === "Металлообработка" ? (
+            <Metalworking maxWidth={maxWidth} />
+          ) : (
+            <Welding maxWidth={maxWidth} />
+          )}
         </section>
       </main>
       <Footer />

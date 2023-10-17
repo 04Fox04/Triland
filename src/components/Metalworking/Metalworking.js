@@ -9,7 +9,7 @@ import {
   hardeningServices,
 } from "../../constants/constants";
 
-function Metalworking() {
+function Metalworking({ maxWidth }) {
   return (
     <>
       <div className="services__container">
@@ -37,61 +37,128 @@ function Metalworking() {
           src={metalProcessingServices}
           alt="Обработка металлов"
         />
+        {maxWidth <= 767 ? (
+          <>
+            <div className="services__container-text" id="turning-works">
+              <h3 className="services__container-text-title">
+                Изготовления деталей и изделий по чертежам и эскизам заказчика
+              </h3>
+              <p className="services__container-description">
+                Мы понимаем важность точности и аккуратности, когда речь идет о
+                производстве нестандартных деталей, и наша команда
+                квалифицированных специалистов стремится поставлять
+                высококачественную продукцию, которая точно соответствует
+                спецификациям наших клиентов. Будь то сложная конструкция или
+                простой компонент, мы гордимся своей способностью выполнять
+                требования клиентов вовремя и в рамках бюджета. Наше стремление
+                к совершенству делают нас лучшим выбором для всех ваших
+                потребностей в производстве деталей на заказ.
+              </p>
+            </div>
+            <img
+              className="services__container-image"
+              src={turningWorksServices}
+              alt="Чертежи"
+            />
 
-        <img
-          className="services__container-image"
-          src={turningWorksServices}
-          alt="Чертежи"
-        />
-        <div className="services__container-text" id="turning-works">
-          <h3 className="services__container-text-title">
-            Изготовления деталей и изделий по чертежам и эскизам заказчика
-          </h3>
-          <p className="services__container-description">
-            Мы понимаем важность точности и аккуратности, когда речь идет о
-            производстве нестандартных деталей, и наша команда квалифицированных
-            специалистов стремится поставлять высококачественную продукцию,
-            которая точно соответствует спецификациям наших клиентов. Будь то
-            сложная конструкция или простой компонент, мы гордимся своей
-            способностью выполнять требования клиентов вовремя и в рамках
-            бюджета. Наше стремление к совершенству делают нас лучшим выбором
-            для всех ваших потребностей в производстве деталей на заказ.
-          </p>
-        </div>
+            <div className="services__container-text" id="sketches">
+              <h3 className="services__container-text-title">
+                Токарные работы
+              </h3>
+              <p className="services__container-description">
+                Токарные работы выполняются на токарном станке, который имеет
+                вращающийся режущий инструмент (токарный резец) и неподвижную
+                заготовку (деталь). Во время работы заготовка вращается вокруг
+                своей оси, а резец перемещается вдоль ее поверхности, удаляя
+                материал и формируя нужную форму и размеры детали.
+              </p>
+            </div>
+          </>
+        ) : (
+          <>
+            <img
+              className="services__container-image"
+              src={turningWorksServices}
+              alt="Чертежи"
+            />
+            <div className="services__container-text" id="turning-works">
+              <h3 className="services__container-text-title">
+                Изготовления деталей и изделий по чертежам и эскизам заказчика
+              </h3>
+              <p className="services__container-description">
+                Мы понимаем важность точности и аккуратности, когда речь идет о
+                производстве нестандартных деталей, и наша команда
+                квалифицированных специалистов стремится поставлять
+                высококачественную продукцию, которая точно соответствует
+                спецификациям наших клиентов. Будь то сложная конструкция или
+                простой компонент, мы гордимся своей способностью выполнять
+                требования клиентов вовремя и в рамках бюджета. Наше стремление
+                к совершенству делают нас лучшим выбором для всех ваших
+                потребностей в производстве деталей на заказ.
+              </p>
+            </div>
 
-        <div className="services__container-text" id="sketches">
-          <h3 className="services__container-text-title">Токарные работы</h3>
-          <p className="services__container-description">
-            Токарные работы выполняются на токарном станке, который имеет
-            вращающийся режущий инструмент (токарный резец) и неподвижную
-            заготовку (деталь). Во время работы заготовка вращается вокруг своей
-            оси, а резец перемещается вдоль ее поверхности, удаляя материал и
-            формируя нужную форму и размеры детали.
-          </p>
-        </div>
+            <div className="services__container-text" id="sketches">
+              <h3 className="services__container-text-title">
+                Токарные работы
+              </h3>
+              <p className="services__container-description">
+                Токарные работы выполняются на токарном станке, который имеет
+                вращающийся режущий инструмент (токарный резец) и неподвижную
+                заготовку (деталь). Во время работы заготовка вращается вокруг
+                своей оси, а резец перемещается вдоль ее поверхности, удаляя
+                материал и формируя нужную форму и размеры детали.
+              </p>
+            </div>
+          </>
+        )}
+
         <img
           className="services__container-image"
           src={sketchesServices}
           alt="Готовые изделия"
         />
-
-        <img
-          className="services__container-image"
-          src={millingServices}
-          alt="Фрезерование деталей"
-        />
-        <div className="services__container-text" id="milling">
-          <h3 className="services__container-text-title">
-            Фрезерование деталей любой сложности
-          </h3>
-          <p className="services__container-description">
-            Фрезерные работы выполняются на фрезерном станке, который также
-            имеет вращающийся инструмент (фрезу) и неподвижную заготовку. Во
-            время работы фреза вращается вокруг своей оси, а инструмент
-            перемещается вдоль заготовки, создавая требуемую форму и размер
-            детали.
-          </p>
-        </div>
+        {maxWidth <= 767 ? (
+          <>
+            <div className="services__container-text" id="milling">
+              <h3 className="services__container-text-title">
+                Фрезерование деталей любой сложности
+              </h3>
+              <p className="services__container-description">
+                Фрезерные работы выполняются на фрезерном станке, который также
+                имеет вращающийся инструмент (фрезу) и неподвижную заготовку. Во
+                время работы фреза вращается вокруг своей оси, а инструмент
+                перемещается вдоль заготовки, создавая требуемую форму и размер
+                детали.
+              </p>
+            </div>
+            <img
+              className="services__container-image"
+              src={millingServices}
+              alt="Фрезерование деталей"
+            />
+          </>
+        ) : (
+          <>
+            <img
+              className="services__container-image"
+              src={millingServices}
+              alt="Фрезерование деталей"
+            />
+            <div className="services__container-text" id="milling">
+              <h3 className="services__container-text-title">
+                Фрезерование деталей любой сложности
+              </h3>
+              <p className="services__container-description">
+                Фрезерные работы выполняются на фрезерном станке, который также
+                имеет вращающийся инструмент (фрезу) и неподвижную заготовку. Во
+                время работы фреза вращается вокруг своей оси, а инструмент
+                перемещается вдоль заготовки, создавая требуемую форму и размер
+                детали.
+              </p>
+            </div>
+          </>
+        )}
 
         <div
           className="services__container-text"
@@ -111,24 +178,49 @@ function Metalworking() {
           src={electricalDischargeMachiningServices}
           alt="Обработка изделий"
         />
-
-        <img
-          className="services__container-image"
-          src={laserCuttingServices}
-          alt="Резка металла"
-        />
-        <div className="services__container-text" id="laser-cutting">
-          <h3 className="services__container-text-title">
-            Лазерная резка металлов
-          </h3>
-          <p className="services__container-description">
-            Лазерная резка металла - это один из самых современных и эффективных
-            методов обработки металла. Он основан на использовании лазерного
-            луча, который направляется на поверхность металла и прожигает ее.
-            При этом материал расплавляется и выдувается из зоны реза, оставляя
-            после себя чистый и ровный край.
-          </p>
-        </div>
+        {maxWidth <= 767 ? (
+          <>
+            <div className="services__container-text" id="laser-cutting">
+              <h3 className="services__container-text-title">
+                Лазерная резка металлов
+              </h3>
+              <p className="services__container-description">
+                Лазерная резка металла - это один из самых современных и
+                эффективных методов обработки металла. Он основан на
+                использовании лазерного луча, который направляется на
+                поверхность металла и прожигает ее. При этом материал
+                расплавляется и выдувается из зоны реза, оставляя после себя
+                чистый и ровный край.
+              </p>
+            </div>
+            <img
+              className="services__container-image"
+              src={laserCuttingServices}
+              alt="Резка металла"
+            />
+          </>
+        ) : (
+          <>
+            <img
+              className="services__container-image"
+              src={laserCuttingServices}
+              alt="Резка металла"
+            />
+            <div className="services__container-text" id="laser-cutting">
+              <h3 className="services__container-text-title">
+                Лазерная резка металлов
+              </h3>
+              <p className="services__container-description">
+                Лазерная резка металла - это один из самых современных и
+                эффективных методов обработки металла. Он основан на
+                использовании лазерного луча, который направляется на
+                поверхность металла и прожигает ее. При этом материал
+                расплавляется и выдувается из зоны реза, оставляя после себя
+                чистый и ровный край.
+              </p>
+            </div>
+          </>
+        )}
 
         <div className="services__container-text" id="hardening">
           <h3 className="services__container-text-title">
