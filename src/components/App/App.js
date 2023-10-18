@@ -8,6 +8,7 @@ import ContactsPage from "../ContactsPage/ContactsPage";
 import PrivacyPolicy from "../PrivacyPolicy/PrivacyPolicy";
 import PersonalDataProcessingPolicy from "../PersonalDataProcessingPolicy/PersonalDataProcessingPolicy";
 import NotFoundError from "../NotFoundError/NotFoundError";
+import InfoTooltip from "../InfoTooltip/InfoTooltip";
 
 function App() {
   //стейт для открытия попапа с формой
@@ -20,6 +21,9 @@ function App() {
   const [selectedImg, setSelectedImg] = useState(null);
   //используем хук для установки состояния компонента, добавляем Metalworking как состояние по умолчанию
   const [activeButton, setActiveButton] = useState("Металлообработка");
+
+  // изменяемое вручную состояние попапа результата отправки формы (всё ок или что-то пошло не так)
+  const [success, setSuccess] = useState(true);
 
   //обработчик клика
   const handleButtonClick = (componentName) => {
@@ -105,6 +109,15 @@ function App() {
           />
           <Route path="/*" element={<NotFoundError />} />
         </Routes>
+
+        <InfoTooltip
+          success={success}
+          tooltipText={
+            success
+              ? "Заявка успешно отправлена!\nМы свяжемся с вами в ближайшее время."
+              : "Что-то пошло не так! Попробуйте еще раз."
+          }
+        />
       </div>
     </div>
   );
