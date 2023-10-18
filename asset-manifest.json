@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Triland/static/css/main.4f4cf23f.css",
-    "main.js": "/Triland/static/js/main.bba61335.js",
+    "main.js": "/Triland/static/js/main.57161d7d.js",
     "static/js/787.e1047087.chunk.js": "/Triland/static/js/787.e1047087.chunk.js",
     "static/media/20220729_145426.jpg": "/Triland/static/media/20220729_145426.ea95231b762d85c8c471.jpg",
     "static/media/20220729_145416.jpg": "/Triland/static/media/20220729_145416.ac06e1b0abca079953d3.jpg",
@@ -123,11 +123,11 @@
     "static/media/close-white.svg": "/Triland/static/media/close-white.249cd22e039ed968617d.svg",
     "static/media/left-button-hover.svg": "/Triland/static/media/left-button-hover.09d10659a2323d4f491e.svg",
     "main.4f4cf23f.css.map": "/Triland/static/css/main.4f4cf23f.css.map",
-    "main.bba61335.js.map": "/Triland/static/js/main.bba61335.js.map",
+    "main.57161d7d.js.map": "/Triland/static/js/main.57161d7d.js.map",
     "787.e1047087.chunk.js.map": "/Triland/static/js/787.e1047087.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.4f4cf23f.css",
-    "static/js/main.bba61335.js"
+    "static/js/main.57161d7d.js"
   ]
 }
