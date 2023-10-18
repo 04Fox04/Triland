@@ -240,11 +240,6 @@
     left: 12px;
   }
 
-  .form__error:last-of-type {
-    top: 293px;
-    left: 12px;
-  }
-
   .form__input {
     top: 183px;
     max-width: 260px;
@@ -256,5 +251,6 @@
 
   .form__error:last-of-type {
     top: 343px;
+    left: 12px;
   }
 }
