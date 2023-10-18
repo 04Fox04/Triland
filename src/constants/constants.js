@@ -106,10 +106,14 @@ import photoGalleryImage60 from "../images/photo-gallery/в2.jpg";
 import photoGalleryImage61 from "../images/photo-gallery/в3.jpg";
 import photoGalleryImage62 from "../images/photo-gallery/в4.jpg";
 import photoGalleryImage63 from "../images/photo-gallery/в5.jpg";
+import correctResultImage from "../images/correct-result.svg";
+import errorResultImage from "../images/error-result.svg";
 // разрешение только пробелов и букв
 export const nameRegex = /^[a-zA-Zа-яёЁА-Я\s]+$/;
 // телефон начинается с "+" и содержит цифры, пробелы, тире и скобки, или состоит только из цифр и пробелов. Номер телефона не может заканчиваться ()
 export const telRegex = /^(?!.*[-+()]$)(?:\+\d{1,3}\s?)?[\d\s()-]+$/; 
+
+
 
 export {
   metalProcessing,
@@ -157,6 +161,8 @@ export {
   arcWeldingServices,
   semiAutomaticWeldingServices,
   argonWeldingServices,
+  correctResultImage,
+  errorResultImage,
 };
 
 export const photoItems = [
