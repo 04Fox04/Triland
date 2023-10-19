@@ -1,12 +1,12 @@
-import React from "react";
+import React, {useEffect, useRef,} from "react";
 import "./InfoTooltip.css";
 import {
   correctResultImage,
   errorResultImage,
 } from "../../constants/constants";
 
-function InfoTooltip({ success, tooltipText }) {
-/*   const formRef = useRef(null);
+function InfoTooltip({ success, tooltipText, onClose }) {
+  const formReff = useRef(null);
 
   useEffect(() => {
     //обработчик для клавиши "Esc"
@@ -25,15 +25,15 @@ function InfoTooltip({ success, tooltipText }) {
   }, [onClose]);
   //обработчик клика на overlay
   const handleOverlayClick = (e) => {
-    if (e.target === formRef.current) {
+    if (e.target === formReff.current) {
       onClose(); //закрыть попап только если клик был на overlay
     }
-  }; */
+  };
 
   return (
-    <div className="tooltip-popup" /* onClick={handleOverlayClick} */ /* ref={formRef} */>
+    <div className="tooltip-popup" onClick={handleOverlayClick} ref={formReff}>
       <div className="tooltip-popup__container">
-      <button type="button" className="tooltip-popup__close" /* onClick={onClose} */ />
+      <button type="button" className="tooltip-popup__close" onClick={onClose} />
         <img
           className="tooltip-popup__image"
           src={success ? correctResultImage : errorResultImage}
