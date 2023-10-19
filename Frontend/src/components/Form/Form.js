@@ -2,6 +2,7 @@ import React, { useEffect, useRef, useState } from "react";
 import { useLocation } from "react-router-dom";
 import "./Form.css";
 import { nameRegex, telRegex } from "../../constants/constants";
+import InfoTooltip from "../InfoTooltip/InfoTooltip";
 
 function Form({ onClose }) {
   const formRef = useRef(null);
@@ -14,6 +15,8 @@ function Form({ onClose }) {
   const [isTelValid, setIsTelValid] = useState(false);
   // стейт для валидации кнопки submit
   const [disabledButton, setDisabledButton] = useState(true);
+  //стейт для отображениия InfoTooltip
+  const [isInfoTooltip, setIsInfoTooltip] = useState(false);
 
   useEffect(() => {
     //обработчик для клавиши "Esc"
@@ -89,7 +92,8 @@ function Form({ onClose }) {
       });
 
       if (response.ok) {
-        //здесь должно сообщение об удачной отправке
+        onClose() // закрываем попап с формой
+        setIsInfoTooltip(true); //здесь должно сообщение об удачной отправке
         form.reset();
       } else if (response.status === 422) {
         const errors = await response.json();
@@ -99,6 +103,7 @@ function Form({ onClose }) {
         throw new Error(response.statusText);
       }
     } catch (error) {
+      onClose() // закрываем попап с формой
       console.error(error.message);
       //здесь должно сообщение о неудачной отправке
     } finally {
@@ -107,74 +112,86 @@ function Form({ onClose }) {
   }
 
   return (
-    <div className="overlay" onClick={handleOverlayClick} ref={formRef}>
-      <form className="form" onSubmit={submitForm}>
-        <button className="form__closed" onClick={onClose}></button>
-        <div className="form__titles">
-          <h2 className="form__title">Заказать обратный звонок</h2>
-          <p className="form__subtitle">Закажите звонок и мы перезвоним Вам!</p>
-        </div>
-        <input
-          className="form__input"
-          type="text"
-          name="name"
-          placeholder="Имя"
-          value={name}
-          required
-          maxLength={30}
-          onChange={(e) => setName(e.target.value)}
-        ></input>
-        <span className="form__error">
-          {!isNameValid && name.trim() !== ""
-            ? name.length <= 1
-              ? "Имя должно быть не короче 2 символов"
-              : "Введите корректное Имя"
-            : ""}
-        </span>
-        <input
-          className="form__input"
-          type="tel"
-          name="phone"
-          placeholder="Телефон"
-          value={tel}
-          required
-          maxLength={30}
-          onChange={(e) => setTel(e.target.value)}
-        ></input>
-        <span className="form__error">
-          {!isTelValid && tel.trim() !== ""
-            ? telRegex.test(tel)
-              ? "Телефон должен быть не короче 11 символов"
-              : "Введите корректный номер телефона"
-            : ""}
-        </span>
-        <button
-          className={`${
-            disabledButton ? "form__button-disabled" : "form__button-submit"
-          }`}
-          type="submit"
-          disabled={disabledButton}
-        >
-          Заказать звонок
-        </button>
-        <p className="form__info">
-          Нажимая на эту кнопку вы соглашаетесь на
-          <br />
-          <a
-            href="/personal-data-processing-policy"
-            className="form__link"
-            target="_blank"
-            onClick={() => {
-              if (location.pathname === "/contacts") {
-                onClose();
-              }
-            }}
-          >
-            обработку персональных данных
-          </a>
-        </p>
-      </form>
-    </div>
+    <>
+      {isInfoTooltip ? (
+        <InfoTooltip />
+      ) : (
+        <>
+          <div className="overlay" onClick={handleOverlayClick} ref={formRef}>
+            <form className="form" onSubmit={submitForm}>
+              <button className="form__closed" onClick={onClose}></button>
+              <div className="form__titles">
+                <h2 className="form__title">Заказать обратный звонок</h2>
+                <p className="form__subtitle">
+                  Закажите звонок и мы перезвоним Вам!
+                </p>
+              </div>
+              <input
+                className="form__input"
+                type="text"
+                name="name"
+                placeholder="Имя"
+                value={name}
+                required
+                maxLength={30}
+                onChange={(e) => setName(e.target.value)}
+              ></input>
+              <span className="form__error">
+                {!isNameValid && name.trim() !== ""
+                  ? name.length <= 1
+                    ? "Имя должно быть не короче 2 символов"
+                    : "Введите корректное Имя"
+                  : ""}
+              </span>
+              <input
+                className="form__input"
+                type="tel"
+                name="phone"
+                placeholder="Телефон"
+                value={tel}
+                required
+                maxLength={30}
+                onChange={(e) => setTel(e.target.value)}
+              ></input>
+              <span className="form__error">
+                {!isTelValid && tel.trim() !== ""
+                  ? telRegex.test(tel)
+                    ? "Телефон должен быть не короче 11 символов"
+                    : "Введите корректный номер телефона"
+                  : ""}
+              </span>
+              <button
+                className={`${
+                  disabledButton
+                    ? "form__button-disabled"
+                    : "form__button-submit"
+                }`}
+                type="submit"
+                disabled={disabledButton}
+              >
+                Заказать звонок
+              </button>
+              <p className="form__info">
+                Нажимая на эту кнопку вы соглашаетесь на
+                <br />
+                <a
+                  href="/personal-data-processing-policy"
+                  className="form__link"
+                  target="_blank"
+                  onClick={() => {
+                    if (location.pathname === "/contacts") {
+                      onClose();
+                    }
+                  }}
+                >
+                  обработку персональных данных
+                </a>
+              </p>
+            </form>
+          </div>
+        </>
+      )}
+    </>
   );
 }
 
