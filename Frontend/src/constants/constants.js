@@ -101,11 +101,11 @@ import photoGalleryImage55 from "../images/photo-gallery/20230615_155653.jpg";
 import photoGalleryImage56 from "../images/photo-gallery/20230615_160856.jpg";
 import photoGalleryImage57 from "../images/photo-gallery/20230615_160919.jpg";
 import photoGalleryImage58 from "../images/photo-gallery/20230615_160926.jpg";
-import photoGalleryImage59 from "../images/photo-gallery/в1.jpg";
-import photoGalleryImage60 from "../images/photo-gallery/в2.jpg";
-import photoGalleryImage61 from "../images/photo-gallery/в3.jpg";
-import photoGalleryImage62 from "../images/photo-gallery/в4.jpg";
-import photoGalleryImage63 from "../images/photo-gallery/в5.jpg";
+import photoGalleryImage59 from "../images/photo-gallery/т1.jpg";
+import photoGalleryImage60 from "../images/photo-gallery/т2.jpg";
+import photoGalleryImage61 from "../images/photo-gallery/т3.jpg";
+import photoGalleryImage62 from "../images/photo-gallery/т4.jpg";
+import photoGalleryImage63 from "../images/photo-gallery/т5.jpg";
 import correctResultImage from "../images/correct-result.svg";
 import errorResultImage from "../images/error-result.svg";
 // разрешение только пробелов и букв

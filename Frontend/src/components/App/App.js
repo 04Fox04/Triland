@@ -22,10 +22,10 @@ function App() {
   //используем хук для установки состояния компонента, добавляем Metalworking как состояние по умолчанию
   const [activeButton, setActiveButton] = useState("Металлообработка");
   // состояние отображение теста в попапе в результате отправки формы
-  const [isTooltipText, setisTooltipText] = useState(false);
+/*   const [isTooltipText, setisTooltipText] = useState(false); */
 
   // изменяемое вручную состояние попапа результата отправки формы (всё ок или что-то пошло не так)
-  const [success, setSuccess] = useState(true);
+/*   const [success, setSuccess] = useState(true); */
 
   //обработчик клика
   const handleButtonClick = (componentName) => {
@@ -64,7 +64,7 @@ function App() {
     document.body.style.overflow = "auto";
   };
 
-  useEffect(() => {
+/*   useEffect(() => {
     const checkTime = () => {
       const currentDay = new Date().getUTCDay(); // Получаем текущий день недели (0 - воскресенье, 1 - понедельник, и т.д.)
       const currentHour = new Date()
@@ -92,7 +92,7 @@ function App() {
     return () => {
       clearInterval(interval); // Вызывается при размонтировании компонента и очищает интервал
     };
-  }, []);
+  }, []); */
 
   return (
     <div className="body">
@@ -142,7 +142,7 @@ function App() {
           <Route path="/*" element={<NotFoundError />} />
         </Routes>
 
-        <InfoTooltip
+{/*         <InfoTooltip
           success={success}
           tooltipText={
             success
@@ -151,7 +151,7 @@ function App() {
                 : "Заявка успешно отправлена!\nМы свяжемся с вами в ближайшее время."
               : "Что-то пошло не так! Попробуйте еще раз."
           }
-        />
+        /> */}
       </div>
     </div>
   );
