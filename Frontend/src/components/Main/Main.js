@@ -21,13 +21,11 @@ function Main({
 }) {
   return (
     <>
-      <Header isFormOpen={isFormOpen} onOpen={onOpen} onClose={onClose} />
+      <Header />
       <main className="main">
         <Promo isFormOpen={isFormOpen} onOpen={onOpen} onClose={onClose} />
         <AboutCompany
-          isFormOpen={isFormOpen}
           onOpen={onOpen}
-          onClose={onClose}
         />
         <OurServices onButtonClick={onButtonClick} />
         <Licenses
@@ -38,7 +36,7 @@ function Main({
           onClosePopupLicense={onClosePopupLicense}
         />
         <OurClients />
-        <Contacts isFormOpen={isFormOpen} onOpen={onOpen} onClose={onClose} />
+        <Contacts onOpen={onOpen} />
       </main>
       <Footer />
     </>
