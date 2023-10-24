@@ -22,7 +22,7 @@ function Promo({ isFormOpen, onOpen, onClose }) {
         </div>
         <img src={man} className="promo__image" alt="Фото сотрудника" />
       </div>
-      {isFormOpen && <Form onClose={onClose} />}
+      {isFormOpen && <Form onClose={onClose}/>}
     </section>
   );
 }

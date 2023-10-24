@@ -5,7 +5,9 @@ import { nameRegex, telRegex } from "../../constants/constants";
 import InfoTooltip from "../InfoTooltip/InfoTooltip";
 
 function Form({ onClose }) {
+  const overlayRef = useRef(null);
   const formRef = useRef(null);
+
   const location = useLocation();
   // стейты для валидации имени
   const [name, setName] = useState("");
@@ -20,7 +22,7 @@ function Form({ onClose }) {
   // изменяемое вручную состояние попапа результата отправки формы (всё ок или что-то пошло не так)
   const [success, setSuccess] = useState(true);
   // состояние отображение теста в попапе в результате отправки формы
-  const [isTooltipText, setisTooltipText] = useState(true);
+  const [isTooltipText, setisTooltipText] = useState(false);
 
   useEffect(() => {
     //обработчик для клавиши "Esc"
@@ -69,7 +71,7 @@ function Form({ onClose }) {
   async function submitForm(event) {
     event.preventDefault();
     const form = event.target;
-    const formBtn = document.querySelector(".form");
+    const formBtn = formRef;
 
     // Получение данных из формы
     const formData = new FormData(form);
@@ -87,7 +89,7 @@ function Form({ onClose }) {
     try {
       formBtn.disabled = true;
 
-      const response = await fetch("http://localhost:3000/send-email", {
+      const response = await fetch("http://localhost:5000/send-email", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -96,10 +98,11 @@ function Form({ onClose }) {
       });
 
       if (response.ok) {
-        setIsInfoTooltip(true); //здесь должно сообщение об удачной отправке
+        //здесь должно сообщение об удачной отправке
         setSuccess(true);
-        onClose() // закрываем попап с формой
+        setIsInfoTooltip(true);
         form.reset();
+        //onClose() // закрываем попап с формой
       } else if (response.status === 422) {
         const errors = await response.json();
         console.log(errors);
@@ -108,7 +111,7 @@ function Form({ onClose }) {
         throw new Error(response.statusText);
       }
     } catch (error) {
-      onClose() // закрываем попап с формой
+      //onClose() // закрываем попап с формой
       console.error(error.message);
       setIsInfoTooltip(true);
       setSuccess(false); //здесь должно сообщение о неудачной отправке
@@ -126,6 +129,7 @@ function Form({ onClose }) {
           hour: "numeric",
           hourCycle: "h23",
         }) // Получаем текущий час по Москве
+        
         .replace(/^0/, ""); // Убираем лишние нули в начале показателя времени
       if (
         (currentDay >= 1 &&
@@ -146,10 +150,17 @@ function Form({ onClose }) {
       clearInterval(interval); // Вызывается при размонтировании компонента и очищает интервал
     };
   }, []);
-console.log(isInfoTooltip)
+
+
+  useEffect(() => {
+    if (success === false) {
+      setIsInfoTooltip(true);
+    }
+  }, [success]);
+
   return (
     <>
-      {isInfoTooltip ? (
+      {isInfoTooltip || !success ? (
         <InfoTooltip
         success={success}
         tooltipText={
@@ -163,8 +174,8 @@ console.log(isInfoTooltip)
       />
       ) : (
         <>
-          <div className="overlay" onClick={handleOverlayClick} ref={formRef}>
-            <form className="form" onSubmit={submitForm}>
+          <div className="overlay" onClick={handleOverlayClick} ref={overlayRef}>
+            <form className="form" onSubmit={submitForm} ref={formRef}>
               <button className="form__closed" onClick={onClose}></button>
               <div className="form__titles">
                 <h2 className="form__title">Заказать обратный звонок</h2>
@@ -238,6 +249,7 @@ console.log(isInfoTooltip)
         </>
       )}
     </>
+
   );
 }
 

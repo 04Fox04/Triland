@@ -67,7 +67,7 @@ function Contacts({ isFormOpen, onOpen, onClose }) {
           </div>
         </div>
       </div>
-      {isFormOpen && <Form onClose={onClose} />}
+      {/* {isFormOpen && <Form onClose={onClose} />} */}
     </section>
   );
 }

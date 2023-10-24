@@ -21,7 +21,7 @@ function Main({
 }) {
   return (
     <>
-      <Header isFormOpen={isFormOpen} onOpen={onOpen} onClose={onClose} />
+      <Header />
       <main className="main">
         <Promo isFormOpen={isFormOpen} onOpen={onOpen} onClose={onClose} />
         <AboutCompany
