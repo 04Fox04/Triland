@@ -1,9 +1,8 @@
 import React from "react";
 import "./Contacts.css";
-import Form from "../Form/Form";
 import YaMap from "../Map/Map";
 
-function Contacts({ isFormOpen, onOpen, onClose }) {
+function Contacts({ onOpen}) {
   return (
     <section className="contacts" id="contacts">
       <div className="contacts__container">
@@ -67,7 +66,6 @@ function Contacts({ isFormOpen, onOpen, onClose }) {
           </div>
         </div>
       </div>
-      {isFormOpen && <Form onClose={onClose} />}
     </section>
   );
 }

@@ -6,7 +6,7 @@ import {
 } from "../../constants/constants";
 
 function InfoTooltip({ success, tooltipText, onClose }) {
-  const formReff = useRef(null);
+  const tooltipRef = useRef(null);
 
   useEffect(() => {
     //обработчик для клавиши "Esc"
@@ -25,13 +25,13 @@ function InfoTooltip({ success, tooltipText, onClose }) {
   }, [onClose]);
   //обработчик клика на overlay
   const handleOverlayClick = (e) => {
-    if (e.target === formReff.current) {
+    if (e.target === tooltipRef.current) {
       onClose(); //закрыть попап только если клик был на overlay
     }
   };
 
   return (
-    <div className="tooltip-popup" onClick={handleOverlayClick} ref={formReff}>
+    <div className="tooltip-popup" onClick={handleOverlayClick} ref={tooltipRef}>
       <div className="tooltip-popup__container">
       <button type="button" className="tooltip-popup__close" onClick={onClose} />
         <img

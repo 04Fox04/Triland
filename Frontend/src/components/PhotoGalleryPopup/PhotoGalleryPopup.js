@@ -87,7 +87,7 @@ function PhotoGalleryPopup({ photo, onClose, photoItems }) {
   }, [onClose]);
 
   return (
-    <div className="overlay" onClick={handleOverlayClick} ref={imageRef}>
+    <div className="photo-popup-overlay" onClick={handleOverlayClick} ref={imageRef}>
       <section className="photo-popup">
         <button
           className="photo-popup__button-closed"

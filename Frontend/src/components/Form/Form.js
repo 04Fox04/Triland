@@ -5,7 +5,8 @@ import { nameRegex, telRegex } from "../../constants/constants";
 import InfoTooltip from "../InfoTooltip/InfoTooltip";
 
 function Form({ onClose }) {
-  const formRef = useRef(null);
+  const overlayRef = useRef(null);
+  // const formRef = useRef(null);
   const location = useLocation();
   // стейты для валидации имени
   const [name, setName] = useState("");
@@ -17,10 +18,12 @@ function Form({ onClose }) {
   const [disabledButton, setDisabledButton] = useState(true);
   //стейт для отображениия InfoTooltip
   const [isInfoTooltip, setIsInfoTooltip] = useState(false);
-  // изменяемое вручную состояние попапа результата отправки формы (всё ок или что-то пошло не так)
+  // состояние попапа результата отправки формы (всё ок или что-то пошло не так)
   const [success, setSuccess] = useState(true);
   // состояние отображение теста в попапе в результате отправки формы
   const [isTooltipText, setisTooltipText] = useState(true);
+
+  // const [isFormSubmitted, setIsFormSubmitted] = useState(true);
 
   useEffect(() => {
     //обработчик для клавиши "Esc"
@@ -39,7 +42,7 @@ function Form({ onClose }) {
   }, [onClose]);
   //обработчик клика на overlay
   const handleOverlayClick = (e) => {
-    if (e.target === formRef.current) {
+    if (e.target === overlayRef.current) {
       onClose(); //закрыть попап только если клик был на overlay
     }
   };
@@ -69,7 +72,7 @@ function Form({ onClose }) {
   async function submitForm(event) {
     event.preventDefault();
     const form = event.target;
-    const formBtn = document.querySelector(".form");
+    // const formBtn = formRef;
 
     // Получение данных из формы
     const formData = new FormData(form);
@@ -80,12 +83,13 @@ function Form({ onClose }) {
     });
 
     // Отправка формы на бэк
-    sendFormData(form, formBtn, formDataObject);
+    sendFormData(form, /* formBtn, */ formDataObject);
   }
 
-  async function sendFormData(form, formBtn, formDataObject) {
+  async function sendFormData(form, /* formBtn, */ formDataObject) {
     try {
-      formBtn.disabled = true;
+      setDisabledButton(true);
+      //formBtn.disabled = true;
 
       const response = await fetch("http://localhost:3000/send-email", {
         method: "POST",
@@ -96,9 +100,9 @@ function Form({ onClose }) {
       });
 
       if (response.ok) {
-        setIsInfoTooltip(true); //здесь должно сообщение об удачной отправке
-        setSuccess(true);
-        onClose() // закрываем попап с формой
+      // setIsFormSubmitted(false);
+        setIsInfoTooltip(true);
+        setSuccess(true);  //здесь должно сообщение об удачной отправке
         form.reset();
       } else if (response.status === 422) {
         const errors = await response.json();
@@ -108,12 +112,13 @@ function Form({ onClose }) {
         throw new Error(response.statusText);
       }
     } catch (error) {
-      onClose() // закрываем попап с формой
+      // setIsFormSubmitted(false);
       console.error(error.message);
       setIsInfoTooltip(true);
       setSuccess(false); //здесь должно сообщение о неудачной отправке
     } finally {
-      formBtn.disabled = false;
+      // formBtn.disabled = false;
+      setDisabledButton(false)
     }
   }
 
@@ -130,7 +135,7 @@ function Form({ onClose }) {
       if (
         (currentDay >= 1 &&
           currentDay <= 5 &&
-          (currentHour >= 17 || currentHour <= 10)) || // Проверяем будние дни с 17:00 до 10 утра
+          (currentHour >= 18 || currentHour <= 10)) || // Проверяем будние дни с 17:00 до 10 утра
         currentDay === 6 || // Проверяем субботу (весь день)
         currentDay === 0 // Проверяем воскресенье (весь день)
       ) {
@@ -146,32 +151,32 @@ function Form({ onClose }) {
       clearInterval(interval); // Вызывается при размонтировании компонента и очищает интервал
     };
   }, []);
-console.log(isInfoTooltip)
-  return (
+
+return (
     <>
-      {isInfoTooltip ? (
-        <InfoTooltip
+{isInfoTooltip ? (
+      <InfoTooltip
         success={success}
         tooltipText={
           success
             ? isTooltipText
               ? "Заявка успешно отправлена!\nМы свяжемся с вами в ближайшее время."
-              : "Упс, сейчас мы не работаем.\nМы обязательно позвоним\nВам в рабочие часы!"
+              : "Упс, сейчас мы не работаем.\nМы обязательно позвоним Вам в рабочие часы!"
             : "Что-то пошло не так! Попробуйте еще раз."
         }
         onClose={onClose}
       />
-      ) : (
-        <>
-          <div className="overlay" onClick={handleOverlayClick} ref={formRef}>
-            <form className="form" onSubmit={submitForm}>
-              <button className="form__closed" onClick={onClose}></button>
-              <div className="form__titles">
-                <h2 className="form__title">Заказать обратный звонок</h2>
-                <p className="form__subtitle">
-                  Закажите звонок и мы перезвоним Вам!
-                </p>
-              </div>
+    ) : (
+      <>
+        <div className="overlay" onClick={handleOverlayClick} ref={overlayRef}>
+          <form className="form" onSubmit={submitForm}>
+            <button className="form__closed" onClick={onClose}/>
+            <div className="form__titles">
+              <h2 className="form__title">Заказать обратный звонок</h2>
+              <p className="form__subtitle">
+                Закажите звонок и мы перезвоним Вам!
+              </p>
+            </div>
               <input
                 className="form__input"
                 type="text"
@@ -181,7 +186,7 @@ console.log(isInfoTooltip)
                 required
                 maxLength={30}
                 onChange={(e) => setName(e.target.value)}
-              ></input>
+              />
               <span className="form__error">
                 {!isNameValid && name.trim() !== ""
                   ? name.length <= 1
@@ -198,7 +203,7 @@ console.log(isInfoTooltip)
                 required
                 maxLength={30}
                 onChange={(e) => setTel(e.target.value)}
-              ></input>
+              />
               <span className="form__error">
                 {!isTelValid && tel.trim() !== ""
                   ? telRegex.test(tel)
@@ -233,12 +238,13 @@ console.log(isInfoTooltip)
                   обработку персональных данных
                 </a>
               </p>
-            </form>
+              </form>
           </div>
-        </>
+      </>
       )}
-    </>
-  );
+  </>
+);
 }
+
 
 export default Form;
