@@ -1,6 +1,7 @@
 {
   "name": "triland",
   "version": "0.1.0",
+  "description": "Сайт предоставляет информацию об услугах металлообработки и сварки компании Triland.",
   "private": true,
   "dependencies": {
     "@pbe/react-yandex-maps": "^1.2.5",
