@@ -90,7 +90,7 @@ function App() {
       if (
         (currentDay >= 1 &&
           currentDay <= 5 &&
-          (currentHour >= 18 || currentHour <= 10)) || // Проверяем будние дни с 18:00 до 10 утра
+          (currentHour >= 18 || currentHour <= 9)) || // Проверяем будние дни с 18:00 до 9 утра
         currentDay === 6 || // Проверяем субботу (весь день)
         currentDay === 0 // Проверяем воскресенье (весь день)
       ) {
