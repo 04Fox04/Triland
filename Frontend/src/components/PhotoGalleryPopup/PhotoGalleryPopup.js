@@ -71,10 +71,9 @@ function PhotoGalleryPopup({ photo, onClose, photoItems }) {
         // Код клавиши "влево"
         handlePreviousPhoto();
         // Код клавиши "вправо"
-      } else if (e.keyCode === 39){
+      } else if (e.keyCode === 39) {
         handleNextPhoto();
-      }
-      else if (e.keyCode === 27) {
+      } else if (e.keyCode === 27) {
         // Код клавиши "Esc"
         onClose();
       }
@@ -87,7 +86,11 @@ function PhotoGalleryPopup({ photo, onClose, photoItems }) {
   }, [onClose]);
 
   return (
-    <div className="photo-popup-overlay" onClick={handleOverlayClick} ref={imageRef}>
+    <div
+      className="photo-popup-overlay"
+      onClick={handleOverlayClick}
+      ref={imageRef}
+    >
       <div className="photo-popup">
         <button
           className="photo-popup__button-closed"

@@ -18,16 +18,19 @@ function Main({
   onOpenPopupLicense,
   onClosePopupLicense,
   onButtonClick,
-  isTooltipText
+  isTooltipText,
 }) {
   return (
     <>
       <Header />
       <main className="main">
-        <Promo isFormOpen={isFormOpen} onOpen={onOpen} onClose={onClose} isTooltipText={isTooltipText}/>
-        <AboutCompany
+        <Promo
+          isFormOpen={isFormOpen}
           onOpen={onOpen}
+          onClose={onClose}
+          isTooltipText={isTooltipText}
         />
+        <AboutCompany onOpen={onOpen} />
         <OurServices onButtonClick={onButtonClick} />
         <Licenses
           isPopupImageOpen={isPopupImageOpen}

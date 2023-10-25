@@ -6,8 +6,7 @@ import {
   argonWeldingServices,
 } from "../../constants/constants";
 
-function Welding({maxWidth}) {
-
+function Welding({ maxWidth }) {
   return (
     <>
       <div className="services__container">

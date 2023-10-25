@@ -107,7 +107,6 @@ function App() {
     };
   }, []);
 
-
   return (
     <div className="body">
       <div className="page">
