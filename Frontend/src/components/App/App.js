@@ -21,10 +21,7 @@ function App() {
   //используем хук для установки состояния компонента, добавляем Metalworking как состояние по умолчанию
   const [activeButton, setActiveButton] = useState("Металлообработка");
   // состояние отображение теста в попапе в результате отправки формы
-/*   const [isTooltipText, setisTooltipText] = useState(false); */
-
-  // изменяемое вручную состояние попапа результата отправки формы (всё ок или что-то пошло не так)
-/*   const [success, setSuccess] = useState(true); */
+  const [isTooltipText, setisTooltipText] = useState(true);
 
   //обработчик клика
   const handleButtonClick = (componentName) => {
@@ -63,37 +60,6 @@ function App() {
     document.body.style.overflow = "auto";
   };
 
-/*   useEffect(() => {
-    const checkTime = () => {
-      const currentDay = new Date().getUTCDay(); // Получаем текущий день недели (0 - воскресенье, 1 - понедельник, и т.д.)
-      const currentHour = new Date()
-        .toLocaleString("ru-RU", {
-          timeZone: "Europe/Moscow",
-          hour: "numeric",
-          hourCycle: "h23",
-        }) // Получаем текущий час по Москве
-        .replace(/^0/, ""); // Убираем лишние нули в начале показателя времени
-      if (
-        (currentDay >= 1 &&
-          currentDay <= 5 &&
-          (currentHour >= 17 || currentHour <= 10)) || // Проверяем будние дни с 17:00 до 10 утра
-        currentDay === 6 || // Проверяем субботу (весь день)
-        currentDay === 0 // Проверяем воскресенье (весь день)
-      ) {
-        setisTooltipText(true);
-      } else {
-        setisTooltipText(false);
-      }
-    };
-    checkTime(); // Вызывается функция для первоначальной установки значения `isDisplayText`
-    const interval = setInterval(checkTime, 60000); // Проверка времени каждую минуту
-
-    return () => {
-      clearInterval(interval); // Вызывается при размонтировании компонента и очищает интервал
-    };
-  }, []); */
-
-
   useEffect(() => {
     //обработчик для клавиши "Esc"
     const handleEsc = (e) => {
@@ -107,6 +73,37 @@ function App() {
     //убираем слушатель события при размонтировании компонента
     return () => {
       document.removeEventListener("keydown", handleEsc);
+    };
+  }, []);
+
+  // обработчик изменения текста в зависимости от времени
+  useEffect(() => {
+    const checkTime = () => {
+      const currentDay = new Date().getUTCDay(); // Получаем текущий день недели (0 - воскресенье, 1 - понедельник, и т.д.)
+      const currentHour = new Date()
+        .toLocaleString("ru-RU", {
+          timeZone: "Europe/Moscow",
+          hour: "numeric",
+          hourCycle: "h23",
+        }) // Получаем текущий час по Москве
+        .replace(/^0/, ""); // Убираем лишние нули в начале показателя времени
+      if (
+        (currentDay >= 1 &&
+          currentDay <= 5 &&
+          (currentHour >= 18 || currentHour <= 10)) || // Проверяем будние дни с 17:00 до 10 утра
+        currentDay === 6 || // Проверяем субботу (весь день)
+        currentDay === 0 // Проверяем воскресенье (весь день)
+      ) {
+        setisTooltipText(false);
+      } else {
+        setisTooltipText(true);
+      }
+    };
+    checkTime(); // Вызывается функция для первоначальной установки значения `isDisplayText`
+    const interval = setInterval(checkTime, 60000); // Проверка времени каждую минуту
+
+    return () => {
+      clearInterval(interval); // Вызывается при размонтировании компонента и очищает интервал
     };
   }, []);
 
@@ -128,6 +125,7 @@ function App() {
                 onOpenPopupLicense={handleOpenPopupLicense}
                 onClosePopupLicense={handleClosePopupLicense}
                 onButtonClick={handleButtonClick}
+                isTooltipText={isTooltipText}
               />
             }
           />

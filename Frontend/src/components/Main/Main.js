@@ -17,13 +17,14 @@ function Main({
   imageAlt,
   onOpenPopupLicense,
   onClosePopupLicense,
-  onButtonClick
+  onButtonClick,
+  isTooltipText
 }) {
   return (
     <>
       <Header />
       <main className="main">
-        <Promo isFormOpen={isFormOpen} onOpen={onOpen} onClose={onClose} />
+        <Promo isFormOpen={isFormOpen} onOpen={onOpen} onClose={onClose} isTooltipText={isTooltipText}/>
         <AboutCompany
           onOpen={onOpen}
         />
