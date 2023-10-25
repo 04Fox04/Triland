@@ -23,13 +23,13 @@ function PhotoGallery() {
   const handleLoadMore = () => {
     if (window.innerWidth <= 1200 && window.innerWidth >= 1000) {
       setDisplayedPhotos(displayedPhotos + 10); // если ширина экрана меньше 1200 добавляется еще 10 фотографий
-      setShowPhoto(70); // кнопка дизейблится на 70 фотографиях 
+      setShowPhoto(70); // кнопка дизейблится на 70 фотографиях
     } else if (window.innerWidth <= 1000 && window.innerWidth >= 751) {
       setDisplayedPhotos(displayedPhotos + 8); // если ширина экрана меньше 1000 добавляется еще 8 фотографий
-      setShowPhoto(68); // кнопка дизейблится на 68 фотографиях 
+      setShowPhoto(68); // кнопка дизейблится на 68 фотографиях
     } else if (window.innerWidth <= 750 && window.innerWidth >= 0) {
       setDisplayedPhotos(displayedPhotos + 6); // если ширина экрана меньше 750 добавляется еще 6 фотографий
-      setShowPhoto(64); // кнопка дизейблится на 64 фотографиях 
+      setShowPhoto(64); // кнопка дизейблится на 64 фотографиях
     } else {
       setDisplayedPhotos(displayedPhotos + 12); // по дефолту добалвяется 12 фотографий
     }
@@ -98,15 +98,19 @@ function PhotoGallery() {
               ))}
             </ul>
           )}
-          {displayedPhotos === showPhoto ? (
-            <button className="photo-gallery__button-disabled" disabled>
-              Смотреть больше
-            </button>
-          ) : (
-            <button className="photo-gallery__button" onClick={handleLoadMore}>
-              Смотреть больше
-            </button>
-          )}
+          {!loading &&
+            (displayedPhotos === showPhoto ? (
+              <button className="photo-gallery__button-disabled" disabled>
+                Смотреть больше
+              </button>
+            ) : (
+              <button
+                className="photo-gallery__button"
+                onClick={handleLoadMore}
+              >
+                Смотреть больше
+              </button>
+            ))}
         </section>
       </main>
       {selectedPhoto && (
