@@ -160,6 +160,7 @@
 
 @media screen and (max-width: 550px) {
   .contacts {
+    padding-top: 80px;
     padding-bottom: 40px;
   }
 
