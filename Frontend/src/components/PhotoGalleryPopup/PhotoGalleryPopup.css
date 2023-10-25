@@ -14,7 +14,7 @@
   max-width: 1170px;
   width: 100%;
   margin: 0 auto;
-  margin-top: 101px;
+  margin-top: 80px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -111,9 +111,14 @@
 }
 
 @media screen and (max-width: 1200px) {
+  .photo-popup-overlay {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
   .photo-popup {
     max-width: 738px;
-    margin-top: 50px;
   }
   .photo-popup__image {
     max-width: 738px;

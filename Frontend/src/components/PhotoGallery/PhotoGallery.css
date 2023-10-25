@@ -35,11 +35,13 @@
   height: 170px;
   cursor: pointer;
   /* object-fit: cover; */
+  border-radius: 10px;
 }
 
 .photo-gallery__list-item-image:hover {
   transform: scale(1.05);
   transition: 0.5s;
+  box-shadow: 4px 4px 15px 0px rgba(0, 0, 0, 0.25);
 }
 
 .photo-gallery__button {
@@ -89,7 +91,6 @@
     margin: 147px auto 50px auto;
     width: 970px;
   }
-
 }
 
 @media screen and (max-width: 1000px) {
@@ -147,4 +148,3 @@
     height: 130px;
   }
 }
-

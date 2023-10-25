@@ -28,6 +28,7 @@ function Form({ onClose, isTooltipText }) {
     }
   };
 
+  // Функция для закрытия сообщения при неудачной отправке формы
   function handleTooltipClose() {
     setIsInfoTooltip(false);
   }

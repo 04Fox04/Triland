@@ -200,7 +200,7 @@
   .form__input {
     top: 135px;
   }
-  
+
   .form__input:last-of-type {
     top: 215px;
   }
@@ -244,7 +244,7 @@
     top: 183px;
     max-width: 260px;
   }
-  
+
   .form__input:last-of-type {
     top: 265px;
   }
