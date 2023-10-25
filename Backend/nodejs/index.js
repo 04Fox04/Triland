@@ -34,10 +34,10 @@ function trimReplace(value) {
 
 // Валидация данных при обработке POST-запроса от клиента
 const validateData = [
-  body('name').customSanitizer(trimReplace).notEmpty().withMessage('Нет ФИО.')
-    .isLength({ min: 2, max: 50 }).withMessage('ФИО должно быть 2-50 символов.'),
+  body('name').customSanitizer(trimReplace).notEmpty().withMessage('Нет имени.')
+    .isLength({ min: 2, max: 50 }).withMessage('Имя должно быть 2-50 символов.'),
   body('phone').customSanitizer(trimReplace).notEmpty().withMessage('Нет телефона.')
-    .matches(/^(?!.*[-+()]$)(?:\+\d{1,3}\s?)?[\d\s()-]+$/).withMessage('Не корректный телефон.'),
+    .matches(/^(?!.*[-+()]$)(?:\+\d{1,3}\s?)?[\d\s()-]+$/).withMessage('Некорректный телефон.'),
 ];
 
 

@@ -1,4 +1,4 @@
-import React, {useEffect, useRef,} from "react";
+import React, { useEffect, useRef } from "react";
 import "./InfoTooltip.css";
 import {
   correctResultImage,
@@ -31,9 +31,17 @@ function InfoTooltip({ success, tooltipText, onClose }) {
   };
 
   return (
-    <div className="tooltip-popup" onClick={handleOverlayClick} ref={tooltipRef}>
+    <div
+      className="tooltip-popup"
+      onClick={handleOverlayClick}
+      ref={tooltipRef}
+    >
       <div className="tooltip-popup__container">
-      <button type="button" className="tooltip-popup__close" onClick={onClose} />
+        <button
+          type="button"
+          className="tooltip-popup__close"
+          onClick={onClose}
+        />
         <img
           className="tooltip-popup__image"
           src={success ? correctResultImage : errorResultImage}

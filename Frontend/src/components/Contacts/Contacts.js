@@ -2,7 +2,7 @@ import React from "react";
 import "./Contacts.css";
 import YaMap from "../Map/Map";
 
-function Contacts({ onOpen}) {
+function Contacts({ onOpen }) {
   return (
     <section className="contacts" id="contacts">
       <div className="contacts__container">

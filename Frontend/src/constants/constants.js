@@ -109,11 +109,10 @@ import photoGalleryImage63 from "../images/photo-gallery/т5.jpg";
 import correctResultImage from "../images/correct-result.svg";
 import errorResultImage from "../images/error-result.svg";
 // разрешение пробелов, букв и тире. Имя не может нач/зак тире или пробелом
-export const nameRegex = /^(?=.*[а-яА-ЯёЁa-zA-Z].*[а-яА-ЯёЁa-zA-Z])[а-яА-ЯёЁa-zA-Z][а-яА-ЯёЁa-zA-Z -]*[а-яА-ЯёЁa-zA-Z]$/;
+export const nameRegex =
+  /^(?=.*[а-яА-ЯёЁa-zA-Z].*[а-яА-ЯёЁa-zA-Z])[а-яА-ЯёЁa-zA-Z][а-яА-ЯёЁa-zA-Z -]*[а-яА-ЯёЁa-zA-Z]$/;
 // телефон начинается с "+" и содержит цифры, пробелы, тире и скобки, или состоит только из цифр и пробелов. Номер телефона не может заканчиваться ()
-export const telRegex = /^(?!.*[-+()]$)(?:\+\d{1,3}\s?)?[\d\s()-]+$/; 
-
-
+export const telRegex = /^(?!.*[-+()]$)(?:\+\d{1,3}\s?)?[\d\s()-]+$/;
 
 export {
   metalProcessing,

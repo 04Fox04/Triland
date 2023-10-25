@@ -22,7 +22,7 @@ function Promo({ isFormOpen, onOpen, onClose, isTooltipText }) {
         </div>
         <img src={man} className="promo__image" alt="Фото сотрудника" />
       </div>
-      {isFormOpen && <Form onClose={onClose} isTooltipText={isTooltipText}/>}
+      {isFormOpen && <Form onClose={onClose} isTooltipText={isTooltipText} />}
     </section>
   );
 }
