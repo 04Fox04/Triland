@@ -4,7 +4,7 @@ import "../../vendor/fonts/fonts.css";
 import { man } from "../../constants/constants";
 import Form from "../Form/Form";
 
-function Promo({ isFormOpen, onOpen, onClose }) {
+function Promo({ isFormOpen, onOpen, onClose, isTooltipText }) {
   return (
     <section className="promo">
       <div className="promo__container">
@@ -22,7 +22,7 @@ function Promo({ isFormOpen, onOpen, onClose }) {
         </div>
         <img src={man} className="promo__image" alt="Фото сотрудника" />
       </div>
-      {isFormOpen && <Form onClose={onClose}/>}
+      {isFormOpen && <Form onClose={onClose} isTooltipText={isTooltipText}/>}
     </section>
   );
 }

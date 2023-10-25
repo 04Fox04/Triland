@@ -1,5 +1,4 @@
 .tooltip-popup {
-/*   visibility: hidden; */
   position: fixed;
   top: 0;
   left: 0;
@@ -17,7 +16,7 @@
 .tooltip-popup__container {
   position: relative;
   margin: 0 auto;
-  padding: 30px 63px;
+  padding: 30px 60px;
   max-width: 502px;
   width: 100%;
   height: 489px;
