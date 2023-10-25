@@ -88,7 +88,7 @@ function PhotoGalleryPopup({ photo, onClose, photoItems }) {
 
   return (
     <div className="photo-popup-overlay" onClick={handleOverlayClick} ref={imageRef}>
-      <section className="photo-popup">
+      <div className="photo-popup">
         <button
           className="photo-popup__button-closed"
           onClick={onClose}
@@ -110,7 +110,7 @@ function PhotoGalleryPopup({ photo, onClose, photoItems }) {
           }`}
           onClick={handleNextPhoto}
         ></button>
-      </section>
+      </div>
     </div>
   );
 }

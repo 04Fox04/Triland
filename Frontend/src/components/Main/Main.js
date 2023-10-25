@@ -17,7 +17,7 @@ function Main({
   imageAlt,
   onOpenPopupLicense,
   onClosePopupLicense,
-  onButtonClick,
+  onButtonClick
 }) {
   return (
     <>

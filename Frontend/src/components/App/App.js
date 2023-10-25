@@ -8,7 +8,6 @@ import ContactsPage from "../ContactsPage/ContactsPage";
 import PrivacyPolicy from "../PrivacyPolicy/PrivacyPolicy";
 import PersonalDataProcessingPolicy from "../PersonalDataProcessingPolicy/PersonalDataProcessingPolicy";
 import NotFoundError from "../NotFoundError/NotFoundError";
-import InfoTooltip from "../InfoTooltip/InfoTooltip";
 
 function App() {
   //стейт для открытия попапа с формой
@@ -94,6 +93,24 @@ function App() {
     };
   }, []); */
 
+
+  useEffect(() => {
+    //обработчик для клавиши "Esc"
+    const handleEsc = (e) => {
+      //проверка на нажатие клавиши Esc (код клавиши 27)
+      if (e.keyCode === 27) {
+        handleClosePopupForm(); // вызывается функция закрытия попапа
+      }
+    };
+    //слушатель события при монтировании компонента
+    document.addEventListener("keydown", handleEsc);
+    //убираем слушатель события при размонтировании компонента
+    return () => {
+      document.removeEventListener("keydown", handleEsc);
+    };
+  }, []);
+
+
   return (
     <div className="body">
       <div className="page">
@@ -141,17 +158,6 @@ function App() {
           />
           <Route path="/*" element={<NotFoundError />} />
         </Routes>
-
-{/*         <InfoTooltip
-          success={success}
-          tooltipText={
-            success
-              ? isTooltipText
-                ? "Упс, сейчас мы не работаем.\nМы обязательно позвоним\nВам в рабочие часы!"
-                : "Заявка успешно отправлена!\nМы свяжемся с вами в ближайшее время."
-              : "Что-то пошло не так! Попробуйте еще раз."
-          }
-        /> */}
       </div>
     </div>
   );
