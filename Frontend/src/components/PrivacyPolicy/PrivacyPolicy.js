@@ -16,16 +16,16 @@ function PrivacyPolicy() {
         </h2>
         <div className="privacy-policy__container">
           <p className="privacy-policy__container-date privacy-policy__container-item-text">
-            Последнее обновление: [Дата обновления]
+            Последнее обновление: 26.10.2023г.
           </p>
           <div className="privacy-policy__container-item">
             <h3 className="privacy-policy__container-item-title">Введение</h3>
             <p className="privacy-policy__container-item-text privacy-policy__container-item-text-gap">
-              Данная политика конфиденциальности объясняет, как [Имя вашей
-              компании] (далее "Мы", "Наша компания" или "Наш сайт") собирает,
-              использует и защищает информацию, предоставляемую пользователями
-              (далее "Вы" или "Пользователи") при использовании нашего веб-сайта
-              [адрес вашего сайта] (далее "Сайт"). Мы придерживаемся строгих
+              Данная политика конфиденциальности объясняет, как ООО "Триланд"
+              (далее "Мы", "Наша компания" или "Наш сайт") собирает, использует
+              и защищает информацию, предоставляемую пользователями (далее "Вы"
+              или "Пользователи") при использовании нашего веб-сайта
+              https://триланд.рф (далее "Сайт"). Мы придерживаемся строгих
               принципов конфиденциальности и обязуемся защищать личные данные
               наших пользователей.
             </p>
@@ -162,10 +162,10 @@ function PrivacyPolicy() {
               следующим контактным данным:
             </p>
             <p className="privacy-policy__container-item-text privacy-policy__container-item-text-gap">
-              [Ваши контактные данные]
+              Info@gk-triland.ru
             </p>
             <p className="privacy-policy__container-item-text privacy-policy__container-item-text-gap">
-              [Дата создания политики конфиденциальности]
+              26.10.2023г.
             </p>
           </div>
         </div>
