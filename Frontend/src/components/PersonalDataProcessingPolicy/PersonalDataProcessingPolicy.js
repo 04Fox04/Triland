@@ -671,9 +671,9 @@ function PersonalDataProcessingPolicy() {
                     расположена в сети Интернет по адресу{" "}
                     <a
                       className="personal-data-processing-policy__list-link"
-                      href="https://xn--80aikmlon.xn--p1ai/privacy"
+                      href="https://xn--80aikmlon.xn--p1ai/personal-data-processing-policy"
                     >
-                      https://триланд.рф/privacy
+                      https://триланд.рф/personal-data-processing-policy
                     </a>
                     .
                   </li>

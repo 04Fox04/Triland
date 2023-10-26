@@ -1,6 +1,6 @@
 export async function sendEmail(formDataObject) {
   try {
-    const response = await fetch("https://триланд-гк.рф/send-email", {
+    const response = await fetch("https://xn----7sbkcsqcrxt.xn--p1ai/send-email", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
