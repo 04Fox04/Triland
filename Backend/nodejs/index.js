@@ -8,9 +8,13 @@ import { body, validationResult } from 'express-validator'
 const app = express();
 const PORT = process.env.PORT || 3000;
 
-app.use(express.json()); 
-app.use(cors());
+app.use(cors({
+  origin: ['http://триланд.рф', 'https://триланд.рф', 'http://xn--80aikmlon.xn--p1ai', 'https://xn--80aikmlon.xn--p1ai'],
+  methods: ['POST'],
+  optionsSuccessStatus: 200,
+}));
 
+app.use(express.json()); 
 
 // Настройка транспортера для отправки электронной почты
 const transporter = nodemailer.createTransport({
