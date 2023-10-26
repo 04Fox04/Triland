@@ -45,9 +45,9 @@ function PersonalDataProcessingPolicy() {
                     веб-сайта{" "}
                     <a
                       className="personal-data-processing-policy__list-link"
-                      href="https://triland.ru"
+                      href="https://xn--80aikmlon.xn--p1ai"
                     >
-                      https://triland.ru
+                      https://триланд.рф
                     </a>
                     .
                   </li>
@@ -76,9 +76,9 @@ function PersonalDataProcessingPolicy() {
                     адресу{" "}
                     <a
                       className="personal-data-processing-policy__list-link"
-                      href="https://triland.ru"
+                      href="https://xn--80aikmlon.xn--p1ai"
                     >
-                      https://triland.ru
+                      https://триланд.рф
                     </a>
                     .
                   </li>
@@ -120,9 +120,9 @@ function PersonalDataProcessingPolicy() {
                     Пользователю веб-сайта{" "}
                     <a
                       className="personal-data-processing-policy__list-link"
-                      href="https://triland.ru"
+                      href="https://xn--80aikmlon.xn--p1ai"
                     >
-                      https://triland.ru
+                      https://триланд.рф
                     </a>
                     .
                   </li>
@@ -140,9 +140,9 @@ function PersonalDataProcessingPolicy() {
                     2.10. Пользователь — любой посетитель веб-сайта{" "}
                     <a
                       className="personal-data-processing-policy__list-link"
-                      href="https://triland.ru"
+                      href="https://xn--80aikmlon.xn--p1ai"
                     >
-                      https://triland.ru
+                      https://триланд.рф
                     </a>
                     .
                   </li>
@@ -671,9 +671,9 @@ function PersonalDataProcessingPolicy() {
                     расположена в сети Интернет по адресу{" "}
                     <a
                       className="personal-data-processing-policy__list-link"
-                      href="https://triland.ru/privacy"
+                      href="https://xn--80aikmlon.xn--p1ai/privacy"
                     >
-                      https://triland.ru/privacy
+                      https://триланд.рф/privacy
                     </a>
                     .
                   </li>
