@@ -121,7 +121,6 @@
 
   .licenses__title {
     margin-bottom: 40px;
-    white-space: nowrap;
   }
 
   .licenses__item {
@@ -172,11 +171,7 @@
   .licenses__container {
     max-width: 290px;
   }
-
-  .licenses__title {
-    white-space: wrap;
-  }
-
+  
   .licenses__item {
     min-width: 130px;
     max-width: 130px;
