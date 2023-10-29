@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./PersonalDataProcessingPolicy.css";
 import "../../index.css";
 import Header from "../Header/Header";
@@ -43,12 +44,13 @@ function PersonalDataProcessingPolicy() {
                     персональных данных (далее — Политика) применяется ко всей
                     информации, которую Оператор может получить о посетителях
                     веб-сайта{" "}
-                    <a
+                    <Link
                       className="personal-data-processing-policy__list-link"
-                      href="https://xn--80aikmlon.xn--p1ai"
+                      to="/"
+                      target="_blank"
                     >
                       https://триланд.рф
-                    </a>
+                    </Link>
                     .
                   </li>
                 </ol>
@@ -74,12 +76,13 @@ function PersonalDataProcessingPolicy() {
                     материалов, а также программ для ЭВМ и баз данных,
                     обеспечивающих их доступность в сети интернет по сетевому
                     адресу{" "}
-                    <a
+                    <Link
                       className="personal-data-processing-policy__list-link"
-                      href="https://xn--80aikmlon.xn--p1ai"
+                      to="/"
+                      target="_blank"
                     >
                       https://триланд.рф
-                    </a>
+                    </Link>
                     .
                   </li>
                   <li className="personal-data-processing-policy__list-num-item">
@@ -118,12 +121,13 @@ function PersonalDataProcessingPolicy() {
                     2.8. Персональные данные — любая информация, относящаяся
                     прямо или косвенно к определенному или определяемому
                     Пользователю веб-сайта{" "}
-                    <a
+                    <Link
                       className="personal-data-processing-policy__list-link"
-                      href="https://xn--80aikmlon.xn--p1ai"
+                      to="/"
+                      target="_blank"
                     >
                       https://триланд.рф
-                    </a>
+                    </Link>
                     .
                   </li>
                   <li className="personal-data-processing-policy__list-num-item">
@@ -138,12 +142,13 @@ function PersonalDataProcessingPolicy() {
                   </li>
                   <li className="personal-data-processing-policy__list-num-item">
                     2.10. Пользователь — любой посетитель веб-сайта{" "}
-                    <a
+                    <Link
                       className="personal-data-processing-policy__list-link"
-                      href="https://xn--80aikmlon.xn--p1ai"
+                      to="/"
+                      target="_blank"
                     >
                       https://триланд.рф
-                    </a>
+                    </Link>
                     .
                   </li>
                   <li className="personal-data-processing-policy__list-num-item">
@@ -669,12 +674,13 @@ function PersonalDataProcessingPolicy() {
                   <li className="personal-data-processing-policy__list-num-item">
                     12.3. Актуальная версия Политики в свободном доступе
                     расположена в сети Интернет по адресу{" "}
-                    <a
+                    <Link
                       className="personal-data-processing-policy__list-link"
-                      href="https://xn--80aikmlon.xn--p1ai/personal-data-processing-policy"
+                      to="/personal-data-processing-policy"
+                      target="_blank"
                     >
                       https://триланд.рф/personal-data-processing-policy
-                    </a>
+                    </Link>
                     .
                   </li>
                 </ol>

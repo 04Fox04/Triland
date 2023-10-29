@@ -55,10 +55,12 @@
 .contacts__text-info-link {
   display: inline-block;
   text-transform: uppercase;
+  border-bottom: 1px solid #fff;
 }
 
 .contacts__text-info-link:hover {
   color: #173fc9;
+  border-bottom: 1px solid #173fc9;
   transition: 0.15s;
 }
 
