@@ -34,8 +34,8 @@ function Services({ onButtonClick, activeButton }) {
             <button
               className={`services__navigation-button ${
                 activeButton === "Металлообработка"
-                  ? "services__navigation-button-active"
-                  : ""
+                  ? ""
+                  : "services__navigation-button-active"
               }`}
               onClick={() => onButtonClick("Металлообработка")}
             >
@@ -44,8 +44,8 @@ function Services({ onButtonClick, activeButton }) {
             <button
               className={`services__navigation-button ${
                 activeButton === "Сварка"
-                  ? "services__navigation-button-active"
-                  : ""
+                  ? ""
+                  : "services__navigation-button-active"
               }`}
               onClick={() => onButtonClick("Сварка")}
             >

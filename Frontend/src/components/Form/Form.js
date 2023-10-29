@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import { useLocation } from "react-router-dom";
+import { Link } from "react-router-dom";
 import "./Form.css";
 import { nameRegex, telRegex } from "../../constants/constants";
 import InfoTooltip from "../InfoTooltip/InfoTooltip";
@@ -165,8 +166,8 @@ function Form({ onClose, isTooltipText }) {
               <p className="form__info">
                 Нажимая на эту кнопку вы соглашаетесь на
                 <br />
-                <a
-                  href="/personal-data-processing-policy"
+                <Link
+                  to="/personal-data-processing-policy"
                   className="form__link"
                   target="_blank"
                   onClick={() => {
@@ -176,7 +177,7 @@ function Form({ onClose, isTooltipText }) {
                   }}
                 >
                   обработку персональных данных
-                </a>
+                </Link>
               </p>
             </form>
           </div>

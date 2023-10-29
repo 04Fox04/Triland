@@ -29,11 +29,6 @@
   padding: 0;
 }
 
-.services__navigation-button:hover {
-  transition: 0.15s;
-  color: #173fc9;
-}
-
 .services__navigation-button-active {
   font-size: 25px;
   font-weight: 500;
@@ -44,6 +39,11 @@
   background-color: #fff;
   color: #0a37d3;
   padding: 0;
+}
+
+.services__navigation-button-active:hover {
+  transition: 0.15s;
+  color: #a7a7a7;
 }
 
 .services__container {
