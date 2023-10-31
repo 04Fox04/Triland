@@ -9,7 +9,7 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 
 app.use(cors({
-  origin: ['http://триланд.рф', 'https://триланд.рф', 'http://xn--80aikmlon.xn--p1ai', 'https://xn--80aikmlon.xn--p1ai'],
+  origin: ['http://триланд.рф', 'https://триланд.рф', 'http://xn--80aikmlon.xn--p1ai', 'https://xn--80aikmlon.xn--p1ai', 'https://xn----7sbkcsqcrxt.xn--p1ai'],
   optionsSuccessStatus: 200,
 }));
 
