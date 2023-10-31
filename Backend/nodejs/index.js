@@ -8,13 +8,8 @@ import { body, validationResult } from 'express-validator'
 const app = express();
 const PORT = process.env.PORT || 3000;
 
-app.use(function(req, res, next) {
-  res.header("Access-Control-Allow-Origin", "https://xn--80aikmlon.xn--p1ai");
-  next();
-});
-
 app.use(cors({
-  origin: ['http://триланд.рф', 'https://триланд.рф', 'http://xn--80aikmlon.xn--p1ai', 'https://xn--80aikmlon.xn--p1ai'],
+  origin: ['http://триланд.рф', 'https://триланд.рф', 'http://xn--80aikmlon.xn--p1ai', 'https://xn--80aikmlon.xn--p1ai', 'https://xn----7sbkcsqcrxt.xn--p1ai'],
   methods: ['POST'],
   optionsSuccessStatus: 200,
 }));
