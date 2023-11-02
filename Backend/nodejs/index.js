@@ -8,12 +8,12 @@ import { body, validationResult } from 'express-validator'
 const app = express();
 const PORT = process.env.PORT || 3000;
 
+app.use(express.json()); 
+
 app.use(cors({
-  origin: ['http://localhost:3001', 'http://триланд.рф', 'https://триланд.рф', 'http://xn--80aikmlon.xn--p1ai', 'https://xn--80aikmlon.xn--p1ai', 'https://xn----7sbkcsqcrxt.xn--p1ai', 'https://xn----7sbkcsqcrxt.xn--p1ai/send-email', 'https://триланд-гк.рф/send-email'],
+  origin: ['http://localhost:3001', 'http://триланд.рф', 'https://триланд.рф', 'http://xn--80aikmlon.xn--p1ai', 'https://xn--80aikmlon.xn--p1ai', 'https://xn----7sbkcsqcrxt.xn--p1ai'],
   optionsSuccessStatus: 200,
 }));
-
-app.use(express.json()); 
 
 // Настройка транспортера для отправки электронной почты
 const transporter = nodemailer.createTransport({
