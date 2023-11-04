@@ -2,6 +2,7 @@ export async function sendEmail(formDataObject) {
   try {
     const response = await fetch("https://триланд-гк.рф/send-email", {
       method: "POST",
+      mode: 'no-cors',
       headers: {
         "Content-Type": "application/json",
       },
