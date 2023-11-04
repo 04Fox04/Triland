@@ -10,11 +10,6 @@ const PORT = process.env.PORT || 3000;
 
 app.use(express.json()); 
 
-app.use(cors({
-  origin: ['https://xn--80aikmlon.xn--p1ai'],
-  optionsSuccessStatus: 200,
-}));
-
 // Настройка транспортера для отправки электронной почты
 const transporter = nodemailer.createTransport({
   host: 'smtp.yandex.ru',
