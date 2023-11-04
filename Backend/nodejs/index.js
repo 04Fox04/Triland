@@ -10,6 +10,11 @@ const PORT = process.env.PORT || 3000;
 
 app.use(express.json()); 
 
+app.use((req, res, next) => {
+  res.setHeader('Access-Control-Allow-Origin', '*');
+  next();
+});
+
 app.use(cors({
   origin: ['http://localhost:3001', 'http://триланд.рф', 'https://триланд.рф', 'http://xn--80aikmlon.xn--p1ai', 'https://xn--80aikmlon.xn--p1ai', 'https://xn----7sbkcsqcrxt.xn--p1ai'],
   optionsSuccessStatus: 200,
