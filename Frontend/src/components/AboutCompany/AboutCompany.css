@@ -54,7 +54,7 @@
 .about-company__button {
   width: 221px;
   height: 56px;
-  margin-top: 40px;
+  margin-top: 110px;
   border-radius: 15px;
   border: 2px solid #fff;
   box-shadow: 4px 4px 10px 0px rgba(255, 255, 255, 0.25);
@@ -174,10 +174,6 @@
     max-width: 738px;
     width: 100%;
   }
-
-  .about-company__button {
-    margin-top: 20px;
-  }
 }
 
 @media screen and (max-width: 1222px) {
@@ -224,11 +220,15 @@
   .about-company__slid-container {
     padding-top: 150px;
   }
+
+  .about-company__button {
+    margin-top: 40px;
+  }
 }
 
 @media screen and (max-width: 920px) {
   .about-company {
-    min-height: 1147px;
+    min-height: 1100px;
     position: relative;
   }
 
@@ -238,19 +238,19 @@
   }
 
   .about-company__info {
-    min-height: 526px;
+    min-height: 326px;
     max-width: 738px;
     padding: 111px 0 110px 0;
   }
 
   .about-company__text {
     margin-top: 20px;
-    max-width: 738px;
+    max-width: 700px;
     width: 100%;
   }
 
   .about-company__slider {
-    top: 650px;
+    top: 603px;
     left: 15px;
   }
 
@@ -315,7 +315,7 @@
 
 @media screen and (max-width: 500px) {
   .about-company {
-    min-height: 1183px;
+    min-height: 1030px;
   }
 
   .about-company__info {
@@ -324,7 +324,7 @@
   }
 
   .about-company__slider {
-    top: 883px;
+    top: 730px;
   }
 
   .about-company__slid-container {
@@ -340,5 +340,11 @@
   .about-company__slid-container-button {
     width: 130px;
     height: 54px;
+  }
+}
+
+@media screen and (max-width: 340px) {
+  .about-company__text {
+    max-width: 290px;
   }
 }
