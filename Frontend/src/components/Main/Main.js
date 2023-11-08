@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet } from "react-helmet";
 import Header from "../Header/Header";
 import Promo from "../Promo/Promo";
 import AboutCompany from "../AboutCompany/AboutCompany";
@@ -22,6 +23,12 @@ function Main({
 }) {
   return (
     <>
+      <Helmet>
+        <meta
+          name="description"
+          content="Триланд – эксперт в изготовлении и сварке металлоизделий. Наша команда профессионалов выполняет задачи любой сложности. Доверьте нам свои проекты и получите качественные изделия."
+        />
+      </Helmet>
       <Header />
       <main className="main">
         <Promo
