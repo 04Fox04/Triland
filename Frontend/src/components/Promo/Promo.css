@@ -42,6 +42,9 @@
 
 .promo__subtitle {
   color: #fff;
+  background-color: rgba(8, 9, 10, 0.7);
+  border-radius: 13px;
+  padding: 10px;
   font-family: Raleway;
   font-size: 22px;
   font-weight: 400;
@@ -173,6 +176,7 @@
   }
   .promo__subtitle {
     width: 400px;
+    padding: 0;
   }
 }
 @media screen and (max-width: 500px) {
@@ -186,6 +190,7 @@
   }
   .promo__subtitle {
     width: 290px;
+    background-color: initial;
   }
   .promo__image {
     position: static;
