@@ -1,9 +1,10 @@
 export async function sendEmail(formDataObject) {
   try {
-    const response = await fetch("http://localhost:3000/send-email", {
+    const response = await fetch("https://триланд-гк.рф/send-email", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
+        "Origin": "https://xn--80aikmlon.xn--p1ai"
       },
       body: JSON.stringify(formDataObject),
     });
