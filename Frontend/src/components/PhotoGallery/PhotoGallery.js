@@ -76,7 +76,7 @@ function PhotoGallery() {
     };
   }, []);
 
-  console.log(displayedPhotos)
+  // console.log(displayedPhotos)
   // console.log(showPhoto)
 
   return (
