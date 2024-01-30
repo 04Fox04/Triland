@@ -132,7 +132,6 @@
   .about-company__container {
     left: 50%;
     transform: translateX(-50%);
-    margin-left: 215px;
     margin-right: auto;
   }
 }
