@@ -19,7 +19,7 @@ function YaMap() {
           className={classNameMap}
         >
           <Placemark
-            geometry={[55.945629, 37.95613]}
+            geometry={[56.260208, 38.009597]}
             options={{
               iconColor: "#34abeb", // цвет отметки
               preset: "islands#blueHomeIcon", // стиль отметки
