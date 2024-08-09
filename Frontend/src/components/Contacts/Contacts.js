@@ -33,8 +33,8 @@ function Contacts({ onOpen }) {
               <div className="contacts__container-item">
                 <h3 className="contacts__title-text-info">Производство:</h3>
                 <p className="contacts__text-info">
-                  М.О. г. Щелково ул. Браварская д.100 (территория 31-го завода
-                  ГА)
+                  М.О. Сергиево-Посадский городской округ, Хотьково, Загорская
+                  улица, 1
                 </p>
               </div>
               <div className="contacts__container-item">

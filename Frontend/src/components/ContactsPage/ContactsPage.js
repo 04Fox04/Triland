@@ -22,8 +22,8 @@ function ContactsPage({ isFormOpen, onOpen, onClose }) {
                     Производство:
                   </h3>
                   <p className="contacts-page__text-info">
-                    М.О. г. Щелково ул. Браварская д.100 (территория 31-го
-                    завода ГА)
+                    М.О. Сергиево-Посадский городской округ, Хотьково, Загорская
+                    улица, 1
                   </p>
                 </div>
                 <div className="contacts-page__text-block">
